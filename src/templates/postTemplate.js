@@ -1,9 +1,9 @@
-import React from 'react'
-import Layout from '../layout'
-import Seo from '../components/seo'
+import React from "react"
+import Layout from "../layout"
+import Seo from "../components/seo"
 
 const PostTemplate = React.memo(props => {
-    const { title, date, html } = props['pageContext']
+    const { title, date, html } = props["pageContext"]
     return (
         <Layout>
             <Seo title={title} />
@@ -15,6 +15,6 @@ const PostTemplate = React.memo(props => {
     )
 })
 
-PostTemplate.displayName = 'PostTemplate'
+PostTemplate.displayName = "PostTemplate"
 
 export default PostTemplate

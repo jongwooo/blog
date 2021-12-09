@@ -23,7 +23,7 @@ exports.createPages = async ({ actions, graphql }) => {
         throw errors
     }
 
-    data['allMarkdownRemark'].edges.forEach(({ node }) => {
+    data["allMarkdownRemark"].edges.forEach(({ node }) => {
         createPage({
             path: node.frontmatter.path,
             context: {
@@ -31,7 +31,7 @@ exports.createPages = async ({ actions, graphql }) => {
                 title: node.frontmatter.title,
                 description: node.frontmatter.description,
             },
-            component: require.resolve('./src/templates/postTemplate.js'),
+            component: require.resolve("./src/templates/postTemplate.js"),
         })
     })
 }

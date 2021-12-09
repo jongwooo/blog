@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import * as React from "react"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
-import Layout from '../layout'
-import Seo from '../components/seo'
+import Layout from "../layout"
+import Seo from "../components/seo"
 
 const LatestPostListQuery = graphql`
     query LatestPostListQuery {
@@ -30,7 +30,7 @@ const IndexPage = () => {
         <Layout>
             <Seo title="Home" />
             <ul>
-                {data['allMarkdownRemark'].edges.map(({ node }) => (
+                {data["allMarkdownRemark"].edges.map(({ node }) => (
                     <li key={node.id}>
                         <h2>
                             <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
