@@ -2,25 +2,25 @@ exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions
 
     const { data, errors } = await graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            html
-            frontmatter {
-              date
-              title
-              description
-              path 
+        {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        html
+                        frontmatter {
+                            date
+                            title
+                            description
+                            path
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-    }
-  `);
+    `)
 
     if (errors) {
-        throw errors;
+        throw errors
     }
 
     data['allMarkdownRemark'].edges.forEach(({ node }) => {
@@ -29,9 +29,9 @@ exports.createPages = async ({ actions, graphql }) => {
             context: {
                 html: node.html,
                 title: node.frontmatter.title,
-                description: node.frontmatter.description
+                description: node.frontmatter.description,
             },
             component: require.resolve('./src/templates/postTemplate.js'),
-        });
-    });
+        })
+    })
 }

@@ -2,31 +2,31 @@ import * as React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../layout'
-import Seo from "../components/seo";
+import Seo from '../components/seo'
 
 const LatestPostListQuery = graphql`
-  query LatestPostListQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
-      edges {
-        node {
-          excerpt(truncate: true, pruneLength: 200)
-          frontmatter {
-            date(formatString: "YYYY-MM-DD HH:mm:ss")
-            title
-            description
-            path       
-          }
-          id
+    query LatestPostListQuery {
+        allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+            edges {
+                node {
+                    excerpt(truncate: true, pruneLength: 200)
+                    frontmatter {
+                        date(formatString: "YYYY-MM-DD HH:mm:ss")
+                        title
+                        description
+                        path
+                    }
+                    id
+                }
+            }
         }
-      }
     }
-  }
-`;
+`
 
 const IndexPage = () => {
-    const data = useStaticQuery(LatestPostListQuery);
+    const data = useStaticQuery(LatestPostListQuery)
 
-    return(
+    return (
         <Layout>
             <Seo title="Home" />
             <ul>
@@ -44,6 +44,5 @@ const IndexPage = () => {
         </Layout>
     )
 }
-
 
 export default IndexPage
