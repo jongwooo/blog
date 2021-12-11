@@ -1,7 +1,9 @@
 import * as React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
+import Post from "../models/post"
 import Layout from "../layout"
+import PostCard from "../components/post-card"
 import Seo from "../components/seo"
 
 const LatestPostListQuery = graphql`
@@ -9,14 +11,15 @@ const LatestPostListQuery = graphql`
         allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
             edges {
                 node {
-                    excerpt(truncate: true, pruneLength: 200)
+                    id
                     frontmatter {
-                        date(formatString: "YYYY-MM-DD HH:mm:ss")
+                        date(formatString: "YYYY년 MM월 DD일")
                         title
                         description
-                        path
                     }
-                    id
+                    fields {
+                        slug
+                    }
                 }
             }
         }
@@ -26,19 +29,14 @@ const LatestPostListQuery = graphql`
 const IndexPage = () => {
     const data = useStaticQuery(LatestPostListQuery)
 
+    const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node))
+
     return (
         <Layout>
             <Seo title="Home" />
             <ul>
-                {data["allMarkdownRemark"].edges.map(({ node }) => (
-                    <li key={node.id}>
-                        <h2>
-                            <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
-                        </h2>
-                        <h3>{node.frontmatter.date}</h3>
-                        <p>{node.frontmatter.description}</p>
-                        <hr />
-                    </li>
+                {posts.map(post => (
+                    <PostCard post={post} />
                 ))}
             </ul>
         </Layout>
