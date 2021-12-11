@@ -23,6 +23,13 @@ const LatestPostListQuery = graphql`
                 }
             }
         }
+
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
     }
 `
 
@@ -30,10 +37,11 @@ const IndexPage = () => {
     const data = useStaticQuery(LatestPostListQuery)
 
     const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node))
+    const defaultTitle = data.site.siteMetadata.title
 
     return (
         <Layout>
-            <Seo title="Home" />
+            <Seo title={defaultTitle} />
             <ul>
                 {posts.map(post => (
                     <PostCard post={post} />
