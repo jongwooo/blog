@@ -1,17 +1,54 @@
-exports.createPages = async ({ actions, graphql }) => {
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+    const { createNodeField } = actions
+    if (node.internal.type === `MarkdownRemark`) {
+        const slug = createFilePath({ node, getNode, basePath: `posts` })
+        createNodeField({ node, name: `slug`, value: slug })
+    }
+}
+
+const createBlogPages = ({ createPage, results }) => {
+    const blogPostTemplate = require.resolve(`./src/templates/postTemplate.js`)
+    results.data.allMarkdownRemark.edges.forEach(({ node, next, previous }) => {
+        createPage({
+            path: node.fields.slug,
+            component: blogPostTemplate,
+            context: {
+                slug: node.fields.slug,
+                nextSlug: next?.fields.slug ?? "",
+                previousSlug: previous?.fields.slug ?? "",
+            },
+        })
+    })
+}
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
 
-    const { data, errors } = await graphql(`
+    const results = await graphql(`
         {
-            allMarkdownRemark {
+            allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
                 edges {
                     node {
-                        html
+                        id
+                        fields {
+                            slug
+                        }
                         frontmatter {
-                            date
                             title
+                            date(formatString: "MMMM DD, YYYY")
                             description
-                            path
+                        }
+                    }
+                    next {
+                        fields {
+                            slug
+                        }
+                    }
+                    previous {
+                        fields {
+                            slug
                         }
                     }
                 }
@@ -19,19 +56,10 @@ exports.createPages = async ({ actions, graphql }) => {
         }
     `)
 
-    if (errors) {
-        throw errors
+    if (results.errors) {
+        reporter.panicOnBuild(`Error while running GraphQL query.`)
+        return
     }
 
-    data["allMarkdownRemark"].edges.forEach(({ node }) => {
-        createPage({
-            path: node.frontmatter.path,
-            context: {
-                html: node.html,
-                title: node.frontmatter.title,
-                description: node.frontmatter.description,
-            },
-            component: require.resolve("./src/templates/postTemplate.js"),
-        })
-    })
+    createBlogPages({ createPage, results })
 }
