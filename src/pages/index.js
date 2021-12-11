@@ -6,8 +6,8 @@ import Layout from "../layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
 
-const LatestPostListQuery = graphql`
-    query LatestPostListQuery {
+const pageQuery = graphql`
+    query pageQuery {
         allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
             edges {
                 node {
@@ -34,7 +34,7 @@ const LatestPostListQuery = graphql`
 `
 
 const IndexPage = () => {
-    const data = useStaticQuery(LatestPostListQuery)
+    const data = useStaticQuery(pageQuery)
 
     const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node))
     const defaultTitle = data.site.siteMetadata.title
