@@ -1,0 +1,33 @@
+@use "../../styles/colors" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/reset" as *;
+@use "../../styles/variables" as *;
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 60px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--greyOpacity200);
+    background-color: var(--whiteOpacity50);
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0 5%;
+        margin: auto;
+        @include content-max-width;
+
+        .header-title {
+            color: var(--green700);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
