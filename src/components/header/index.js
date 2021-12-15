@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
     <header className="header-wrapper">
         <div className="header">
             <Link to="/" className="header-title">
-                { siteTitle }
+                {siteTitle}
             </Link>
         </div>
     </header>
