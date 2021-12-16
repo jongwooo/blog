@@ -32,13 +32,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 edges {
                     node {
                         id
-                        fields {
-                            slug
-                        }
+                        excerpt(truncate: true, pruneLength: 200)
                         frontmatter {
                             title
                             date(formatString: "MMMM DD, YYYY")
-                            description
+                        }
+                        fields {
+                            slug
                         }
                     }
                     next {

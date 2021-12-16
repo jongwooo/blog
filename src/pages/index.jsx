@@ -12,10 +12,10 @@ const pageQuery = graphql`
             edges {
                 node {
                     id
+                    excerpt(truncate: true, pruneLength: 200)
                     frontmatter {
                         date(formatString: "YYYY년 MM월 DD일")
                         title
-                        description
                     }
                     fields {
                         slug

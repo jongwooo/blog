@@ -8,7 +8,7 @@ const PostCard = ({ post }) => {
         <div className="post-card">
             <Link to={post.slug}>
                 <h4>{post.title}</h4>
-                <p className="post-card-description">{post.description}</p>
+                <p className="post-card-excerpt">{post.excerpt}</p>
                 <p className="post-card-date">{post.date}</p>
             </Link>
         </div>

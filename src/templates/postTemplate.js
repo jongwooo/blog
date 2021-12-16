@@ -13,7 +13,7 @@ const PostTemplate = ({ data }) => {
 
     return (
         <Layout>
-            <Seo title={currentPost?.title} description={currentPost?.description} />
+            <Seo title={currentPost?.title} description={currentPost?.excerpt} />
             <h2>{currentPost.title}</h2>
             <p>{currentPost.date}</p>
             <hr />
@@ -30,10 +30,10 @@ export const pageQuery = graphql`
         current: markdownRemark(fields: { slug: { eq: $slug } }) {
             id
             html
+            excerpt(truncate: true, pruneLength: 200)
             frontmatter {
                 date(formatString: "YYYY년 MM월 DD일")
                 title
-                description
             }
             fields {
                 slug
