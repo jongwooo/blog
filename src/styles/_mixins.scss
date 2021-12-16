@@ -1,39 +1,17 @@
 @use "./variables" as *;
 
-// Small devices
-@mixin sm {
-    @media (min-width: #{$screen-sm-min}) {
+@mixin mobile {
+    @media (max-width: #{$screen-mobile-max}) {
         @content;
     }
 }
 
-// Medium devices
-@mixin md {
-    @media (min-width: #{$screen-md-min}) {
-        @content;
-    }
-}
-
-// Large devices
-@mixin lg {
-    @media (min-width: #{$screen-lg-min}) {
-        @content;
-    }
-}
-
-// Extra large devices
-@mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
+@mixin desktop {
+    @media (min-width: #{$screen-desktop-min}) {
         @content;
     }
 }
 
 @mixin content-max-width {
-    width: 100%;
     max-width: $content-max-width;
-}
-
-@mixin content-horizontal-padding {
-    padding-left: $content-horizontal-padding;
-    padding-right: $content-horizontal-padding;
 }
