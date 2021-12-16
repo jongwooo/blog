@@ -5,13 +5,13 @@ import "./style.scss"
 
 const PostCard = ({ post }) => {
     return (
-        <li className="post-card" key={post.id}>
+        <div className="post-card">
             <Link to={post.slug}>
                 <h4>{post.title}</h4>
                 <p className="post-card-description">{post.description}</p>
                 <p className="post-card-date">{post.date}</p>
             </Link>
-        </li>
+        </div>
     )
 }
 

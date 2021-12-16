@@ -42,11 +42,9 @@ const IndexPage = () => {
     return (
         <Layout>
             <Seo title={defaultTitle} />
-            <ul>
-                {posts.map(post => (
-                    <PostCard post={post} />
-                ))}
-            </ul>
+            {posts.map(post => (
+                <PostCard post={post} />
+            ))}
         </Layout>
     )
 }
