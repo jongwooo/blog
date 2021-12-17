@@ -23,7 +23,7 @@ const Utterances = React.memo(({ repo }) => {
         })
 
         containerRef.current.appendChild(utterances)
-    }, [repo])
+    })
 
     return <div ref={containerRef} />
 })
