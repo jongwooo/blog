@@ -8,7 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "../components/header"
+import PageHeader from "../components/page-header"
 import "./style.scss"
 
 const Layout = ({ children }) => {
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <PageHeader siteTitle={data.site.siteMetadata?.title || `Title`} />
             <div className="content-wrapper">
                 <main>{children}</main>
             </div>

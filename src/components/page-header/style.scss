@@ -3,7 +3,7 @@
 @use "../../styles/reset" as *;
 @use "../../styles/variables" as *;
 
-.header-wrapper {
+.page-header-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     border-bottom: 1px solid var(--greyOpacity200);
     background-color: var(--whiteOpacity50);
 
-    .header {
+    .page-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,7 +23,7 @@
         margin: auto;
         @include content-max-width;
 
-        .header-title {
+        .page-header-title {
             color: var(--green700);
             text-decoration: none;
             font-size: 18px;
