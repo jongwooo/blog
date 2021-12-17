@@ -5,7 +5,7 @@ import Post from "../models/post"
 import Layout from "../layout"
 import Seo from "../components/seo"
 import PostNavigator from "../components/post-navigator"
-import Utterances from "../components/Utterances";
+import Utterances from "../components/Utterances"
 
 const PostTemplate = ({ data }) => {
     const currentPost = new Post(data.current)
