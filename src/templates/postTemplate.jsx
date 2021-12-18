@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Post from "../models/post"
 import Layout from "../layout"
 import Seo from "../components/seo"
+import PostHeader from "../components/post-header"
 import PostNavigator from "../components/post-navigator"
 import Utterances from "../components/Utterances"
 
@@ -15,9 +16,7 @@ const PostTemplate = ({ data }) => {
     return (
         <Layout>
             <Seo title={currentPost?.title} description={currentPost?.excerpt} />
-            <h2>{currentPost.title}</h2>
-            <p>{currentPost.date}</p>
-            <hr />
+            <PostHeader title={currentPost?.title} date={currentPost?.date} />
             <div dangerouslySetInnerHTML={{ __html: currentPost.html }} />
             <PostNavigator previousPost={previousPost} nextPost={nextPost} />
             <Utterances repo="jongwooo/blog" />
