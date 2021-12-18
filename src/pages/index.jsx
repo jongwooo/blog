@@ -43,7 +43,7 @@ const IndexPage = () => {
         <Layout>
             <Seo title={defaultTitle} />
             {posts.map(post => (
-                <PostCard post={post} />
+                <PostCard key={post.id} post={post} />
             ))}
         </Layout>
     )
