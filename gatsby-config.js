@@ -20,8 +20,8 @@ module.exports = {
         {
             resolve: "gatsby-source-filesystem",
             options: {
-                name: "posts",
-                path: `${__dirname}/posts`,
+                name: "article",
+                path: `${__dirname}/content`,
             },
         },
         `gatsby-plugin-sitemap`,
