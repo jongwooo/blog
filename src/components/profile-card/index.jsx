@@ -19,6 +19,8 @@ const Author = styled.h1`
 const Description = styled.p`
     margin: 0 0 ${theme.sizes.$5};
     color: ${theme.colors.grey.$900};
+    word-break: keep-all;
+    overflow-wrap: break-word;
 `
 
 const SocialLink = styled.a`
