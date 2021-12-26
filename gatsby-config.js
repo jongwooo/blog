@@ -58,5 +58,18 @@ module.exports = {
                 anonymize: true,
             },
         },
+        {
+            resolve: "gatsby-plugin-robots-txt",
+            options: {
+                host: "https://thearchivelog.dev",
+                sitemap: "https://thearchivelog.dev/sitemap.xml",
+                policy: [
+                    {
+                        userAgent: "*",
+                        allow: "/",
+                    },
+                ],
+            },
+        },
     ],
 }
