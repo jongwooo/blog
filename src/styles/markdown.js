@@ -133,7 +133,8 @@ const StyledMarkdown = styled.div`
         white-space: nowrap;
     }
 
-    & code {
+    & code[class*="language-"],
+    & pre[class*="language-"] {
         display: block;
         padding: ${theme.sizes.$6};
         white-space: pre;
