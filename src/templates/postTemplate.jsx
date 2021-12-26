@@ -6,7 +6,19 @@ import Layout from "../layout"
 import Seo from "../components/seo"
 import PostHeader from "../components/post-header"
 import PostNavigator from "../components/post-navigator"
-import Utterances from "../components/Utterances"
+import ProfileCard from "../components/profile-card"
+import Utterances from "../components/utterances"
+import StyledMarkdown from "../styles/markdown"
+import styled from "styled-components"
+import { theme } from "../styles/theme"
+
+const Divider = styled.hr`
+    width: 75%;
+    margin: ${theme.sizes.$7} auto;
+    height: 0;
+    border: 0;
+    border-top: thin solid ${theme.colors.greyOpacity.$400};
+`
 
 const PostTemplate = ({ data }) => {
     const currentPost = new Post(data.current)
@@ -15,9 +27,11 @@ const PostTemplate = ({ data }) => {
 
     return (
         <Layout>
-            <Seo title={currentPost?.title} description={currentPost?.excerpt} />
+            <Seo title={currentPost?.title} description={currentPost?.description} />
             <PostHeader title={currentPost?.title} date={currentPost?.date} />
-            <div dangerouslySetInnerHTML={{ __html: currentPost.html }} />
+            <StyledMarkdown dangerouslySetInnerHTML={{ __html: currentPost.html }} />
+            <Divider />
+            <ProfileCard />
             <PostNavigator previousPost={previousPost} nextPost={nextPost} />
             <Utterances repo="jongwooo/blog" />
         </Layout>
@@ -31,7 +45,6 @@ export const pageQuery = graphql`
         current: markdownRemark(fields: { slug: { eq: $slug } }) {
             id
             html
-            excerpt(truncate: true, pruneLength: 200)
             frontmatter {
                 date(formatString: "YYYY년 MM월 DD일")
                 title

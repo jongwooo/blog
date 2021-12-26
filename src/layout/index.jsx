@@ -7,9 +7,17 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
+import { theme } from "../styles/theme"
+import GlobalStyles from "../styles/global"
 import PageHeader from "../components/page-header"
-import "./style.scss"
+
+const Content = styled.div`
+    margin: ${theme.sizes.$8} auto 0;
+    padding: 0 5%;
+    max-width: ${theme.sizes.container};
+`
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -24,10 +32,11 @@ const Layout = ({ children }) => {
 
     return (
         <>
+            <GlobalStyles />
             <PageHeader siteTitle={data.site.siteMetadata?.title || `Title`} />
-            <div className="content-wrapper">
+            <Content>
                 <main>{children}</main>
-            </div>
+            </Content>
         </>
     )
 }
