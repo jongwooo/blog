@@ -24,6 +24,7 @@ module.exports = {
                 path: `${__dirname}/posts`,
             },
         },
+        `gatsby-plugin-sitemap`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
