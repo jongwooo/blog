@@ -3,10 +3,10 @@ import { theme } from "./theme"
 
 const StyledMarkdown = styled.div`
     & {
-        font-size: 1rem;
+        font-size: ${theme.fonts.size.sm};
         color: ${theme.colors.grey.$900};
         line-height: 1.6;
-        word-break: break-word;
+        word-break: keep-all;
         overflow: hidden;
         margin-bottom: ${theme.sizes.$8};
     }
@@ -113,7 +113,7 @@ const StyledMarkdown = styled.div`
     & td,
     & th {
         padding: 0.25rem 0.5rem;
-        border-width: 1px;
+        border-width: ${theme.sizes.$1};
         border-color: ${theme.colors.green.$500};
     }
 
