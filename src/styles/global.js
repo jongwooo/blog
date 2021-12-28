@@ -8,7 +8,12 @@ const GlobalStyles = createGlobalStyle`
     
     body {
       font-family: ${theme.fonts.family};
-      background-color: white;
+      background-color: ${theme.colors.white};
+    }
+
+    * ::selection {
+      background: ${theme.colors.green.$400};
+      color: #fff;
     }
 `
 
