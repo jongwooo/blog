@@ -8,6 +8,8 @@ const PostCardWrapper = styled.div`
     padding: 3% 0;
     margin-bottom: 3%;
     line-height: 1.6;
+    word-break: keep-all;
+    overflow-wrap: break-word;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
 `
@@ -18,10 +20,8 @@ const PostCardTitle = styled(Link)`
     overflow: hidden;
     font-size: ${theme.fonts.size.base};
     font-weight: ${theme.fonts.weight.bold};
-    word-break: keep-all;
-    overflow-wrap: break-word;
-    transition: color 0.3s ease;
     text-decoration: none;
+    transition: color 0.3s ease;
     color: ${theme.colors.grey.$900};
 
     &:hover {
