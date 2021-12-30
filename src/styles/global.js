@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
 
     * ::selection {
       background: ${theme.colors.green.$400};
-      color: #fff;
+      color: ${theme.colors.white};
     }
 `
 
