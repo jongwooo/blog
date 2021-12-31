@@ -4,8 +4,9 @@ import { graphql, useStaticQuery } from "gatsby"
 import Post from "../models/post"
 import Layout from "../layout"
 import PostCard from "../components/post-card"
-import Seo from "../components/seo"
 import ProfileCard from "../components/profile-card"
+import Seo from "../components/seo"
+import useSiteMetaData from "../hooks/useSiteMetaData"
 
 const pageQuery = graphql`
     query pageQuery {
@@ -24,24 +25,18 @@ const pageQuery = graphql`
                 }
             }
         }
-
-        site {
-            siteMetadata {
-                title
-            }
-        }
     }
 `
 
 const IndexPage = () => {
     const data = useStaticQuery(pageQuery)
+    const { title } = useSiteMetaData()
 
     const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node))
-    const defaultTitle = data.site.siteMetadata.title
 
     return (
         <Layout>
-            <Seo title={defaultTitle} />
+            <Seo title={title} />
             <ProfileCard />
             {posts.map(post => (
                 <PostCard key={post.id} post={post} />
