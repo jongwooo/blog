@@ -1,8 +1,9 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 import { VscGithubInverted } from "react-icons/vsc"
 import styled from "styled-components"
+
 import { theme } from "../../styles/theme"
+import useSiteMetaData from "../../hooks/useSiteMetaData"
 
 const ProfileCardWrapper = styled.div`
     padding: ${theme.sizes.$5} 0;
@@ -40,26 +41,14 @@ const SocialLink = styled.a`
 `
 
 const ProfileCard = () => {
-    const { site } = useStaticQuery(
-        graphql`
-            query {
-                site {
-                    siteMetadata {
-                        author
-                        description
-                        githubUrl
-                    }
-                }
-            }
-        `,
-    )
+    const { author, description, githubUrl } = useSiteMetaData()
 
     return (
         <ProfileCardWrapper>
-            <Author>{site.siteMetadata.author}</Author>
-            <Description>{site.siteMetadata.description}</Description>
-            {site.siteMetadata.githubUrl && (
-                <SocialLink href={site.siteMetadata.githubUrl}>
+            <Author>{author}</Author>
+            <Description>{description}</Description>
+            {githubUrl && (
+                <SocialLink href={githubUrl}>
                     <VscGithubInverted />
                     깃허브
                 </SocialLink>
