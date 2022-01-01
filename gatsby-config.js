@@ -30,10 +30,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
+                name: `thearchivelog.dev`,
                 start_url: `/`,
-                display: `minimal-ui`,
                 icon: `src/images/favicon-32x32.png`,
             },
         },
