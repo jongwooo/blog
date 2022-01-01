@@ -161,6 +161,12 @@ const StyledMarkdown = styled.div`
         max-width: 100%;
     }
 
+    & figcaption {
+        color: ${theme.colors.grey.$500};
+        font-size: ${theme.fonts.size.xs};
+        text-align: center;
+    }
+
     & hr {
         border: none;
         border-bottom: 1px solid ${theme.colors.grey.$300};
