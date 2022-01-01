@@ -56,6 +56,7 @@ export const theme = {
             "-apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto,\n" +
             "    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji",
         size: {
+            xs: ".75rem",
             sm: "1rem",
             base: "1.125rem",
             lg: "1.25rem",
