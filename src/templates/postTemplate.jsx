@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Post from "../models/post"
 import Layout from "../layout"
@@ -8,8 +9,8 @@ import PostHeader from "../components/post-header"
 import PostNavigator from "../components/post-navigator"
 import ProfileCard from "../components/profile-card"
 import Utterances from "../components/utterances"
+import useSiteMetaData from "../hooks/useSiteMetaData"
 import StyledMarkdown from "../styles/markdown"
-import styled from "styled-components"
 import { theme } from "../styles/theme"
 
 const Divider = styled.hr`
@@ -25,6 +26,8 @@ const PostTemplate = ({ data }) => {
     const previousPost = data.previous && new Post(data.previous)
     const nextPost = data.next && new Post(data.next)
 
+    const { repo } = useSiteMetaData()
+
     return (
         <Layout>
             <Seo title={currentPost?.title} description={currentPost?.description} />
@@ -33,7 +36,7 @@ const PostTemplate = ({ data }) => {
             <Divider />
             <ProfileCard />
             <PostNavigator previousPost={previousPost} nextPost={nextPost} />
-            <Utterances repo="jongwooo/blog" />
+            <Utterances repo={repo} />
         </Layout>
     )
 }

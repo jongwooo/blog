@@ -10,6 +10,7 @@ const useSiteMetaData = () => {
                         author
                         description
                         githubUrl
+                        repo
                     }
                 }
             }
