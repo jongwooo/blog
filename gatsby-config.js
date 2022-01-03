@@ -5,6 +5,7 @@ module.exports = {
         description: `프론트엔드 엔지니어 한종우입니다.`,
         siteUrl: `https://thearchivelog.dev/`,
         githubUrl: `https://github.com/jongwooo/`,
+        repo: `jongwooo/blog`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
