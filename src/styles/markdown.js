@@ -26,7 +26,7 @@ const StyledMarkdown = styled.div`
 
     & h1,
     & h2 {
-        font-size: 1.25rem;
+        font-size: ${theme.fonts.size.lg};
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
