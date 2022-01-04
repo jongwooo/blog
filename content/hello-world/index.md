@@ -6,7 +6,7 @@ description: Hello World!
 
 예전부터 생각하고 있던 `기술 블로그`를 시작하게 되었습니다. 새롭게 블로그를 만들면서 [Gatsby](https://www.gatsbyjs.com)를 사용하였는데 개발 과정에서 있었던 일들을 이야기해 보려 합니다.
 
-## Gatsby로 우여곡절 끝에 블로그 만들기
+## 시작하기 전
 
 사실 지금의 블로그는 여러 실패를 거쳐 탄생했습니다. 처음엔 동아리에서 Jekyll을 사용해 만들었던 [기술 블로그](https://likelionmyongji.github.io)를 조금 수정해서 사용하려 했습니다. 하지만 Ruby를 잘 알지 못했던 터라 원하는 기능을 추가하기엔 어려움이 있었습니다.
 
@@ -56,7 +56,7 @@ const ProfileCard = () => {
 
 위의 코드는 간단한 예시이지만 실제 코드에서는 쿼리의 양이 생각보다 길었고 비슷한 쿼리를 많은 파일에서 불필요하게 반복하고 있었습니다.
 
-그래서 저는 `react hook`을 사용하여 불필요한 코드 반복을 줄였습니다.
+metadata를 호출하는 부분을 `react hook`으로 만들어 불필요한 코드 반복을 줄였습니다.
 
 ```jsx
 const ProfileCard = () => {
@@ -77,7 +77,7 @@ const ProfileCard = () => {
 
 ![Utterances](./utterances.png "[Utterances](https://utteranc.es)로 구현한 댓글 기능")
 
-### Github Action으로 Gatsby 블로그 배포하기
+### Github Action으로 배포하기
 
 Utterances로 댓글을 관리하기 때문에 댓글 Issue를 관리하기 위해 레포지토리를 아래와 같이 분리하였습니다.
 
