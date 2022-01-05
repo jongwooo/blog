@@ -81,8 +81,8 @@ const ProfileCard = () => {
 
 Utterances로 댓글을 관리하기 때문에 댓글 Issue를 관리하기 위해 레포지토리를 아래와 같이 분리하였습니다.
 
--   개발을 하고 댓글 Issue를 관리하는 **blog** 레포지토리
--   실제로 사이트가 배포되는 **jongwooo.github.io** 레포지토리
+-   댓글 Issue를 관리하는 Gatsby 레포지토리
+-   실제로 사이트가 배포되는 블로그 레포지토리
 
 [gatsby-gh-pages-action](https://github.com/enriikke/gatsby-gh-pages-action)를 통해 쉽게 레포지토리를 분리할 수 있었습니다. 아래는 배포를 위해 만든 workflow 파일입니다.
 
