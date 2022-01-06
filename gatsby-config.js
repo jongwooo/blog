@@ -8,32 +8,47 @@ module.exports = {
         repo: `jongwooo/blog`,
     },
     plugins: [
-        `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-styled-components`,
-        `gatsby-plugin-image`,
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: `gatsby-plugin-gtag`,
             options: {
-                name: `images`,
-                path: `${__dirname}/src/images`,
+                trackingId: `G-G347H7GN1W`,
+                head: false,
+                anonymize: true,
             },
         },
-        {
-            resolve: "gatsby-source-filesystem",
-            options: {
-                name: "article",
-                path: `${__dirname}/content`,
-            },
-        },
-        `gatsby-plugin-sitemap`,
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `thearchivelog.dev`,
                 start_url: `/`,
                 icon: `src/images/favicon-32x32.png`,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-robots-txt`,
+            options: {
+                host: `https://thearchivelog.dev`,
+                sitemap: `https://thearchivelog.dev/sitemap.xml`,
+                policy: [
+                    {
+                        userAgent: "*",
+                        allow: "/",
+                    },
+                ],
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `article`,
+                path: `${__dirname}/content`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
             },
         },
         {
@@ -51,26 +66,11 @@ module.exports = {
                 ],
             },
         },
-        {
-            resolve: `gatsby-plugin-gtag`,
-            options: {
-                trackingId: `G-G347H7GN1W`,
-                head: false,
-                anonymize: true,
-            },
-        },
-        {
-            resolve: "gatsby-plugin-robots-txt",
-            options: {
-                host: "https://thearchivelog.dev",
-                sitemap: "https://thearchivelog.dev/sitemap.xml",
-                policy: [
-                    {
-                        userAgent: "*",
-                        allow: "/",
-                    },
-                ],
-            },
-        },
+        `gatsby-plugin-image`,
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-sharp`,
+        `gatsby-plugin-sitemap`,
+        `gatsby-plugin-styled-components`,
+        `gatsby-transformer-sharp`,
     ],
 }
