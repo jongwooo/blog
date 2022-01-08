@@ -34,6 +34,12 @@ module.exports = {
             },
         },
         {
+            resolve: "gatsby-plugin-sitemap",
+            options: {
+                output: "/",
+            },
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `article`,
@@ -65,7 +71,6 @@ module.exports = {
         `gatsby-plugin-image`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sharp`,
-        `gatsby-plugin-sitemap`,
         `gatsby-plugin-styled-components`,
         `gatsby-transformer-sharp`,
     ],
