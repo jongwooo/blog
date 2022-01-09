@@ -36,7 +36,7 @@ const IndexPage = () => {
 
     return (
         <Layout>
-            <Seo title={title} description={description}/>
+            <Seo title={title} description={description} />
             <ProfileCard />
             {posts.map(post => (
                 <PostCard key={post.id} post={post} />
