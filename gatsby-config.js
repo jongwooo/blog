@@ -68,7 +68,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `thearchivelog.dev`,
+                name: `${metaConfig.title}`,
+                description: `${metaConfig.description}`,
                 start_url: `/`,
                 icon: `src/images/favicon-32x32.png`,
             },
