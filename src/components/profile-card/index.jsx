@@ -17,7 +17,7 @@ const Author = styled.h1`
     margin-bottom: ${theme.sizes.$5};
 `
 
-const Description = styled.p`
+const Greetings = styled.p`
     margin: 0 0 ${theme.sizes.$5};
     color: ${theme.colors.grey.$900};
     word-break: keep-all;
@@ -41,12 +41,12 @@ const SocialLink = styled.a`
 `
 
 const ProfileCard = () => {
-    const { author, description, githubUrl } = useSiteMetaData()
+    const { author, greetings, githubUrl } = useSiteMetaData()
 
     return (
         <ProfileCardWrapper>
             <Author>{author}</Author>
-            <Description>{description}</Description>
+            <Greetings>{greetings}</Greetings>
             {githubUrl && (
                 <SocialLink href={githubUrl}>
                     <VscGithubInverted />
