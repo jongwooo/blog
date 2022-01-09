@@ -9,6 +9,7 @@ const useSiteMetaData = () => {
                         title
                         author
                         description
+                        greetings
                         githubUrl
                         repo
                     }
