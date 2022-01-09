@@ -23,8 +23,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-robots-txt`,
             options: {
-                host: `https://thearchivelog.dev`,
-                sitemap: `https://thearchivelog.dev/sitemap-index.xml`,
+                host: `${metaConfig.siteUrl}`,
+                sitemap: `${metaConfig.siteUrl}/sitemap-index.xml`,
                 policy: [
                     {
                         userAgent: "*",
