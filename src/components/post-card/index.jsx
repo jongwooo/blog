@@ -6,17 +6,14 @@ import { theme } from "../../styles/theme"
 
 const PostCardWrapper = styled.div`
     padding: 3% 0;
-    margin-bottom: 3%;
+    margin-top: 3%;
     line-height: 1.6;
     word-break: keep-all;
     overflow-wrap: break-word;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
 `
 
 const PostCardTitle = styled(Link)`
-    margin-top: 0;
-    margin-bottom: ${theme.sizes.$3};
     overflow: hidden;
     font-size: ${theme.fonts.size.base};
     font-weight: ${theme.fonts.weight.bold};
@@ -31,11 +28,12 @@ const PostCardTitle = styled(Link)`
 
 const PostCardDescription = styled.p`
     color: ${theme.colors.grey.$700};
+    margin-top: ${theme.sizes.$3};
 `
 
 const PostCardDate = styled.p`
     color: ${theme.colors.grey.$500};
-    margin-bottom: ${theme.sizes.$3};
+    margin-top: ${theme.sizes.$4};
 `
 
 const PostCard = ({ post }) => {
