@@ -6,9 +6,9 @@ const useSiteMetaData = () => {
             query {
                 site {
                     siteMetadata {
-                        title
+                        siteTitle
                         author
-                        description
+                        siteDescription
                         greetings
                         githubUrl
                         repo

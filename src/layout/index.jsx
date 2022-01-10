@@ -20,12 +20,12 @@ const Content = styled.div`
 `
 
 const Layout = ({ children }) => {
-    const { title } = useSiteMetaData()
+    const { siteTitle } = useSiteMetaData()
 
     return (
         <>
             <GlobalStyles />
-            <PageHeader siteTitle={title} />
+            <PageHeader siteTitle={siteTitle} />
             <Content>
                 <main>{children}</main>
             </Content>

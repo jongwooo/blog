@@ -30,13 +30,13 @@ const pageQuery = graphql`
 
 const IndexPage = () => {
     const data = useStaticQuery(pageQuery)
-    const { title, description } = useSiteMetaData()
+    const { siteTitle, siteDescription } = useSiteMetaData()
 
     const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node))
 
     return (
         <Layout>
-            <Seo title={title} description={description} />
+            <Seo title={siteTitle} description={siteDescription} />
             <ProfileCard />
             {posts.map(post => (
                 <PostCard key={post.id} post={post} />
