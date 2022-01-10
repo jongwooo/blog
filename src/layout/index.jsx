@@ -6,12 +6,12 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import { theme } from "../styles/theme"
 import GlobalStyles from "../styles/global"
 import PageHeader from "../components/page-header"
+import useSiteMetaData from "../hooks/useSiteMetaData"
 
 const Content = styled.div`
     margin: ${theme.sizes.$8} auto 0;
@@ -20,20 +20,12 @@ const Content = styled.div`
 `
 
 const Layout = ({ children }) => {
-    const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `)
+    const { title } = useSiteMetaData()
 
     return (
         <>
             <GlobalStyles />
-            <PageHeader siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <PageHeader siteTitle={title} />
             <Content>
                 <main>{children}</main>
             </Content>
