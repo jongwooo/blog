@@ -52,7 +52,7 @@ module.exports = {
               }
             `,
                         output: `/rss.xml`,
-                        title: `${metaConfig.title}`,
+                        title: `${metaConfig.siteTitle}`,
                     },
                 ],
             },
@@ -68,8 +68,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `${metaConfig.title}`,
-                description: `${metaConfig.description}`,
+                name: `${metaConfig.siteTitle}`,
+                description: `${metaConfig.siteDescription}`,
                 start_url: `/`,
                 icon: `src/images/favicon-32x32.png`,
             },
