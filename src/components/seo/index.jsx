@@ -8,23 +8,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+
+import useSiteMetaData from "../../hooks/useSiteMetaData"
 
 const Seo = ({ description, lang, meta, title }) => {
-    const { site } = useStaticQuery(
-        graphql`
-            query {
-                site {
-                    siteMetadata {
-                        title
-                        description
-                    }
-                }
-            }
-        `,
-    )
+    const { siteDescription } = useSiteMetaData()
 
-    const metaDescription = description || site.siteMetadata.description
+    const metaDescription = description || siteDescription
 
     return (
         <Helmet
