@@ -38,7 +38,7 @@ const ProfileCard = () => {
                 site {
                     siteMetadata {
                         author
-                        description
+                        greetings
                     }
                 }
             }
@@ -48,7 +48,7 @@ const ProfileCard = () => {
     return (
         <ProfileCardWrapper>
             <Author>{site.siteMetadata.author}</Author>
-            <Description>{site.siteMetadata.description}</Description>
+            <Greetings>{site.siteMetadata.greetings}</Greetings>
         </ProfileCardWrapper>
     )
 }
@@ -60,12 +60,12 @@ metadata를 호출하는 부분을 `react hook`으로 만들어 불필요한 코
 
 ```jsx
 const ProfileCard = () => {
-    const { author, description } = useSiteMetaData()
+    const { author, greetings } = useSiteMetaData()
 
     return (
         <ProfileCardWrapper>
             <Author>{author}</Author>
-            <Description>{description}</Description>
+            <Greetings>{greetings}</Greetings>
         </ProfileCardWrapper>
     )
 }
