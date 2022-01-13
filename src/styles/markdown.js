@@ -168,8 +168,11 @@ const StyledMarkdown = styled.div`
     }
 
     & hr {
-        border: none;
-        border-bottom: 1px solid ${theme.colors.grey.$300};
+        width: 75%;
+        margin: ${theme.sizes.$7} auto;
+        height: 0;
+        border: 0;
+        border-top: thin solid ${theme.colors.greyOpacity.$400};
     }
 `
 
