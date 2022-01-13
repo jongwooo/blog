@@ -1,6 +1,5 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import styled from "styled-components"
 
 import Post from "../models/post"
 import Layout from "../layout"
@@ -8,18 +7,10 @@ import Seo from "../components/seo"
 import PostHeader from "../components/post-header"
 import PostNavigator from "../components/post-navigator"
 import ProfileCard from "../components/profile-card"
+import Divider from "../components/divider"
 import Utterances from "../components/utterances"
 import useSiteMetaData from "../hooks/useSiteMetaData"
 import StyledMarkdown from "../styles/markdown"
-import { theme } from "../styles/theme"
-
-const Divider = styled.hr`
-    width: 75%;
-    margin: ${theme.sizes.$7} auto;
-    height: 0;
-    border: 0;
-    border-top: thin solid ${theme.colors.greyOpacity.$400};
-`
 
 const PostTemplate = ({ data }) => {
     const currentPost = new Post(data.current)
