@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { theme } from "../../styles/theme"
 
 const PostHeaderWrapper = styled.div`
-    padding: ${theme.sizes.$5} 0;
+    padding: ${theme.sizes.$6} 0;
     width: 100%;
 `
 
