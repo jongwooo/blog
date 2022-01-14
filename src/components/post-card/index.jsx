@@ -37,11 +37,13 @@ const PostCardDate = styled.p`
 `
 
 const PostCard = ({ post }) => {
+    const { slug, title, description, date } = post
+
     return (
         <PostCardWrapper>
-            <PostCardTitle to={post.slug}>{post.title}</PostCardTitle>
-            <PostCardDescription>{post.description}</PostCardDescription>
-            <PostCardDate>{post.date}</PostCardDate>
+            <PostCardTitle to={slug}>{title}</PostCardTitle>
+            <PostCardDescription>{description}</PostCardDescription>
+            <PostCardDate>{date}</PostCardDate>
         </PostCardWrapper>
     )
 }
