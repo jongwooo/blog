@@ -73,6 +73,7 @@ module.exports = {
                 icon_options: {
                     purpose: `maskable`,
                 },
+                background_color: `white`,
                 theme_color: `white`,
                 display: `standalone`,
             },
