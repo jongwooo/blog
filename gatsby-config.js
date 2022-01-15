@@ -121,6 +121,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-image`,
+        `gatsby-plugin-offline`,
         `gatsby-plugin-preact`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sharp`,
