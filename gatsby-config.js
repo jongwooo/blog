@@ -69,7 +69,12 @@ module.exports = {
                 name: `${metaConfig.siteTitle}`,
                 description: `${metaConfig.siteDescription}`,
                 start_url: `/`,
-                icon: `src/images/favicon-32x32.png`,
+                icon: `src/images/favicon.png`,
+                icon_options: {
+                    purpose: `maskable`,
+                },
+                theme_color: `white`,
+                display: `standalone`,
             },
         },
         {
