@@ -8,7 +8,6 @@ const GlobalStyles = createGlobalStyle`
     
     body {
       font-family: ${theme.fonts.family};
-      background-color: ${theme.colors.white};
     }
 
     * ::selection {
