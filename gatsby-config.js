@@ -71,7 +71,7 @@ module.exports = {
                 start_url: `/`,
                 icon: `src/images/favicon.png`,
                 icon_options: {
-                    purpose: `maskable`,
+                    purpose: `any maskable`,
                 },
                 background_color: `white`,
                 theme_color: `white`,
