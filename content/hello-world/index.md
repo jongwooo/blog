@@ -6,6 +6,8 @@ description: Hello World!
 
 예전부터 생각하고 있던 `기술 블로그`를 시작하게 되었습니다. 새롭게 블로그를 만들면서 [Gatsby](https://www.gatsbyjs.com)를 사용하였는데 개발 과정에서 있었던 일들을 이야기해 보려 합니다.
 
+<!-- end -->
+
 ---
 
 ## Gatsby로 우여곡절 끝에 블로그 만들기
