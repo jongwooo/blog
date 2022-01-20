@@ -36,9 +36,10 @@
     "prettier": "^2.4.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "blog"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
