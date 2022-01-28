@@ -39,6 +39,10 @@ const Seo = ({ description, lang, meta, title }) => {
                     property: `og:type`,
                     content: `website`,
                 },
+                {
+                    name: `naver-site-verification`,
+                    content: `11caa82a2e04522f65c80a777a7ce992eedcc57d`,
+                },
             ].concat(meta)}
         />
     )
