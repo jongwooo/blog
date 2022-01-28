@@ -5,6 +5,13 @@ module.exports = {
 
     plugins: [
         {
+            resolve: `gatsby-plugin-canonical-urls`,
+            options: {
+                siteUrl: `${metaConfig.siteUrl}`,
+                stripQueryString: true,
+            },
+        },
+        {
             resolve: `gatsby-plugin-feed`,
             options: {
                 query: `
