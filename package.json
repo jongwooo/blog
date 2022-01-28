@@ -33,6 +33,7 @@
     "styled-reset": "^4.3.4"
   },
   "devDependencies": {
+    "gatsby-plugin-canonical-urls": "^4.6.0",
     "prettier": "^2.4.1"
   },
   "keywords": [

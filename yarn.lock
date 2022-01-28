@@ -7394,6 +7394,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-canonical-urls@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "gatsby-plugin-canonical-urls@npm:4.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 420df4784eec469a2d2a602e72c152803f4957b1030892b98a7d71fce389bbddc0b4f917ce2fd34590cc48b8a11ea4bdbba93f61f317fab913ac8bc9a3300cb7
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-feed@npm:^4.4.0":
   version: 4.4.0
   resolution: "gatsby-plugin-feed@npm:4.4.0"
@@ -15264,6 +15275,7 @@ __metadata:
   dependencies:
     babel-plugin-styled-components: ^2.0.2
     gatsby: ^4.3.0
+    gatsby-plugin-canonical-urls: ^4.6.0
     gatsby-plugin-feed: ^4.4.0
     gatsby-plugin-gtag: ^1.0.13
     gatsby-plugin-image: ^2.3.0
