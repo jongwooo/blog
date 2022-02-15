@@ -6,10 +6,11 @@
  */
 
 import * as React from "react"
-import styled from "styled-components"
+import styled from "@emotion/styled"
+import { Global } from "@emotion/react"
 
 import { theme } from "../styles/theme"
-import GlobalStyles from "../styles/global"
+import reset from "../styles/reset"
 import PageHeader from "../components/page-header"
 import useSiteMetaData from "../hooks/useSiteMetaData"
 
@@ -24,7 +25,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <GlobalStyles />
+            <Global styles={reset} />
             <PageHeader siteTitle={siteTitle} />
             <Content>
                 <main>{children}</main>

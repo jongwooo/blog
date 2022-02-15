@@ -1,6 +1,6 @@
 import * as React from "react"
 import { VscGithubInverted } from "react-icons/vsc"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
 import { theme } from "../../styles/theme"
 import useSiteMetaData from "../../hooks/useSiteMetaData"
