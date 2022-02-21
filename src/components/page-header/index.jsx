@@ -1,4 +1,5 @@
 import * as React from "react"
+import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
 
@@ -41,6 +42,14 @@ const PageHeader = ({ siteTitle }) => {
             </PageHeaderBody>
         </PageHeaderWrapper>
     )
+}
+
+PageHeader.propTypes = {
+    siteTitle: PropTypes.string,
+}
+
+PageHeader.defaultProps = {
+    siteTitle: ``,
 }
 
 export default PageHeader
