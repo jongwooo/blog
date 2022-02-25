@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet"
 import useSiteMetaData from "../../hooks/useSiteMetaData"
 
 const Seo = ({ description, lang, meta, title }) => {
-    const { siteTitle, siteDescription } = useSiteMetaData()
+    const { siteTitle, author, siteDescription } = useSiteMetaData()
 
     const metaDescription = description || siteDescription
 
@@ -39,6 +39,22 @@ const Seo = ({ description, lang, meta, title }) => {
                 {
                     property: `og:type`,
                     content: `website`,
+                },
+                {
+                    name: `twitter:card`,
+                    content: `summary`,
+                },
+                {
+                    name: `twitter:creator`,
+                    content: author,
+                },
+                {
+                    name: `twitter:title`,
+                    content: title,
+                },
+                {
+                    name: `twitter:description`,
+                    content: metaDescription,
                 },
                 {
                     name: `naver-site-verification`,
