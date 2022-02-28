@@ -76,7 +76,7 @@ module.exports = {
                 name: `${metaConfig.siteTitle}`,
                 description: `${metaConfig.siteDescription}`,
                 start_url: `/`,
-                icon: `src/images/favicon.png`,
+                icon: `static/favicon.png`,
                 icon_options: {
                     purpose: `any maskable`,
                 },
@@ -109,13 +109,6 @@ module.exports = {
             options: {
                 name: `article`,
                 path: `${__dirname}/content`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `images`,
-                path: `${__dirname}/src/images`,
             },
         },
         {
