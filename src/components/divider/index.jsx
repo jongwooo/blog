@@ -3,7 +3,7 @@ import { theme } from "../../styles/theme"
 
 const Divider = styled.hr`
     width: 75%;
-    margin: ${theme.sizes.$7} auto;
+    margin: 32px auto;
     height: 0;
     border: 0;
     border-top: thin solid ${theme.colors.greyOpacity.$400};

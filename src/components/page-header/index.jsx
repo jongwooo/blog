@@ -10,10 +10,10 @@ const PageHeaderWrapper = styled.header`
     top: 0;
     left: 0;
     right: 0;
-    z-index: ${theme.zIndices.$1};
-    height: ${theme.sizes.$8};
+    z-index: 10;
+    height: 64px;
     box-sizing: border-box;
-    border-bottom: ${theme.sizes.$1} solid ${theme.colors.greyOpacity.$400};
+    border-bottom: 1px solid ${theme.colors.greyOpacity.$400};
     background-color: ${theme.colors.whiteOpacity.$900};
 `
 
@@ -24,13 +24,13 @@ const PageHeaderBody = styled.div`
     height: 100%;
     padding: 0 5%;
     margin: auto;
-    max-width: ${theme.sizes.container};
+    max-width: 700px;
 `
 
 const PageTitle = styled(Link)`
     color: ${theme.colors.green.$700};
-    font-size: ${theme.fonts.size.lg};
-    font-weight: ${theme.fonts.weight.bold};
+    font-size: 1.25rem;
+    font-weight: 700;
     text-decoration: none;
 `
 

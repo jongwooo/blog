@@ -51,33 +51,4 @@ export const theme = {
             $900: `#005c36`,
         },
     },
-    fonts: {
-        family: `-apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji`,
-        size: {
-            xs: `.75rem`,
-            sm: `1rem`,
-            base: `1.125rem`,
-            lg: `1.25rem`,
-            xl: `2rem`,
-        },
-        weight: {
-            light: 100,
-            normal: 400,
-            bold: 700,
-        },
-    },
-    sizes: {
-        $1: `1px`,
-        $2: `2px`,
-        $3: `4px`,
-        $4: `8px`,
-        $5: `16px`,
-        $6: `24px`,
-        $7: `32px`,
-        $8: `64px`,
-        container: `700px`,
-    },
-    zIndices: {
-        $1: `10`,
-    },
 }

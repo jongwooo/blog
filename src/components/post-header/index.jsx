@@ -4,22 +4,22 @@ import styled from "@emotion/styled"
 import { theme } from "../../styles/theme"
 
 const PostHeaderWrapper = styled.div`
-    padding: ${theme.sizes.$6} 0;
+    padding: 24px 0;
     width: 100%;
 `
 
 const PostHeaderTitle = styled.h1`
-    margin-bottom: ${theme.sizes.$5};
+    margin-bottom: 16px;
     color: ${theme.colors.grey.$900};
-    font-size: ${theme.fonts.size.xl};
-    font-weight: ${theme.fonts.weight.bold};
+    font-size: 2rem;
+    font-weight: 700;
     word-break: keep-all;
 `
 
 const PostHeaderDate = styled.p`
     color: ${theme.colors.grey.$500};
-    font-size: ${theme.fonts.size.sm};
-    font-weight: ${theme.fonts.weight.normal};
+    font-size: 1rem;
+    font-weight: 400;
 `
 
 const PostHeader = ({ title, date }) => {

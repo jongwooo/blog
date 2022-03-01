@@ -6,33 +6,33 @@ import { theme } from "../../styles/theme"
 import useSiteMetaData from "../../hooks/useSiteMetaData"
 
 const ProfileCardWrapper = styled.div`
-    padding: ${theme.sizes.$5} 0;
+    padding: 16px 0;
     line-height: 1.4;
 `
 
 const Author = styled.h1`
-    font-size: ${theme.fonts.size.sm};
-    font-weight: ${theme.fonts.weight.bold};
+    font-size: 1rem;
+    font-weight: 700;
     color: ${theme.colors.green.$700};
-    margin-bottom: ${theme.sizes.$5};
+    margin-bottom: 16px;
 `
 
 const Greetings = styled.p`
-    margin: 0 0 ${theme.sizes.$5};
+    margin: 0 0 16px;
     color: ${theme.colors.grey.$900};
     word-break: keep-all;
     overflow-wrap: break-word;
 `
 
 const SocialLink = styled.a`
-    font-size: ${theme.fonts.size.sm};
+    font-size: 1rem;
     display: inline-flex;
     align-items: center;
     color: ${theme.colors.green.$700};
     text-decoration: none;
 
     > svg {
-        margin: 0 ${theme.sizes.$4} 0 0;
+        margin: 0 8px 0 0;
     }
 
     & :hover {

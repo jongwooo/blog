@@ -7,12 +7,12 @@ import { theme } from "../../styles/theme"
 const PostNavWrapper = styled.div`
     display: flex;
     align-items: center;
-    margin: ${theme.sizes.$7} 0;
+    margin: 32px 0;
 `
 
 const PostNav = styled(Link)`
     flex: 0 0 calc(50% - 0.5rem);
-    padding: ${theme.sizes.$5};
+    padding: 16px;
     box-sizing: border-box;
     text-decoration: none;
     line-height: 1.4;
@@ -38,7 +38,7 @@ const Label = styled.span`
 `
 
 const PostTitle = styled.p`
-    font-weight: ${theme.fonts.weight.bold};
+    font-weight: 700;
     color: ${theme.colors.grey.$900};
     margin: 0;
 `

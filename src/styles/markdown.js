@@ -3,12 +3,12 @@ import { theme } from "./theme"
 
 const StyledMarkdown = styled.div`
     & {
-        font-size: ${theme.fonts.size.sm};
+        font-size: 1rem;
         color: ${theme.colors.grey.$900};
         line-height: 1.6;
         word-break: keep-all;
         overflow: hidden;
-        margin-bottom: ${theme.sizes.$8};
+        margin-bottom: 64px;
     }
 
     & p {
@@ -21,12 +21,12 @@ const StyledMarkdown = styled.div`
     & h4,
     & h5,
     & h6 {
-        font-weight: ${theme.fonts.weight.bold};
+        font-weight: 700;
     }
 
     & h1,
     & h2 {
-        font-size: ${theme.fonts.size.lg};
+        font-size: 1.25rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
@@ -35,22 +35,22 @@ const StyledMarkdown = styled.div`
     & h4,
     & h5,
     & h6 {
-        font-size: ${theme.fonts.size.base};
+        font-size: 1.125rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
-    @media (max-width: ${theme.sizes.container}) {
+    @media (max-width: 700px) {
         & h1,
         & h2 {
-            font-size: ${theme.fonts.size.xl};
+            font-size: 2rem;
         }
 
         & h3,
         & h4,
         & h5,
         & h6 {
-            font-size: ${theme.fonts.size.lg};
+            font-size: 1.25rem;
         }
     }
 
@@ -64,7 +64,7 @@ const StyledMarkdown = styled.div`
     }
 
     & strong {
-        font-weight: ${theme.fonts.weight.bold};
+        font-weight: 700;
     }
 
     & em {
@@ -113,7 +113,7 @@ const StyledMarkdown = styled.div`
     & td,
     & th {
         padding: 0.25rem 0.5rem;
-        border-width: ${theme.sizes.$1};
+        border-width: 1px;
         border-color: ${theme.colors.green.$500};
     }
 
@@ -136,7 +136,7 @@ const StyledMarkdown = styled.div`
     & code[class*="language-"],
     & pre[class*="language-"] {
         display: block;
-        padding: ${theme.sizes.$6};
+        padding: 24px;
         white-space: pre;
         -webkit-overflow-scrolling: touch;
         overflow-x: scroll;
@@ -163,13 +163,13 @@ const StyledMarkdown = styled.div`
 
     & figcaption {
         color: ${theme.colors.grey.$500};
-        font-size: ${theme.fonts.size.xs};
+        font-size: 0.75rem;
         text-align: center;
     }
 
     & hr {
         width: 75%;
-        margin: ${theme.sizes.$7} auto;
+        margin: 32px auto;
         height: 0;
         border: 0;
         border-top: thin solid ${theme.colors.greyOpacity.$400};

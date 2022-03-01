@@ -15,8 +15,8 @@ const PostCardWrapper = styled.div`
 
 const PostCardTitle = styled(Link)`
     overflow: hidden;
-    font-size: ${theme.fonts.size.base};
-    font-weight: ${theme.fonts.weight.bold};
+    font-size: 1.125rem;
+    font-weight: 700;
     text-decoration: none;
     transition: color 0.3s ease;
     color: ${theme.colors.grey.$900};
@@ -28,12 +28,12 @@ const PostCardTitle = styled(Link)`
 
 const PostCardDescription = styled.p`
     color: ${theme.colors.grey.$700};
-    margin-top: ${theme.sizes.$3};
+    margin-top: 4px;
 `
 
 const PostCardDate = styled.p`
     color: ${theme.colors.grey.$500};
-    margin-top: ${theme.sizes.$4};
+    margin-top: 8px;
 `
 
 const PostCard = ({ post }) => {
