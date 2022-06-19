@@ -5,16 +5,16 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
+import * as React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
 
-import useSiteMetaData from "../../hooks/useSiteMetaData"
+import useSiteMetaData from "../../hooks/useSiteMetaData";
 
 const Seo = ({ description, lang, meta, title }) => {
-    const { siteTitle, author, siteDescription } = useSiteMetaData()
+    const { siteTitle, author, siteDescription } = useSiteMetaData();
 
-    const metaDescription = description || siteDescription
+    const metaDescription = description || siteDescription;
 
     return (
         <Helmet
@@ -62,20 +62,20 @@ const Seo = ({ description, lang, meta, title }) => {
                 },
             ].concat(meta)}
         />
-    )
-}
+    );
+};
 
 Seo.defaultProps = {
     lang: `en`,
     meta: [],
     description: ``,
-}
+};
 
 Seo.propTypes = {
     description: PropTypes.string,
     lang: PropTypes.string,
     meta: PropTypes.arrayOf(PropTypes.object),
     title: PropTypes.string.isRequired,
-}
+};
 
-export default Seo
+export default Seo;

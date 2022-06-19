@@ -1,5 +1,5 @@
-import styled from "@emotion/styled"
-import { theme } from "./theme"
+import styled from "@emotion/styled";
+import { theme } from "./theme";
 
 const StyledMarkdown = styled.div`
     & {
@@ -174,6 +174,6 @@ const StyledMarkdown = styled.div`
         border: 0;
         border-top: thin solid ${theme.colors.greyOpacity.$400};
     }
-`
+`;
 
-export default StyledMarkdown
+export default StyledMarkdown;

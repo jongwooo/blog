@@ -1,12 +1,12 @@
-import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import * as React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 
-import Post from "../models/post"
-import Layout from "../layout"
-import PostCard from "../components/post-card"
-import ProfileCard from "../components/profile-card"
-import Seo from "../components/seo"
-import useSiteMetaData from "../hooks/useSiteMetaData"
+import Post from "../models/post";
+import Layout from "../layout";
+import PostCard from "../components/post-card";
+import ProfileCard from "../components/profile-card";
+import Seo from "../components/seo";
+import useSiteMetaData from "../hooks/useSiteMetaData";
 
 const pageQuery = graphql`
     query pageQuery {
@@ -26,13 +26,13 @@ const pageQuery = graphql`
             }
         }
     }
-`
+`;
 
 const IndexPage = () => {
-    const data = useStaticQuery(pageQuery)
-    const { siteTitle, siteDescription } = useSiteMetaData()
+    const data = useStaticQuery(pageQuery);
+    const { siteTitle, siteDescription } = useSiteMetaData();
 
-    const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node))
+    const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node));
 
     return (
         <Layout>
@@ -42,7 +42,7 @@ const IndexPage = () => {
                 <PostCard key={post.id} post={post} />
             ))}
         </Layout>
-    )
-}
+    );
+};
 
-export default IndexPage
+export default IndexPage;

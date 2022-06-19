@@ -1,6 +1,6 @@
-import { css } from "@emotion/react"
-import { theme } from "./theme"
-import emotionReset from "emotion-reset"
+import { css } from "@emotion/react";
+import { theme } from "./theme";
+import emotionReset from "emotion-reset";
 
 const reset = css`
     ${emotionReset}
@@ -16,6 +16,6 @@ const reset = css`
             Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
             Noto Color Emoji;
     }
-`
+`;
 
-export default reset
+export default reset;

@@ -6,4 +6,4 @@ module.exports = {
     siteUrl: `https://thearchivelog.dev`,
     githubUrl: `https://github.com/jongwooo`,
     repo: `jongwooo/blog`,
-}
+};

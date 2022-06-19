@@ -1,15 +1,15 @@
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-    const { createNodeField } = actions
+    const { createNodeField } = actions;
     if (node.internal.type === `MarkdownRemark`) {
-        const slug = createFilePath({ node, getNode, basePath: `article` })
-        createNodeField({ node, name: `slug`, value: `/article${slug}` })
+        const slug = createFilePath({ node, getNode, basePath: `article` });
+        createNodeField({ node, name: `slug`, value: `/article${slug}` });
     }
-}
+};
 
 const createBlogPages = ({ createPage, results }) => {
-    const blogPostTemplate = require.resolve(`./src/templates/postTemplate.jsx`)
+    const blogPostTemplate = require.resolve(`./src/templates/postTemplate.jsx`);
     results.data.allMarkdownRemark.edges.forEach(({ node, next, previous }) => {
         createPage({
             path: node.fields.slug,
@@ -19,12 +19,12 @@ const createBlogPages = ({ createPage, results }) => {
                 nextSlug: next?.fields.slug ?? "",
                 previousSlug: previous?.fields.slug ?? "",
             },
-        })
-    })
-}
+        });
+    });
+};
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-    const { createPage } = actions
+    const { createPage } = actions;
 
     const results = await graphql(`
         {
@@ -54,12 +54,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 }
             }
         }
-    `)
+    `);
 
     if (results.errors) {
-        reporter.panicOnBuild(`Error while running GraphQL query.`)
-        return
+        reporter.panicOnBuild(`Error while running GraphQL query.`);
+        return;
     }
 
-    createBlogPages({ createPage, results })
-}
+    createBlogPages({ createPage, results });
+};

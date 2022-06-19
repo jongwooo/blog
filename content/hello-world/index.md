@@ -49,15 +49,15 @@ const ProfileCard = () => {
                 }
             }
         `,
-    )
+    );
 
     return (
         <ProfileCardWrapper>
             <Author>{site.siteMetadata.author}</Author>
             <Greetings>{site.siteMetadata.greetings}</Greetings>
         </ProfileCardWrapper>
-    )
-}
+    );
+};
 ```
 
 위의 코드는 간단한 예시이지만 실제 코드에서는 쿼리의 양이 생각보다 길었고 비슷한 쿼리를 많은 파일에서 불필요하게 반복하고 있었습니다.
@@ -66,15 +66,15 @@ metadata를 호출하는 부분을 `react hook`으로 만들어 불필요한 코
 
 ```jsx
 const ProfileCard = () => {
-    const { author, greetings } = useSiteMetaData()
+    const { author, greetings } = useSiteMetaData();
 
     return (
         <ProfileCardWrapper>
             <Author>{author}</Author>
             <Greetings>{greetings}</Greetings>
         </ProfileCardWrapper>
-    )
-}
+    );
+};
 ```
 
 ### Utterances로 댓글 달기

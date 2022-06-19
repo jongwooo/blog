@@ -1,28 +1,28 @@
-import * as React from "react"
-import { VscGithubInverted } from "react-icons/vsc"
-import styled from "@emotion/styled"
+import * as React from "react";
+import { VscGithubInverted } from "react-icons/vsc";
+import styled from "@emotion/styled";
 
-import { theme } from "../../styles/theme"
-import useSiteMetaData from "../../hooks/useSiteMetaData"
+import { theme } from "../../styles/theme";
+import useSiteMetaData from "../../hooks/useSiteMetaData";
 
 const ProfileCardWrapper = styled.div`
     padding: 16px 0;
     line-height: 1.4;
-`
+`;
 
 const Author = styled.h1`
     font-size: 1rem;
     font-weight: 700;
     color: ${theme.colors.green.$700};
     margin-bottom: 16px;
-`
+`;
 
 const Greetings = styled.p`
     margin: 0 0 16px;
     color: ${theme.colors.grey.$900};
     word-break: keep-all;
     overflow-wrap: break-word;
-`
+`;
 
 const SocialLink = styled.a`
     font-size: 1rem;
@@ -38,10 +38,10 @@ const SocialLink = styled.a`
     & :hover {
         text-decoration: underline;
     }
-`
+`;
 
 const ProfileCard = () => {
-    const { author, greetings, githubUrl } = useSiteMetaData()
+    const { author, greetings, githubUrl } = useSiteMetaData();
 
     return (
         <ProfileCardWrapper>
@@ -54,7 +54,7 @@ const ProfileCard = () => {
                 </SocialLink>
             )}
         </ProfileCardWrapper>
-    )
-}
+    );
+};
 
-export default ProfileCard
+export default ProfileCard;

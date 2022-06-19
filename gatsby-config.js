@@ -1,4 +1,4 @@
-const metaConfig = require("./gatsby-meta-config")
+const metaConfig = require("./gatsby-meta-config");
 
 module.exports = {
     siteMetadata: metaConfig,
@@ -34,8 +34,8 @@ module.exports = {
                                     url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                                     guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                                     custom_elements: [{ "content:encoded": edge.node.html }],
-                                })
-                            })
+                                });
+                            });
                         },
                         query: `
               {
@@ -135,4 +135,4 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
     ],
-}
+};

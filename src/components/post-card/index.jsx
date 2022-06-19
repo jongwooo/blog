@@ -1,8 +1,8 @@
-import * as React from "react"
-import styled from "@emotion/styled"
-import { Link } from "gatsby"
+import * as React from "react";
+import styled from "@emotion/styled";
+import { Link } from "gatsby";
 
-import { theme } from "../../styles/theme"
+import { theme } from "../../styles/theme";
 
 const PostCardWrapper = styled.div`
     padding: 3% 0;
@@ -11,7 +11,7 @@ const PostCardWrapper = styled.div`
     word-break: keep-all;
     overflow-wrap: break-word;
     text-overflow: ellipsis;
-`
+`;
 
 const PostCardTitle = styled(Link)`
     overflow: hidden;
@@ -24,20 +24,20 @@ const PostCardTitle = styled(Link)`
     &:hover {
         color: ${theme.colors.green.$700};
     }
-`
+`;
 
 const PostCardDescription = styled.p`
     color: ${theme.colors.grey.$700};
     margin-top: 4px;
-`
+`;
 
 const PostCardDate = styled.p`
     color: ${theme.colors.grey.$500};
     margin-top: 8px;
-`
+`;
 
 const PostCard = ({ post }) => {
-    const { slug, title, description, date } = post
+    const { slug, title, description, date } = post;
 
     return (
         <PostCardWrapper>
@@ -45,7 +45,7 @@ const PostCard = ({ post }) => {
             <PostCardDescription>{description}</PostCardDescription>
             <PostCardDate>{date}</PostCardDate>
         </PostCardWrapper>
-    )
-}
+    );
+};
 
-export default PostCard
+export default PostCard;
