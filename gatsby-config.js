@@ -15,15 +15,15 @@ module.exports = {
             resolve: `gatsby-plugin-feed`,
             options: {
                 query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
+                    {
+                        site {
+                            siteMetadata {
+                                siteUrl
+                                site_url: siteUrl
+                            }
+                        }
+                    }
+                `,
                 feeds: [
                     {
                         serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -38,24 +38,24 @@ module.exports = {
                             });
                         },
                         query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  edges {
-                    node {
-                      html
-                      excerpt
-                      fields { slug }
-                      frontmatter {
-                        date
-                        title
-                      }
-                    }
-                  }
-                }
-              }
-            `,
+                            {
+                                allMarkdownRemark(
+                                    sort: { order: DESC, fields: [frontmatter___date] },
+                                ) {
+                                    edges {
+                                        node {
+                                            html
+                                            excerpt
+                                            fields { slug }
+                                            frontmatter {
+                                                date
+                                                title
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        `,
                         output: `/rss.xml`,
                         title: `${metaConfig.siteTitle}`,
                     },
