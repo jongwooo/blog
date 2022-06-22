@@ -32,7 +32,7 @@ const IndexPage = () => {
     const data = useStaticQuery(pageQuery);
     const { siteTitle, siteDescription } = useSiteMetaData();
 
-    const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node));
+    const posts = data[`allMarkdownRemark`].edges.map(({ node }) => new Post(node));
 
     return (
         <Layout>

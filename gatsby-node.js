@@ -1,4 +1,4 @@
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions;
@@ -10,7 +10,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 const createBlogPages = ({ createPage, results }) => {
     const blogPostTemplate = require.resolve(`./src/templates/postTemplate.jsx`);
-    results.data.allMarkdownRemark.edges.forEach(({ node, next, previous }) => {
+    results.data[`allMarkdownRemark`].edges.forEach(({ node, next, previous }) => {
         createPage({
             path: node.fields.slug,
             component: blogPostTemplate,
