@@ -133,27 +133,6 @@ const StyledMarkdown = styled.div`
         white-space: nowrap;
     }
 
-    & code[class*="language-"],
-    & pre[class*="language-"] {
-        display: block;
-        padding: 24px;
-        white-space: pre;
-        -webkit-overflow-scrolling: touch;
-        overflow-x: scroll;
-        max-width: 100%;
-        min-width: 100px;
-        background-color: ${theme.colors.grey.$100};
-    }
-
-    & p > code,
-    & li > code {
-        padding: 0.1rem 0.25rem;
-        border-radius: 0.25rem;
-        color: ${theme.colors.green.$500};
-        background-color: ${theme.colors.grey.$100};
-        white-space: pre-line;
-    }
-
     & img {
         display: block;
         margin-left: auto;
