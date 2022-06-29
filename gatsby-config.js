@@ -128,11 +128,9 @@ module.exports = {
             },
         },
         `gatsby-plugin-emotion`,
-        `gatsby-plugin-image`,
         `gatsby-plugin-offline`,
         `gatsby-plugin-preact`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`,
     ],
 };

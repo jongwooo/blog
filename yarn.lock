@@ -5446,13 +5446,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jsx-utils@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "babel-jsx-utils@npm:1.1.0"
-  checksum: 0adb20364fca5fb8b2bd77f959a3118011d1b27d6b73912ffa7634637ad6b297baa9400e4d37a00cc190ac33e56f806294bf483cd766dc8104f465c2eaee8116
-  languageName: node
-  linkType: hard
-
 "babel-loader@npm:^8.2.3":
   version: 8.2.3
   resolution: "babel-loader@npm:8.2.3"
@@ -9171,35 +9164,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:^2.3.0":
-  version: 2.17.0
-  resolution: "gatsby-plugin-image@npm:2.17.0"
-  dependencies:
-    "@babel/code-frame": ^7.14.0
-    "@babel/parser": ^7.15.5
-    "@babel/runtime": ^7.15.4
-    "@babel/traverse": ^7.15.4
-    babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^4.17.0
-    camelcase: ^5.3.1
-    chokidar: ^3.5.2
-    common-tags: ^1.8.2
-    fs-extra: ^10.1.0
-    gatsby-core-utils: ^3.17.0
-    gatsby-plugin-utils: ^3.11.0
-    objectFitPolyfill: ^2.3.5
-    prop-types: ^15.8.1
-  peerDependencies:
-    "@babel/core": ^7.12.3
-    gatsby: ^4.0.0-next
-    gatsby-plugin-sharp: ^4.0.0-next
-    gatsby-source-filesystem: ^4.0.0-next
-    react: ^16.9.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 383c16fd1d605abf01888f7cc8eecb9e00cdc2ab42157fff254c43e39aacd60d4d8d551eb5c7f758a7cc6528238573df33311541ded1631e66ae9c2f1dce0e5f
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-manifest@npm:^4.17.0":
   version: 4.17.0
   resolution: "gatsby-plugin-manifest@npm:4.17.0"
@@ -9505,26 +9469,6 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 2f4bcb63233fa5ad49615feed57bae1a182976c188b01db74c54f0e46421ec3bd804fd305addace014c34a4e49216ad9f83f12f27d644de11508a7dd1347f746
-  languageName: node
-  linkType: hard
-
-"gatsby-transformer-sharp@npm:^4.17.0":
-  version: 4.17.0
-  resolution: "gatsby-transformer-sharp@npm:4.17.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    "@gatsbyjs/potrace": ^2.2.0
-    bluebird: ^3.7.2
-    common-tags: ^1.8.2
-    fs-extra: ^10.1.0
-    gatsby-plugin-utils: ^3.11.0
-    probe-image-size: ^7.2.3
-    semver: ^7.3.7
-    sharp: ^0.30.3
-  peerDependencies:
-    gatsby: ^4.0.0-next
-    gatsby-plugin-sharp: ^4.0.0-next
-  checksum: d6e363813f4e189f1669e7c248a5e9634524b1562d5bcb23f8b3e5fc3382219267e515239721dd37fd3991fc1e079d550f4da4cac3342b4f56ed5b3bb0b260c6
   languageName: node
   linkType: hard
 
@@ -13474,13 +13418,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"objectFitPolyfill@npm:^2.3.5":
-  version: 2.3.5
-  resolution: "objectFitPolyfill@npm:2.3.5"
-  checksum: b094a17ddf194186527ec805336f023ad3a32f532c3b7139f72c25cce0a5c7beb5d78ff95e8f9776e9adfe5a080782daed56d14e7182d6fbf4d59ce631681658
-  languageName: node
-  linkType: hard
-
 "omggif@npm:^1.0.10, omggif@npm:^1.0.9":
   version: 1.0.10
   resolution: "omggif@npm:1.0.10"
@@ -16866,7 +16803,6 @@ __metadata:
     gatsby-plugin-emotion: ^7.17.0
     gatsby-plugin-feed: ^4.17.0
     gatsby-plugin-gtag: ^1.0.13
-    gatsby-plugin-image: ^2.3.0
     gatsby-plugin-manifest: ^4.17.0
     gatsby-plugin-offline: ^5.17.0
     gatsby-plugin-preact: ^6.17.0
@@ -16877,7 +16813,6 @@ __metadata:
     gatsby-remark-images: ^6.17.0
     gatsby-source-filesystem: ^4.17.0
     gatsby-transformer-remark: ^5.17.0
-    gatsby-transformer-sharp: ^4.17.0
     preact: ^10.8.2
     preact-render-to-string: ^5.2.0
     prettier: ^2.7.1
