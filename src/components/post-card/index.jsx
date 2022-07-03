@@ -6,7 +6,6 @@ import { theme } from "../../styles/theme";
 
 const PostCardWrapper = styled.div`
     padding: 3% 0;
-    margin-top: 3%;
     line-height: 1.6;
     word-break: keep-all;
     overflow-wrap: break-word;
