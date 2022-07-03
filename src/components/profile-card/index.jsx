@@ -35,7 +35,7 @@ const SocialLink = styled.a`
         margin: 0 8px 0 0;
     }
 
-    & :hover {
+    &:hover {
         text-decoration: underline;
     }
 `;

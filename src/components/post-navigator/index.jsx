@@ -18,7 +18,7 @@ const PostNav = styled(Link)`
     line-height: 1.4;
     border-radius: 1px;
 
-    & :hover {
+    &:hover {
         background-color: ${theme.colors.grey.$100};
     }
 `;
