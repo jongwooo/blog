@@ -8,7 +8,7 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "emotion-reset": "^3.0.1",
-    "gatsby": "^4.17.1",
+    "gatsby": "^4.17.2",
     "gatsby-plugin-canonical-urls": "^4.17.0",
     "gatsby-plugin-emotion": "^7.17.0",
     "gatsby-plugin-feed": "^4.17.0",
@@ -43,6 +43,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
