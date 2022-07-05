@@ -7,7 +7,7 @@
 
 import * as React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
+import { HelmetProvider, Helmet } from "react-helmet-async";
 
 import useSiteMetaData from "../../hooks/useSiteMetaData";
 
@@ -17,51 +17,53 @@ const Seo = ({ description, lang, meta, title }) => {
     const metaDescription = description || siteDescription;
 
     return (
-        <Helmet
-            htmlAttributes={{
-                lang,
-            }}
-            title={title}
-            titleTemplate={title === siteTitle ? null : `%s | ${siteTitle}`}
-            meta={[
-                {
-                    name: `description`,
-                    content: metaDescription,
-                },
-                {
-                    property: `og:title`,
-                    content: title,
-                },
-                {
-                    property: `og:description`,
-                    content: metaDescription,
-                },
-                {
-                    property: `og:type`,
-                    content: `website`,
-                },
-                {
-                    name: `twitter:card`,
-                    content: `summary`,
-                },
-                {
-                    name: `twitter:creator`,
-                    content: author,
-                },
-                {
-                    name: `twitter:title`,
-                    content: title,
-                },
-                {
-                    name: `twitter:description`,
-                    content: metaDescription,
-                },
-                {
-                    name: `naver-site-verification`,
-                    content: `11caa82a2e04522f65c80a777a7ce992eedcc57d`,
-                },
-            ].concat(meta)}
-        />
+        <HelmetProvider>
+            <Helmet
+                htmlAttributes={{
+                    lang,
+                }}
+                title={title}
+                titleTemplate={title === siteTitle ? null : `%s | ${siteTitle}`}
+                meta={[
+                    {
+                        name: `description`,
+                        content: metaDescription,
+                    },
+                    {
+                        property: `og:title`,
+                        content: title,
+                    },
+                    {
+                        property: `og:description`,
+                        content: metaDescription,
+                    },
+                    {
+                        property: `og:type`,
+                        content: `website`,
+                    },
+                    {
+                        name: `twitter:card`,
+                        content: `summary`,
+                    },
+                    {
+                        name: `twitter:creator`,
+                        content: author,
+                    },
+                    {
+                        name: `twitter:title`,
+                        content: title,
+                    },
+                    {
+                        name: `twitter:description`,
+                        content: metaDescription,
+                    },
+                    {
+                        name: `naver-site-verification`,
+                        content: `11caa82a2e04522f65c80a777a7ce992eedcc57d`,
+                    },
+                ].concat(meta)}
+            />
+        </HelmetProvider>
     );
 };
 
