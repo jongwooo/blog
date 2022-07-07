@@ -99,7 +99,7 @@ module.exports = {
             },
         },
         {
-            resolve: "gatsby-plugin-sitemap",
+            resolve: `gatsby-plugin-sitemap`,
             options: {
                 output: "/",
             },
