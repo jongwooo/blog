@@ -38,9 +38,7 @@ const IndexPage = () => {
         <Layout>
             <Seo title={siteTitle} description={siteDescription} />
             <ProfileCard />
-            {posts.map(post => (
-                <PostCard key={post.id} post={post} />
-            ))}
+            {React.Children.toArray(posts.map(post => <PostCard post={post} />))}
         </Layout>
     );
 };
