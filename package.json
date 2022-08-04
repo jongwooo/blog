@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "author": "jongwooo <jongwooo.han@gmail.com>",
   "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "emotion-reset": "^3.0.1",
     "gatsby": "^4.20.0",
     "gatsby-plugin-canonical-urls": "^4.20.0",

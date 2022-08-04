@@ -2326,7 +2326,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.9.3":
+"@emotion/react@npm:^11.10.0":
   version: 11.10.0
   resolution: "@emotion/react@npm:11.10.0"
   dependencies:
@@ -2382,7 +2382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11.9.3":
+"@emotion/styled@npm:^11.10.0":
   version: 11.10.0
   resolution: "@emotion/styled@npm:11.10.0"
   dependencies:
@@ -16877,8 +16877,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "thearchivelog.dev@workspace:."
   dependencies:
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@emotion/react": ^11.10.0
+    "@emotion/styled": ^11.10.0
     emotion-reset: ^3.0.1
     gatsby: ^4.20.0
     gatsby-plugin-canonical-urls: ^4.20.0
