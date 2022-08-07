@@ -25,24 +25,24 @@ const PostCardTitle = styled(Link)`
     }
 `;
 
-const PostCardDescription = styled.p`
-    color: ${theme.colors.grey.$700};
+const PostCardDate = styled.p`
+    color: ${theme.colors.grey.$500};
     margin-top: 4px;
 `;
 
-const PostCardDate = styled.p`
-    color: ${theme.colors.grey.$500};
+const PostCardExcerpt = styled.p`
+    color: ${theme.colors.grey.$700};
     margin-top: 8px;
 `;
 
 const PostCard = ({ post }) => {
-    const { slug, title, description, date } = post;
+    const { slug, title, excerpt, date } = post;
 
     return (
         <PostCardWrapper>
             <PostCardTitle to={slug}>{title}</PostCardTitle>
-            <PostCardDescription>{description}</PostCardDescription>
             <PostCardDate>{date}</PostCardDate>
+            <PostCardExcerpt>{excerpt}</PostCardExcerpt>
         </PostCardWrapper>
     );
 };
