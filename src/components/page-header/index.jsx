@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
 
-import { theme } from "../../styles/theme";
+import { lightTheme } from "../../styles/theme";
 
 const PageHeaderWrapper = styled.header`
     position: fixed;
@@ -13,8 +13,8 @@ const PageHeaderWrapper = styled.header`
     z-index: 10;
     height: 64px;
     box-sizing: border-box;
-    border-bottom: 1px solid ${theme.colors.greyOpacity.$400};
-    background-color: ${theme.colors.whiteOpacity.$900};
+    border-bottom: thin solid ${lightTheme.borderColor};
+    background-color: ${lightTheme.backgroundColor};
 `;
 
 const PageHeaderBody = styled.div`
@@ -28,7 +28,7 @@ const PageHeaderBody = styled.div`
 `;
 
 const PageTitle = styled(Link)`
-    color: ${theme.colors.green.$700};
+    color: ${lightTheme.primaryColor};
     font-size: 1.25rem;
     font-weight: 700;
     text-decoration: none;

@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
 
-import { theme } from "../../styles/theme";
+import { lightTheme } from "../../styles/theme";
 
 const PostNavWrapper = styled.div`
     display: flex;
@@ -19,7 +19,7 @@ const PostNav = styled(Link)`
     border-radius: 1px;
 
     &:hover {
-        background-color: ${theme.colors.grey.$100};
+        background-color: ${lightTheme.postCardColor};
     }
 `;
 
@@ -34,12 +34,12 @@ const NextCard = styled(PostNav)`
 
 const Label = styled.span`
     font-size: 0.875rem;
-    color: ${theme.colors.grey.$500};
+    color: ${lightTheme.mutedFontColor};
 `;
 
 const PostTitle = styled.p`
     font-weight: 700;
-    color: ${theme.colors.grey.$900};
+    color: ${lightTheme.fontColor};
     margin: 0;
 `;
 

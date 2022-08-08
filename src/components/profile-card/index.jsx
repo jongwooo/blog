@@ -2,7 +2,7 @@ import * as React from "react";
 import { VscGithubInverted } from "react-icons/vsc";
 import styled from "@emotion/styled";
 
-import { theme } from "../../styles/theme";
+import { lightTheme } from "../../styles/theme";
 import useSiteMetaData from "../../hooks/useSiteMetaData";
 
 const ProfileCardWrapper = styled.div`
@@ -13,13 +13,13 @@ const ProfileCardWrapper = styled.div`
 const Author = styled.h1`
     font-size: 1rem;
     font-weight: 700;
-    color: ${theme.colors.green.$700};
+    color: ${lightTheme.primaryColor};
     margin-bottom: 16px;
 `;
 
 const Greetings = styled.p`
     margin: 0 0 16px;
-    color: ${theme.colors.grey.$900};
+    color: ${lightTheme.fontColor};
     word-break: keep-all;
     overflow-wrap: break-word;
 `;
@@ -28,7 +28,7 @@ const SocialLink = styled.a`
     font-size: 1rem;
     display: inline-flex;
     align-items: center;
-    color: ${theme.colors.green.$700};
+    color: ${lightTheme.primaryColor};
     text-decoration: none;
 
     > svg {
