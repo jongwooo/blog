@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
 
-import { theme } from "../../styles/theme";
+import { lightTheme } from "../../styles/theme";
 
 const PostCardWrapper = styled.div`
     padding: 3% 0;
@@ -18,20 +18,20 @@ const PostCardTitle = styled(Link)`
     font-weight: 700;
     text-decoration: none;
     transition: color 0.3s ease;
-    color: ${theme.colors.grey.$900};
+    color: ${lightTheme.fontColor};
 
     &:hover {
-        color: ${theme.colors.green.$700};
+        color: ${lightTheme.primaryColor};
     }
 `;
 
 const PostCardDate = styled.p`
-    color: ${theme.colors.grey.$500};
+    color: ${lightTheme.mutedFontColor};
     margin-top: 4px;
 `;
 
 const PostCardExcerpt = styled.p`
-    color: ${theme.colors.grey.$700};
+    color: ${lightTheme.fontColor};
     margin-top: 8px;
 `;
 

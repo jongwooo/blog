@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import { theme } from "./theme";
+import { lightTheme } from "./theme";
 
 const StyledMarkdown = styled.div`
     & {
         font-size: 1rem;
-        color: ${theme.colors.grey.$900};
+        color: ${lightTheme.fontColor};
         line-height: 1.6;
         word-break: keep-all;
         overflow: hidden;
@@ -56,7 +56,7 @@ const StyledMarkdown = styled.div`
 
     & a {
         text-decoration: none;
-        color: ${theme.colors.green.$500};
+        color: ${lightTheme.primaryColor};
     }
 
     & a:hover {
@@ -92,9 +92,9 @@ const StyledMarkdown = styled.div`
 
     & blockquote {
         padding: 0.5rem;
-        background-color: ${theme.colors.grey.$100};
+        color: ${lightTheme.mutedFontColor};
         margin: 0.5rem 0.3rem;
-        border-left: 4px solid ${theme.colors.green.$500};
+        border-left: 4px solid ${lightTheme.borderColor};
     }
 
     & blockquote > p {
@@ -114,15 +114,7 @@ const StyledMarkdown = styled.div`
     & th {
         padding: 0.25rem 0.5rem;
         border-width: 1px;
-        border-color: ${theme.colors.green.$500};
-    }
-
-    & tr:nth-of-type(even) {
-        background-color: ${theme.colors.grey.$100};
-    }
-
-    & th {
-        background-color: ${theme.colors.grey.$100};
+        border-color: ${lightTheme.primaryColor};
     }
 
     & table {
@@ -141,7 +133,7 @@ const StyledMarkdown = styled.div`
     }
 
     & figcaption {
-        color: ${theme.colors.grey.$500};
+        color: ${lightTheme.mutedFontColor};
         font-size: 0.75rem;
         text-align: center;
     }
@@ -151,7 +143,7 @@ const StyledMarkdown = styled.div`
         margin: 32px auto;
         height: 0;
         border: 0;
-        border-top: thin solid ${theme.colors.greyOpacity.$400};
+        border-top: thin solid ${lightTheme.borderColor};
     }
 `;
 
