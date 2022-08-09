@@ -33,6 +33,10 @@ const PostCardDate = styled.p`
 const PostCardExcerpt = styled.p`
     color: ${lightTheme.fontColor};
     margin-top: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 `;
 
 const PostCard = ({ post }) => {
