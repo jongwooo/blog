@@ -14,7 +14,7 @@ const pageQuery = graphql`
             edges {
                 node {
                     id
-                    excerpt(pruneLength: 200, truncate: true)
+                    excerpt(pruneLength: 120, truncate: true)
                     frontmatter {
                         date(formatString: "YYYY년 MM월 DD일")
                         title
