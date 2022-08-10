@@ -24,7 +24,7 @@
     "gatsby-remark-prismjs": "^6.20.0",
     "gatsby-source-filesystem": "^4.20.0",
     "gatsby-transformer-remark": "^5.20.0",
-    "preact": "^10.10.1",
+    "preact": "^10.10.2",
     "preact-render-to-string": "^5.2.1",
     "prismjs": "^1.28.0",
     "prop-types": "^15.8.1",
