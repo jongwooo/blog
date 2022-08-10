@@ -21,13 +21,13 @@ const StyledMarkdown = styled.div`
     & h5,
     & h6 {
         font-weight: 700;
+        margin-top: 1.75rem;
+        margin-bottom: 1rem;
     }
 
     & h1,
     & h2 {
         font-size: 1.5rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
     }
 
     & h3,
@@ -35,13 +35,21 @@ const StyledMarkdown = styled.div`
     & h5,
     & h6 {
         font-size: 1.25rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
     }
 
     @media (max-width: 700px) {
         & {
             font-size: 1rem;
+        }
+
+        & h1,
+        & h2,
+        & h3,
+        & h4,
+        & h5,
+        & h6 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
         }
 
         & h1,
