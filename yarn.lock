@@ -14527,10 +14527,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:^10.10.1":
-  version: 10.10.1
-  resolution: "preact@npm:10.10.1"
-  checksum: a79a196770064eb4d5a533e5b407f5eb842e47ea143bd4687e436ad3faf634efd4fda1185fab7b8c687a0889f1dea61349f1a01d6d6dfe1db3e0f4361f65c1d3
+"preact@npm:^10.10.2":
+  version: 10.10.2
+  resolution: "preact@npm:10.10.2"
+  checksum: 3e994205eb75ce7c79f45bfd86b297645937f926c06fa2a541bf87a5ae168dd6c9f0945af29986065877623d58d1977aff073e4378683994fabee0edbb165c24
   languageName: node
   linkType: hard
 
@@ -16889,7 +16889,7 @@ __metadata:
     gatsby-remark-prismjs: ^6.20.0
     gatsby-source-filesystem: ^4.20.0
     gatsby-transformer-remark: ^5.20.0
-    preact: ^10.10.1
+    preact: ^10.10.2
     preact-render-to-string: ^5.2.1
     prettier: ^2.7.1
     prismjs: ^1.28.0
