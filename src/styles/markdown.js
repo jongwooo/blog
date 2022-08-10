@@ -3,10 +3,9 @@ import { lightTheme } from "./theme";
 
 const StyledMarkdown = styled.div`
     & {
-        font-size: 1rem;
+        font-size: 1.125rem;
         color: ${lightTheme.fontColor};
-        line-height: 1.6;
-        word-break: keep-all;
+        line-height: 1.7;
         overflow: hidden;
         margin-bottom: 64px;
     }
@@ -26,7 +25,7 @@ const StyledMarkdown = styled.div`
 
     & h1,
     & h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
@@ -35,22 +34,14 @@ const StyledMarkdown = styled.div`
     & h4,
     & h5,
     & h6 {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
     @media (max-width: 700px) {
-        & h1,
-        & h2 {
-            font-size: 2rem;
-        }
-
-        & h3,
-        & h4,
-        & h5,
-        & h6 {
-            font-size: 1.25rem;
+        & {
+        font-size: 1rem;
         }
     }
 
