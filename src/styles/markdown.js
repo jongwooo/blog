@@ -41,7 +41,19 @@ const StyledMarkdown = styled.div`
 
     @media (max-width: 700px) {
         & {
-        font-size: 1rem;
+            font-size: 1rem;
+        }
+
+        & h1,
+        & h2 {
+            font-size: 1.25rem;
+        }
+
+        & h3,
+        & h4,
+        & h5,
+        & h6 {
+            font-size: 1.125rem;
         }
     }
 
