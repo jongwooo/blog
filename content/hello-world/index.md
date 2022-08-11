@@ -80,7 +80,7 @@ const ProfileCard = () => {
 
 [Utterances](https://utteranc.es)는 GitHub Issue 기반으로 댓글을 작성할 수 있게 해줍니다. 기술 블로그 특성상 블로그에 방문하는 사람들 대부분이 Github 계정을 가지고 있을 가능성이 높고, Issue 기반으로 댓글이 등록되므로 메일로 알림을 받을 수 있어 Utterances를 선택하게 되었습니다.
 
-![Utterances로 구현한 댓글 기능](./utterances.png "[Utterances](https://utteranc.es)로 구현한 댓글 기능")
+![Utterances로 구현한 댓글 기능](utterances.png "[Utterances](https://utteranc.es)로 구현한 댓글 기능")
 
 ### Github Action으로 배포하기
 
