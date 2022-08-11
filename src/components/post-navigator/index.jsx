@@ -41,6 +41,10 @@ const PostTitle = styled.p`
     font-weight: 700;
     color: ${lightTheme.fontColor};
     margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 `;
 
 const PostNavigator = ({ previousPost, nextPost }) => {
