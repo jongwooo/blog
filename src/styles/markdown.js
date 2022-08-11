@@ -7,7 +7,6 @@ const StyledMarkdown = styled.div`
         color: ${lightTheme.fontColor};
         line-height: 1.7;
         overflow: hidden;
-        margin-bottom: 64px;
     }
 
     & p {
