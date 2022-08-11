@@ -102,9 +102,9 @@ const StyledMarkdown = styled.div`
     }
 
     & blockquote {
-        padding: 0.5rem;
+        padding: 0 0.5rem;
         color: ${lightTheme.mutedFontColor};
-        margin: 0.5rem 0.3rem;
+        margin: 0 0.3rem;
         border-left: 4px solid ${lightTheme.borderColor};
     }
 
