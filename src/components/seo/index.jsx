@@ -47,6 +47,10 @@ const Seo = ({ description, lang, meta, title }) => {
                         content: siteUrl,
                     },
                     {
+                        property: `og:image`,
+                        content: ogImageUrl,
+                    },
+                    {
                         name: `twitter:card`,
                         content: `summary`,
                     },
@@ -61,14 +65,6 @@ const Seo = ({ description, lang, meta, title }) => {
                     {
                         name: `twitter:description`,
                         content: metaDescription,
-                    },
-                    {
-                        property: `image`,
-                        content: ogImageUrl,
-                    },
-                    {
-                        property: `og:image`,
-                        content: ogImageUrl,
                     },
                     {
                         property: `twitter:image`,
