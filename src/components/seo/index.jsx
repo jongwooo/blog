@@ -17,7 +17,7 @@ const Seo = ({ description, lang, meta, title }) => {
     const { siteTitle, author, siteDescription, siteUrl } = useSiteMetaData();
 
     const metaDescription = description || siteDescription;
-    const ogImageUrl = `${defaultOgImage}`;
+    const ogImageUrl = `${siteUrl}${defaultOgImage}`;
     const location = useLocation();
 
     return (
