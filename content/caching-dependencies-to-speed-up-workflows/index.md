@@ -69,59 +69,59 @@ cache miss가 발생하면 action은 restore-keys를 대안키로 사용하여 �
 
 ## 프로젝트에 적용하기
 
-[actions/cache](https://github.com/actions/cache)을 사용하여 프로젝트에 `의존성 캐싱`을 적용해봅시다. 
+[actions/cache](https://github.com/actions/cache)을 사용하여 프로젝트에 `의존성 캐싱`을 적용해봅시다.
 더 많은 예시는 [Examples](https://github.com/actions/cache/blob/main/examples.md)에서 확인할 수 있습니다.
 
 ### Node - npm
 
-[npm](https://www.npmjs.com)의 캐시 디렉토리는 Posix에서는 `~/.npm`에, Windows에서는 `~\AppData\npm-cache`에 저장되지만 
+[npm](https://www.npmjs.com)의 캐시 디렉토리는 Posix에서는 `~/.npm`에, Windows에서는 `~\AppData\npm-cache`에 저장되지만
 `npm config get cache` 명령어를 통하여 플랫폼에 상관 없이 캐시 디렉토리 경로를 찾을 수 있습니다.
 
 ```yml
 - name: Get npm cache directory
   id: npm-cache-dir
   run: |
-    echo "::set-output name=dir::$(npm config get cache)"
+      echo "::set-output name=dir::$(npm config get cache)"
 - uses: actions/cache@v3
   id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
   with:
-    path: ${{ steps.npm-cache-dir.outputs.dir }}
-    key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-    restore-keys: |
-      ${{ runner.os }}-node-
+      path: ${{ steps.npm-cache-dir.outputs.dir }}
+      key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      restore-keys: |
+          ${{ runner.os }}-node-
 ```
 
 ### Node - Yarn
 
-yarn은 버전에 따라 캐시 디렉토리 경로를 가져오는 명령어가 달라집니다. 
+yarn은 버전에 따라 캐시 디렉토리 경로를 가져오는 명령어가 달라집니다.
 캐싱을 하는 step은 동일하게 적용할 수 있습니다.
 
 ```yml
 - uses: actions/cache@v3
   id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
   with:
-    path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-    key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-    restore-keys: |
-      ${{ runner.os }}-yarn-
+      path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+      key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+      restore-keys: |
+          ${{ runner.os }}-yarn-
 ```
 
-- [yarn classic](https://classic.yarnpkg.com/lang/en/)
+-   [yarn classic](https://classic.yarnpkg.com/lang/en/)
 
-    yarn의 캐시 디렉토리는 운영체제와 yarn의 버전에 따라 달라집니다. 
+    yarn의 캐시 디렉토리는 운영체제와 yarn의 버전에 따라 달라집니다.
     npm과 같이 `yarn cache dir` 명령어를 통하여 캐시 디렉토리 경로를 찾을 수 있습니다.
-    
+
     ```yml
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
       run: echo "::set-output name=dir::$(yarn cache dir)"
     ```
 
-- [yarn berry](https://yarnpkg.com)
+-   [yarn berry](https://yarnpkg.com)
 
-    yarn2의 캐시 디렉토리는 사용자 설정에 따라 달라집니다. 
+    yarn2의 캐시 디렉토리는 사용자 설정에 따라 달라집니다.
     yarn과는 다르게 `yarn config get cacheFolder` 명령어를 통하여 캐시 디렉토리 경로를 찾을 수 있습니다.
-    
+
     ```yml
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
