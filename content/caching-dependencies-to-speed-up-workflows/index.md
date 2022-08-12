@@ -74,8 +74,8 @@ cache miss가 발생하면 action은 restore-keys를 대안키로 사용하여 �
 
 ### Node - npm
 
-[npm](https://www.npmjs.com)의 캐시 디렉토리는 Posix에서는 `~/.npm`에, Windows에서는 `~\AppData\npm-cache`에 저장되지만
-`npm config get cache` 명령어를 통하여 플랫폼에 상관 없이 캐시 디렉토리 경로를 찾을 수 있습니다.
+[npm](https://www.npmjs.com)의 캐시 디렉터리는 Posix에서는 `~/.npm`에, Windows에서는 `~\AppData\npm-cache`에 저장되지만
+`npm config get cache` 명령어를 통하여 플랫폼에 상관 없이 캐시 디렉터리 경로를 찾을 수 있습니다.
 
 ```yml
 - name: Get npm cache directory
@@ -93,7 +93,7 @@ cache miss가 발생하면 action은 restore-keys를 대안키로 사용하여 �
 
 ### Node - Yarn
 
-yarn은 버전에 따라 캐시 디렉토리 경로를 가져오는 명령어가 달라집니다.
+yarn은 버전에 따라 캐시 디렉터리 경로를 가져오는 명령어가 달라집니다.
 캐싱을 하는 step은 동일하게 적용할 수 있습니다.
 
 ```yml
@@ -108,8 +108,8 @@ yarn은 버전에 따라 캐시 디렉토리 경로를 가져오는 명령어가
 
 -   [yarn classic](https://classic.yarnpkg.com/lang/en/)
 
-    yarn의 캐시 디렉토리는 운영체제와 yarn의 버전에 따라 달라집니다.
-    npm과 같이 `yarn cache dir` 명령어를 통하여 캐시 디렉토리 경로를 찾을 수 있습니다.
+    yarn의 캐시 디렉터리는 운영체제와 yarn의 버전에 따라 달라집니다.
+    npm과 같이 `yarn cache dir` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
 
     ```yml
     - name: Get yarn cache directory path
@@ -119,8 +119,8 @@ yarn은 버전에 따라 캐시 디렉토리 경로를 가져오는 명령어가
 
 -   [yarn berry](https://yarnpkg.com)
 
-    yarn2의 캐시 디렉토리는 사용자 설정에 따라 달라집니다.
-    yarn과는 다르게 `yarn config get cacheFolder` 명령어를 통하여 캐시 디렉토리 경로를 찾을 수 있습니다.
+    yarn2의 캐시 디렉터리는 사용자 설정에 따라 달라집니다.
+    yarn과는 다르게 `yarn config get cacheFolder` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
 
     ```yml
     - name: Get yarn cache directory path
