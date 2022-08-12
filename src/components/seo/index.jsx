@@ -8,14 +8,17 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { HelmetProvider, Helmet } from "react-helmet-async";
+import { useLocation } from "@reach/router";
 
 import useSiteMetaData from "../../hooks/useSiteMetaData";
+import defaultOgImage from "../../../static/default-og-image.png";
 
 const Seo = ({ description, lang, meta, title }) => {
-    const { siteTitle, author, siteDescription, defaultOgImage, siteUrl } = useSiteMetaData();
+    const { siteTitle, author, siteDescription, siteUrl } = useSiteMetaData();
 
     const metaDescription = description || siteDescription;
-    const ogImageUrl = (siteUrl ?? "") + defaultOgImage;
+    const ogImageUrl = `${defaultOgImage}`;
+    const location = useLocation();
 
     return (
         <HelmetProvider>
@@ -44,7 +47,11 @@ const Seo = ({ description, lang, meta, title }) => {
                     },
                     {
                         property: `og:url`,
-                        content: siteUrl,
+                        content: `${siteUrl}${location.pathname}`,
+                    },
+                    {
+                        property: `og:image`,
+                        content: ogImageUrl,
                     },
                     {
                         name: `twitter:card`,
@@ -61,14 +68,6 @@ const Seo = ({ description, lang, meta, title }) => {
                     {
                         name: `twitter:description`,
                         content: metaDescription,
-                    },
-                    {
-                        property: `image`,
-                        content: ogImageUrl,
-                    },
-                    {
-                        property: `og:image`,
-                        content: ogImageUrl,
                     },
                     {
                         property: `twitter:image`,
