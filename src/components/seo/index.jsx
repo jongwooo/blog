@@ -12,9 +12,10 @@ import { HelmetProvider, Helmet } from "react-helmet-async";
 import useSiteMetaData from "../../hooks/useSiteMetaData";
 
 const Seo = ({ description, lang, meta, title }) => {
-    const { siteTitle, author, siteDescription } = useSiteMetaData();
+    const { siteTitle, author, siteDescription, defaultOgImage, siteUrl } = useSiteMetaData();
 
     const metaDescription = description || siteDescription;
+    const ogImageUrl = (siteUrl ?? "") + defaultOgImage;
 
     return (
         <HelmetProvider>
@@ -56,6 +57,18 @@ const Seo = ({ description, lang, meta, title }) => {
                     {
                         name: `twitter:description`,
                         content: metaDescription,
+                    },
+                    {
+                        property: `image`,
+                        content: ogImageUrl,
+                    },
+                    {
+                        property: `og:image`,
+                        content: ogImageUrl,
+                    },
+                    {
+                        property: `twitter:image`,
+                        content: ogImageUrl,
                     },
                     {
                         name: `naver-site-verification`,

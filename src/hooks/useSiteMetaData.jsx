@@ -8,8 +8,10 @@ const useSiteMetaData = () => {
                     siteMetadata {
                         siteTitle
                         author
-                        siteDescription
                         greetings
+                        siteDescription
+                        defaultOgImage
+                        siteUrl
                         githubUrl
                         repo
                     }
