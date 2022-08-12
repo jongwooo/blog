@@ -44,7 +44,7 @@ const Seo = ({ description, lang, meta, title }) => {
                     },
                     {
                         property: `og:url`,
-                        content: siteUrl
+                        content: siteUrl,
                     },
                     {
                         name: `twitter:card`,
