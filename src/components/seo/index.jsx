@@ -8,6 +8,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { HelmetProvider, Helmet } from "react-helmet-async";
+import { useLocation } from "@reach/router";
 
 import useSiteMetaData from "../../hooks/useSiteMetaData";
 
@@ -16,6 +17,7 @@ const Seo = ({ description, lang, meta, title }) => {
 
     const metaDescription = description || siteDescription;
     const ogImageUrl = (siteUrl ?? "") + defaultOgImage;
+    const location = useLocation();
 
     return (
         <HelmetProvider>
@@ -44,7 +46,7 @@ const Seo = ({ description, lang, meta, title }) => {
                     },
                     {
                         property: `og:url`,
-                        content: siteUrl,
+                        content: `${siteUrl}${location.pathname}`,
                     },
                     {
                         property: `og:image`,
