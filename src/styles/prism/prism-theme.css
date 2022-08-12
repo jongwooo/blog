@@ -19,7 +19,7 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-family: "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
     padding: 1em;
     margin: 0.5em 0;
@@ -29,10 +29,17 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
+    font-size: 1rem;
     background-color: rgba(175,184,193,0.2);
     padding: 0.2em 0.3em;
     border-radius: 0.3em;
     white-space: normal;
+}
+
+@media (max-width: 700px) {
+    :not(pre) > code[class*="language-"] {
+        font-size: 0.875rem;
+    }
 }
 
 .token.comment,
