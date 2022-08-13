@@ -14,6 +14,7 @@ const useSiteMetaData = () => {
                         siteUrl
                         githubUrl
                         repo
+                        naverToken
                     }
                 }
             }
