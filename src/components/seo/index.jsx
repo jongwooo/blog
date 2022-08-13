@@ -7,89 +7,44 @@
 
 import * as React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 
 import useSiteMetaData from "../../hooks/useSiteMetaData";
 
-const Seo = ({ description, lang, meta, title }) => {
-    const { siteTitle, author, siteDescription, defaultOgImage, siteUrl } = useSiteMetaData();
+const Seo = ({ description, title, children }) => {
+    const { siteTitle, author, siteDescription, defaultOgImage, siteUrl, naverToken } = useSiteMetaData();
 
+    const metaTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
     const metaDescription = description || siteDescription;
     const ogImageUrl = `${siteUrl}${defaultOgImage}`;
     const location = useLocation();
 
     return (
-        <Helmet
-            htmlAttributes={{
-                lang,
-            }}
-            title={title}
-            titleTemplate={title === siteTitle ? null : `%s | ${siteTitle}`}
-            meta={[
-                {
-                    name: `description`,
-                    content: metaDescription,
-                },
-                {
-                    property: `og:title`,
-                    content: title,
-                },
-                {
-                    property: `og:description`,
-                    content: metaDescription,
-                },
-                {
-                    property: `og:type`,
-                    content: `website`,
-                },
-                {
-                    property: `og:url`,
-                    content: `${siteUrl}${location.pathname}`,
-                },
-                {
-                    property: `og:image`,
-                    content: ogImageUrl,
-                },
-                {
-                    name: `twitter:card`,
-                    content: `summary`,
-                },
-                {
-                    name: `twitter:creator`,
-                    content: author,
-                },
-                {
-                    name: `twitter:title`,
-                    content: title,
-                },
-                {
-                    name: `twitter:description`,
-                    content: metaDescription,
-                },
-                {
-                    property: `twitter:image`,
-                    content: ogImageUrl,
-                },
-                {
-                    name: `naver-site-verification`,
-                    content: `11caa82a2e04522f65c80a777a7ce992eedcc57d`,
-                },
-            ].concat(meta)}
-        />
+        <>
+            <title>{metaTitle}</title>
+            <meta name="description" content={metaDescription} />
+            <meta property="og:title" content={metaTitle} />
+            <meta property="og:description" content={metaDescription} />
+            <meta property="og:image" content={ogImageUrl} />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content={siteUrl + location.pathname} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:creator" content={author} />
+            <meta name="twitter:title" content={metaTitle} />
+            <meta name="twitter:description" content={metaDescription} />
+            <meta name="twitter:image" content={metaDescription} />
+            <meta name="naver-site-verification" content={naverToken} />
+            {children}
+        </>
     );
 };
 
 Seo.defaultProps = {
-    lang: `en`,
-    meta: [],
     description: ``,
 };
 
 Seo.propTypes = {
     description: PropTypes.string,
-    lang: PropTypes.string,
-    meta: PropTypes.arrayOf(PropTypes.object),
     title: PropTypes.string.isRequired,
 };
 
