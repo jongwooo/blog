@@ -76,7 +76,7 @@ module.exports = {
                 name: `${metaConfig.siteTitle}`,
                 description: `${metaConfig.siteDescription}`,
                 start_url: `/`,
-                icon: `static/favicon.png`,
+                icon: `src/images/favicon.png`,
                 icon_options: {
                     purpose: `any maskable`,
                 },
