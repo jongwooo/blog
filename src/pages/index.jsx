@@ -8,7 +8,26 @@ import ProfileCard from "../components/profile-card";
 import Seo from "../components/seo";
 import useSiteMetaData from "../hooks/useSiteMetaData";
 
-const pageQuery = graphql`
+const IndexPage = () => {
+    const data = useStaticQuery(pageQuery);
+    const posts = data[`allMarkdownRemark`].edges.map(({ node }) => new Post(node));
+
+    return (
+        <Layout>
+            <ProfileCard />
+            {React.Children.toArray(posts.map(post => <PostCard post={post} />))}
+        </Layout>
+    );
+};
+
+export const Head = () => {
+    const { siteTitle, siteDescription } = useSiteMetaData();
+    return <Seo title={siteTitle} description={siteDescription} />;
+};
+
+export default IndexPage;
+
+export const pageQuery = graphql`
     query pageQuery {
         allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
             edges {
@@ -27,20 +46,3 @@ const pageQuery = graphql`
         }
     }
 `;
-
-const IndexPage = () => {
-    const data = useStaticQuery(pageQuery);
-    const { siteTitle, siteDescription } = useSiteMetaData();
-
-    const posts = data[`allMarkdownRemark`].edges.map(({ node }) => new Post(node));
-
-    return (
-        <Layout>
-            <Seo title={siteTitle} description={siteDescription} />
-            <ProfileCard />
-            {React.Children.toArray(posts.map(post => <PostCard post={post} />))}
-        </Layout>
-    );
-};
-
-export default IndexPage;
