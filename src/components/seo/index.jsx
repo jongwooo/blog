@@ -11,10 +11,9 @@ import { HelmetProvider, Helmet } from "react-helmet-async";
 import { useLocation } from "@reach/router";
 
 import useSiteMetaData from "../../hooks/useSiteMetaData";
-import defaultOgImage from "../../../static/default-og-image.png";
 
 const Seo = ({ description, lang, meta, title }) => {
-    const { siteTitle, author, siteDescription, siteUrl } = useSiteMetaData();
+    const { siteTitle, author, siteDescription, defaultOgImage, siteUrl } = useSiteMetaData();
 
     const metaDescription = description || siteDescription;
     const ogImageUrl = `${siteUrl}${defaultOgImage}`;
