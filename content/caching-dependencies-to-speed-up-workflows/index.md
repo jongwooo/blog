@@ -128,21 +128,32 @@ yarn은 버전에 따라 캐시 디렉터리 경로를 가져오는 명령어가
       run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
     ```
 
-### Java
+### Built-in 의존성 캐싱
 
-워크플로우에서는 [actions/setup-java](https://github.com/actions/setup-java)를 통해 java 버전을 설정합니다.
-이 action은 [actions/cache](https://github.com/actions/cache)를 내장하고 있어 복잡한 설정 없이 의존성 캐싱을 적용할 수 있습니다.
+워크플로우 셋업이 용이하도록 GitHub에서 제공하는 [action](https://github.com/actions?q=setup&type=all&language=&sort=setup)은 대부분
+[actions/cache](https://github.com/actions/cache)를 내장하고 있어 복잡한 설정 없이 `의존성 캐싱`을 적용할 수 있습니다.
 
-```yml
-steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-java@v3
-      with:
-          java-version: "11"
-          distribution: "temurin"
-          cache: "gradle" # or "maven", "sbt"
-    - run: ./gradlew build
-```
+-   [actions/setup-node](https://github.com/actions/setup-node#caching-global-packages-data)
+
+    ```yml
+    steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+              node-version: "16"
+              cache: "npm" # or "yarn", "pnpm"
+    ```
+
+-   [actions/setup-java](https://github.com/actions/setup-java#caching-packages-dependencies)
+    ```yml
+    steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-java@v3
+          with:
+              java-version: "11"
+              distribution: "temurin"
+              cache: "gradle" # or "maven", "sbt"
+    ```
 
 ---
 
