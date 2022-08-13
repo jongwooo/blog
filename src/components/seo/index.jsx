@@ -7,7 +7,7 @@
 
 import * as React from "react";
 import PropTypes from "prop-types";
-import { HelmetProvider, Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 
 import useSiteMetaData from "../../hooks/useSiteMetaData";
@@ -20,65 +20,63 @@ const Seo = ({ description, lang, meta, title }) => {
     const location = useLocation();
 
     return (
-        <HelmetProvider>
-            <Helmet
-                htmlAttributes={{
-                    lang,
-                }}
-                title={title}
-                titleTemplate={title === siteTitle ? null : `%s | ${siteTitle}`}
-                meta={[
-                    {
-                        name: `description`,
-                        content: metaDescription,
-                    },
-                    {
-                        property: `og:title`,
-                        content: title,
-                    },
-                    {
-                        property: `og:description`,
-                        content: metaDescription,
-                    },
-                    {
-                        property: `og:type`,
-                        content: `website`,
-                    },
-                    {
-                        property: `og:url`,
-                        content: `${siteUrl}${location.pathname}`,
-                    },
-                    {
-                        property: `og:image`,
-                        content: ogImageUrl,
-                    },
-                    {
-                        name: `twitter:card`,
-                        content: `summary`,
-                    },
-                    {
-                        name: `twitter:creator`,
-                        content: author,
-                    },
-                    {
-                        name: `twitter:title`,
-                        content: title,
-                    },
-                    {
-                        name: `twitter:description`,
-                        content: metaDescription,
-                    },
-                    {
-                        property: `twitter:image`,
-                        content: ogImageUrl,
-                    },
-                    {
-                        name: `naver-site-verification`,
-                        content: `11caa82a2e04522f65c80a777a7ce992eedcc57d`,
-                    },
-                ].concat(meta)}
-            />
-        </HelmetProvider>
+        <Helmet
+            htmlAttributes={{
+                lang,
+            }}
+            title={title}
+            titleTemplate={title === siteTitle ? null : `%s | ${siteTitle}`}
+            meta={[
+                {
+                    name: `description`,
+                    content: metaDescription,
+                },
+                {
+                    property: `og:title`,
+                    content: title,
+                },
+                {
+                    property: `og:description`,
+                    content: metaDescription,
+                },
+                {
+                    property: `og:type`,
+                    content: `website`,
+                },
+                {
+                    property: `og:url`,
+                    content: `${siteUrl}${location.pathname}`,
+                },
+                {
+                    property: `og:image`,
+                    content: ogImageUrl,
+                },
+                {
+                    name: `twitter:card`,
+                    content: `summary`,
+                },
+                {
+                    name: `twitter:creator`,
+                    content: author,
+                },
+                {
+                    name: `twitter:title`,
+                    content: title,
+                },
+                {
+                    name: `twitter:description`,
+                    content: metaDescription,
+                },
+                {
+                    property: `twitter:image`,
+                    content: ogImageUrl,
+                },
+                {
+                    name: `naver-site-verification`,
+                    content: `11caa82a2e04522f65c80a777a7ce992eedcc57d`,
+                },
+            ].concat(meta)}
+        />
     );
 };
 
