@@ -21,7 +21,6 @@ const PostTemplate = ({ data }) => {
 
     return (
         <Layout>
-            <Seo title={currentPost?.title} description={currentPost?.excerpt} />
             <PostHeader title={currentPost?.title} date={currentPost?.date} />
             <StyledMarkdown dangerouslySetInnerHTML={{ __html: currentPost.html }} />
             <Divider />
@@ -30,6 +29,11 @@ const PostTemplate = ({ data }) => {
             <Utterances repo={repo} />
         </Layout>
     );
+};
+
+export const Head = ({ data }) => {
+    const currentPost = new Post(data.current);
+    return <Seo title={currentPost?.title} description={currentPost?.excerpt} />;
 };
 
 export default PostTemplate;
