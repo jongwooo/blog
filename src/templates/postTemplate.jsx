@@ -33,7 +33,7 @@ const PostTemplate = ({ data }) => {
 
 export const Head = ({ data }) => {
     const currentPost = new Post(data.current);
-    return <Seo title={currentPost?.title} description={currentPost?.excerpt} />;
+    return <Seo title={currentPost?.title} description={currentPost?.excerpt} keywords={currentPost?.keywords} />;
 };
 
 export default PostTemplate;
@@ -47,6 +47,7 @@ export const pageQuery = graphql`
             frontmatter {
                 date(formatString: "YYYY년 MM월 DD일")
                 title
+                keywords
             }
             fields {
                 slug
