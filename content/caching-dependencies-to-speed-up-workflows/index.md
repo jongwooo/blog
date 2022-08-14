@@ -1,6 +1,7 @@
 ---
 date: 2022-08-12 00:00:00
 title: 더 빠른 워크플로우를 향해
+keywords: GitHub Actions, Workflows, 워크플로우, 캐싱, 의존성 캐싱, Dependency Caching, cache
 ---
 
 한 [오픈소스 프로젝트](https://github.com/fosslight/fosslight)에서 리드 멘티로 활동하며 GitHub Actions 워크플로우 최적화에 기여하였습니다.

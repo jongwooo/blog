@@ -1,6 +1,7 @@
 ---
 date: 2021-12-27 01:30:00
 title: 블로그를 시작하며
+keywords: 블로그, 기술 블로그, Gatsby, Utterances, GitHub Actions
 ---
 
 예전부터 생각하고 있던 **기술 블로그**를 시작하게 되었습니다. [Gatsby](https://www.gatsbyjs.com)를 기반으로 블로그를 만들면서 개발 과정에서 있었던 일들을 이야기해 보려 합니다.
