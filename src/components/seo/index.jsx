@@ -11,11 +11,12 @@ import { useLocation } from "@reach/router";
 
 import useSiteMetaData from "../../hooks/useSiteMetaData";
 
-const Seo = ({ description, title, children }) => {
-    const { siteTitle, author, siteDescription, defaultOgImage, siteUrl, naverToken } = useSiteMetaData();
+const Seo = ({ description, title, keywords, children }) => {
+    const { siteTitle, author, siteDescription, siteKeywords, defaultOgImage, siteUrl, naverToken } = useSiteMetaData();
 
     const metaTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
     const metaDescription = description || siteDescription;
+    const metaKeywords = keywords || siteKeywords;
     const ogImageUrl = `${siteUrl}${defaultOgImage}`;
     const location = useLocation();
 
@@ -23,6 +24,7 @@ const Seo = ({ description, title, children }) => {
         <>
             <title>{metaTitle}</title>
             <meta name="description" content={metaDescription} />
+            <meta name="keywords" content={metaKeywords} />
             <meta property="og:title" content={metaTitle} />
             <meta property="og:description" content={metaDescription} />
             <meta property="og:image" content={ogImageUrl} />
@@ -46,6 +48,7 @@ Seo.defaultProps = {
 Seo.propTypes = {
     description: PropTypes.string,
     title: PropTypes.string.isRequired,
+    keywords: PropTypes.string,
 };
 
 export default Seo;

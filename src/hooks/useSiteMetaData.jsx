@@ -10,6 +10,7 @@ const useSiteMetaData = () => {
                         author
                         greetings
                         siteDescription
+                        siteKeywords
                         defaultOgImage
                         siteUrl
                         githubUrl
