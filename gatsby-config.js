@@ -1,13 +1,14 @@
 const metaConfig = require("./gatsby-meta-config");
 
 module.exports = {
-    siteMetadata: metaConfig,
-
+    siteMetadata: {
+        ...metaConfig,
+    },
     plugins: [
         {
             resolve: `gatsby-plugin-canonical-urls`,
             options: {
-                siteUrl: `${metaConfig.siteUrl}`,
+                siteUrl: metaConfig.siteUrl,
                 stripQueryString: true,
             },
         },
@@ -57,7 +58,7 @@ module.exports = {
                             }
                         `,
                         output: `/rss.xml`,
-                        title: `${metaConfig.siteTitle}`,
+                        title: metaConfig.siteTitle,
                     },
                 ],
             },
@@ -65,7 +66,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-gtag`,
             options: {
-                trackingId: `G-G347H7GN1W`,
+                trackingId: metaConfig.gaTrackingId,
                 head: false,
                 anonymize: true,
             },
@@ -73,8 +74,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `${metaConfig.siteTitle}`,
-                description: `${metaConfig.siteDescription}`,
+                name: metaConfig.siteTitle,
+                description: metaConfig.siteDescription,
                 start_url: `/`,
                 icon: `static/favicon.png`,
                 icon_options: {
@@ -88,7 +89,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-robots-txt`,
             options: {
-                host: `${metaConfig.siteUrl}`,
+                host: metaConfig.siteUrl,
                 sitemap: `${metaConfig.siteUrl}/sitemap-index.xml`,
                 policy: [
                     {
