@@ -8,5 +8,6 @@ module.exports = {
     siteUrl: `https://thearchivelog.dev`,
     githubUrl: `https://github.com/jongwooo`,
     repo: `jongwooo/blog`,
+    gaTrackingId: `G-G347H7GN1W`,
     naverToken: `11caa82a2e04522f65c80a777a7ce992eedcc57d`,
 };
