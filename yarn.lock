@@ -5878,8 +5878,8 @@ __metadata:
     gatsby-remark-prismjs: ^6.21.0
     gatsby-source-filesystem: ^4.21.0
     gatsby-transformer-remark: ^5.21.0
-    preact: ^10.10.2
-    preact-render-to-string: ^5.2.1
+    preact: ^10.10.3
+    preact-render-to-string: ^5.2.2
     prettier: ^2.7.1
     prismjs: ^1.28.0
     prop-types: ^15.8.1
@@ -14571,21 +14571,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact-render-to-string@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "preact-render-to-string@npm:5.2.1"
+"preact-render-to-string@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "preact-render-to-string@npm:5.2.2"
   dependencies:
     pretty-format: ^3.8.0
   peerDependencies:
     preact: ">=10"
-  checksum: 5702638656a5a471a3698e8535e08ff0fca98317a578b2527158026fda28a681c008cebcabdbacd76209dabd2728a90da9793bef778549d28f5d060854cc7f7a
+  checksum: 2068b8ce4836ca1f01e086e34872dbf1642fd8569e5df655bb7270327d58867ef1a97b7c17dee9ec19fe4a8e73ff6d9ab0fee3be6fa3cffcba028aa265f97bf4
   languageName: node
   linkType: hard
 
-"preact@npm:^10.10.2":
-  version: 10.10.2
-  resolution: "preact@npm:10.10.2"
-  checksum: 3e994205eb75ce7c79f45bfd86b297645937f926c06fa2a541bf87a5ae168dd6c9f0945af29986065877623d58d1977aff073e4378683994fabee0edbb165c24
+"preact@npm:^10.10.3":
+  version: 10.10.3
+  resolution: "preact@npm:10.10.3"
+  checksum: f62762c45d577a0c269bfebf558d3b1940523630c64b0d3895090425a0fb4ed4c6f960fb57b789bda85a5bfc85c7d65d70b596b6579d09b7c2a436565b59e11e
   languageName: node
   linkType: hard
 
