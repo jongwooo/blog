@@ -5863,7 +5863,7 @@ __metadata:
     "@jongwooo/prism-theme-github": ^1.2.0
     "@reach/router": ^1.3.4
     emotion-reset: ^3.0.1
-    gatsby: ^4.21.0
+    gatsby: ^4.21.1
     gatsby-plugin-canonical-urls: ^4.21.0
     gatsby-plugin-emotion: ^7.21.0
     gatsby-plugin-feed: ^4.21.0
@@ -5876,7 +5876,7 @@ __metadata:
     gatsby-plugin-sitemap: ^5.21.0
     gatsby-remark-images: ^6.21.0
     gatsby-remark-prismjs: ^6.21.0
-    gatsby-source-filesystem: ^4.21.0
+    gatsby-source-filesystem: ^4.21.1
     gatsby-transformer-remark: ^5.21.0
     preact: ^10.10.3
     preact-render-to-string: ^5.2.2
@@ -9231,7 +9231,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-parcel-config@npm:^0.12.0":
+"gatsby-parcel-config@npm:0.12.0":
   version: 0.12.0
   resolution: "gatsby-parcel-config@npm:0.12.0"
   dependencies:
@@ -9549,9 +9549,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:^4.21.0":
-  version: 4.21.0
-  resolution: "gatsby-source-filesystem@npm:4.21.0"
+"gatsby-source-filesystem@npm:^4.21.1":
+  version: 4.21.1
+  resolution: "gatsby-source-filesystem@npm:4.21.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     chokidar: ^3.5.3
@@ -9563,10 +9563,10 @@ __metadata:
     pretty-bytes: ^5.4.1
     progress: ^2.0.3
     valid-url: ^1.0.9
-    xstate: ^4.26.1
+    xstate: 4.32.1
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: 9503ce4d5a2a9da788bd3d766deb6bdcd32a37ed4a1d97bc90b18985fd1226f07b3c26a728a83818d77e2a3210e8319384ea286bdd99b1f0293fa700b20b911a
+  checksum: c9212dfb66ba41b8268328a22d121486e455f2da5f465b45e9804187bc823deebac63e5c131abde4b8f4520f95a789b8823de2239d402bab898c2578269dc37f
   languageName: node
   linkType: hard
 
@@ -9633,9 +9633,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^4.21.0":
-  version: 4.21.0
-  resolution: "gatsby@npm:4.21.0"
+"gatsby@npm:^4.21.1":
+  version: 4.21.1
+  resolution: "gatsby@npm:4.21.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -9721,7 +9721,7 @@ __metadata:
     gatsby-legacy-polyfills: ^2.21.0
     gatsby-link: ^4.21.0
     gatsby-page-utils: ^2.21.0
-    gatsby-parcel-config: ^0.12.0
+    gatsby-parcel-config: 0.12.0
     gatsby-plugin-page-creator: ^4.21.0
     gatsby-plugin-typescript: ^4.21.0
     gatsby-plugin-utils: ^3.15.0
@@ -9797,7 +9797,7 @@ __metadata:
     webpack-merge: ^5.8.0
     webpack-stats-plugin: ^1.0.3
     webpack-virtual-modules: ^0.3.2
-    xstate: ^4.26.0
+    xstate: 4.32.1
     yaml-loader: ^0.6.0
   peerDependencies:
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
@@ -9807,7 +9807,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 9c1c90dc3f6639ace7f7338a903848ef3859674307d32091b879875e80c7165856805c7087a25148fa4ae348bb967d0a6b1b4ab454207e72eb88f10c6f2ad452
+  checksum: 2e91f5d5bf7cc01c92a27ca16d6b36a3d0315aefeb4501bc4a05af9635301e9320e59f256acdb9495dba14ece321d8f0ffd556e5596b632d951a3def6e74dcea
   languageName: node
   linkType: hard
 
@@ -18220,14 +18220,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"xstate@npm:^4.26.0":
-  version: 4.26.1
-  resolution: "xstate@npm:4.26.1"
-  checksum: b31a0f2033ec5c9d50f5e15682b3a0b8977f972a02ab33c22f29e3b3d931d07eda75e5c823377bd6a32b46d4467ec8eee4e711d2d2948330ae73bbd828e12920
-  languageName: node
-  linkType: hard
-
-"xstate@npm:^4.26.1":
+"xstate@npm:4.32.1":
   version: 4.32.1
   resolution: "xstate@npm:4.32.1"
   checksum: c16298b2b3dab7689da99d5b1e5128d2ca3bf381f37c8cb95e4af83bb1044b9251629fc00758f7f31785a72c2ddddd26f602b2801e6068cd78373b7f6dd6c28b
