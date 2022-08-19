@@ -5878,7 +5878,7 @@ __metadata:
     gatsby-remark-prismjs: ^6.21.0
     gatsby-source-filesystem: ^4.21.1
     gatsby-transformer-remark: ^5.21.0
-    preact: ^10.10.3
+    preact: ^10.10.5
     preact-render-to-string: ^5.2.2
     prettier: ^2.7.1
     prismjs: ^1.28.0
@@ -14582,10 +14582,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:^10.10.3":
-  version: 10.10.3
-  resolution: "preact@npm:10.10.3"
-  checksum: f62762c45d577a0c269bfebf558d3b1940523630c64b0d3895090425a0fb4ed4c6f960fb57b789bda85a5bfc85c7d65d70b596b6579d09b7c2a436565b59e11e
+"preact@npm:^10.10.5":
+  version: 10.10.5
+  resolution: "preact@npm:10.10.5"
+  checksum: 86fffb979c63c5bb506eea52d33c7ce60214395830f38ebeb8f78f750470fa9a5c65fd33504fb184f9584c2783bc7b872c1618ddac94f9a25d806050b35654d4
   languageName: node
   linkType: hard
 
