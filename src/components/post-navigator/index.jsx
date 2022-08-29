@@ -51,13 +51,13 @@ const PostNavigator = ({ previousPost, nextPost }) => {
     return (
         <PostNavWrapper>
             {previousPost && (
-                <PreviousCard key={previousPost.id} to={previousPost.slug}>
+                <PreviousCard to={previousPost.slug}>
                     <Label>이전 글</Label>
                     <PostTitle>{previousPost.title}</PostTitle>
                 </PreviousCard>
             )}
             {nextPost && (
-                <NextCard key={nextPost.id} to={nextPost.slug}>
+                <NextCard to={nextPost.slug}>
                     <Label>다음 글</Label>
                     <PostTitle>{nextPost.title}</PostTitle>
                 </NextCard>
