@@ -5135,7 +5135,7 @@ __metadata:
     gatsby-source-filesystem: ^4.24.0
     gatsby-transformer-remark: ^5.24.0
     preact: ^10.11.1
-    preact-render-to-string: ^5.2.4
+    preact-render-to-string: ^5.2.5
     prettier: ^2.7.1
     prismjs: ^1.29.0
     prop-types: ^15.8.1
@@ -13329,14 +13329,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact-render-to-string@npm:^5.2.4":
-  version: 5.2.4
-  resolution: "preact-render-to-string@npm:5.2.4"
+"preact-render-to-string@npm:^5.2.5":
+  version: 5.2.5
+  resolution: "preact-render-to-string@npm:5.2.5"
   dependencies:
     pretty-format: ^3.8.0
   peerDependencies:
     preact: ">=10"
-  checksum: cb29e280174bb4e8a77be454b927dfa35f2672d9bf2eb11d6634208b076d81508a35d53a38a5dfee7676fc48be2c1e0db2e83fca955f7016ce5ed844f35d92b4
+  checksum: 42a735274a190577e3a1fc785ab179a8ec422345d0fd24402146aa2e3c2b216b724c94d569677f744e366c2fbbe5619bc4ab8270cb8036c366d524b54e82fd3f
   languageName: node
   linkType: hard
 
