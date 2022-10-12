@@ -2818,10 +2818,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jongwooo/prism-theme-github@npm:^1.3.4":
-  version: 1.3.4
-  resolution: "@jongwooo/prism-theme-github@npm:1.3.4"
-  checksum: a3cc486e1e988587fcea66bfbbf5cf241897677a93e2068e991eac362abbcf0ac93a8534180595f021105f465c3186b30d7a802b39bb589a53885d98d4b688ef
+"@jongwooo/prism-theme-github@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "@jongwooo/prism-theme-github@npm:1.4.1"
+  checksum: 13f398932ca3eb692d113ae57772f0b5fbee0935ee4d7de17353578744ae97c27117bc77185d960994a784d7a33e798930ca906b8a27e31a7f896d51970aa07d
   languageName: node
   linkType: hard
 
@@ -5116,7 +5116,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
-    "@jongwooo/prism-theme-github": ^1.3.4
+    "@jongwooo/prism-theme-github": ^1.4.1
     "@reach/router": ^1.3.4
     emotion-reset: ^3.0.1
     gatsby: ^4.24.4
