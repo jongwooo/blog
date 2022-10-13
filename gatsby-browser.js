@@ -5,4 +5,4 @@
  */
 
 // You can delete this file if you're not using it
-import "@jongwooo/prism-theme-github/themes/prism-github-light.min.css";
+import "@jongwooo/prism-theme-github/themes/prism-github-default-light.min.css";
