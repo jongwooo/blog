@@ -1,7 +1,7 @@
 module.exports = {
     siteTitle: `아카이브-로그`,
     author: `한종우`,
-    greetings: `소프트웨어 엔지니어 한종우입니다.`,
+    greetings: `꾸준히 고민하고 해결해나가는 엔지니어 한종우입니다.`,
     siteDescription: `소프트웨어 엔지니어 한종우의 기술 블로그입니다.`,
     siteKeywords: `블로그, 기술 블로그, 아카이브-로그, 개발자`,
     defaultOgImage: `/default-og-image.png`,
