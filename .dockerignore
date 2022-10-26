@@ -1,0 +1,10 @@
+.cache
+.git*
+.prettier*
+node_modules
+README.md
+public
+!src/
+!package.json
+!yarn.lock
+!.yarnrc.yml
