@@ -10,7 +10,7 @@
     "@jongwooo/prism-theme-github": "^1.5.4",
     "@reach/router": "^1.3.4",
     "emotion-reset": "^3.0.1",
-    "gatsby": "^4.24.6",
+    "gatsby": "^4.24.7",
     "gatsby-plugin-canonical-urls": "^4.24.0",
     "gatsby-plugin-emotion": "^7.24.0",
     "gatsby-plugin-feed": "^4.24.0",
