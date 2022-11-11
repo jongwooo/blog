@@ -1,0 +1,34 @@
+name: build
+
+on: pull_request
+
+jobs:
+  lint:
+    strategy:
+      matrix:
+        node-version: [ 18.x ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
+
+      - name: Restore Gatsby cache directories
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{ github.workspace }}/.cache
+            ${{ github.workspace }}/public
+          key: ${{ runner.os }}-Node-v${{ matrix.node-version }}-Gatsby-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-Node-v${{ matrix.node-version }}-Gatsby-${{ hashFiles('**/yarn.lock') }}-
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Build
+        run: yarn build:incremental
