@@ -3,7 +3,7 @@ name: build
 on: pull_request
 
 jobs:
-  lint:
+  build:
     strategy:
       matrix:
         node-version: [ 18.x ]
