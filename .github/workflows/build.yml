@@ -17,15 +17,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: yarn
 
-      - name: Restore Gatsby cache directories
-        uses: actions/cache@v3
-        with:
-          path: |
-            ${{ github.workspace }}/.cache
-            ${{ github.workspace }}/public
-          key: ${{ runner.os }}-Node-v${{ matrix.node-version }}-Gatsby-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          restore-keys: |
-            ${{ runner.os }}-Node-v${{ matrix.node-version }}-Gatsby-${{ hashFiles('**/yarn.lock') }}-
+      - uses: jongwooo/gatsby-cache@v1.0.0
 
       - name: Install dependencies
         run: yarn install --immutable
