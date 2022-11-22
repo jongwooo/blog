@@ -56,5 +56,5 @@
   "bugs": {
     "url": "https://github.com/jongwooo/blog"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.3.0"
 }
