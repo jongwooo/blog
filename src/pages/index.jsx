@@ -29,7 +29,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
     query pageQuery {
-        allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+        allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
             edges {
                 node {
                     id
