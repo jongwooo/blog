@@ -3820,10 +3820,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^15.0.1":
-  version: 15.14.9
-  resolution: "@types/node@npm:15.14.9"
-  checksum: 49f7f0522a3af4b8389aee660e88426490cd54b86356672a1fedb49919a8797c00d090ec2dcc4a5df34edc2099d57fc2203d796c4e7fbd382f2022ccd789eee7
+"@types/node@npm:^17.0.5":
+  version: 17.0.45
+  resolution: "@types/node@npm:17.0.45"
+  checksum: aa04366b9103b7d6cfd6b2ef64182e0eaa7d4462c3f817618486ea0422984c51fc69fd0d436eae6c9e696ddfdbec9ccaa27a917f7c2e8c75c5d57827fe3d95e8
   languageName: node
   linkType: hard
 
@@ -5105,7 +5105,7 @@ __metadata:
     gatsby-plugin-offline: ^6.2.0
     gatsby-plugin-robots-txt: ^1.8.0
     gatsby-plugin-sharp: ^5.2.0
-    gatsby-plugin-sitemap: ^6.2.0
+    gatsby-plugin-sitemap: ^6.3.0
     gatsby-remark-images: ^7.2.0
     gatsby-remark-prismjs: ^7.2.0
     gatsby-source-filesystem: ^5.2.0
@@ -8386,19 +8386,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "gatsby-plugin-sitemap@npm:6.2.0"
+"gatsby-plugin-sitemap@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "gatsby-plugin-sitemap@npm:6.3.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     common-tags: ^1.8.2
     minimatch: ^3.1.2
-    sitemap: ^7.0.0
+    sitemap: ^7.1.1
   peerDependencies:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 51652bc30b6aec87e3435951ba29cf630f3e6d6940a75158c698aa5f30ee4686d456dc511aaa7d1571f439f9bace00f070746809255a21a7b2724f2b05857b80
+  checksum: 8856a2ecda62b6c773fef598f6fb6670a98ec3ca9ec5e8d53dc894ed41483757a0a9d2f3af7155cd97b934d957bfaf6b039a480129370aab958c7bab6d6af5e7
   languageName: node
   linkType: hard
 
@@ -14475,17 +14475,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sitemap@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "sitemap@npm:7.0.0"
+"sitemap@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "sitemap@npm:7.1.1"
   dependencies:
-    "@types/node": ^15.0.1
+    "@types/node": ^17.0.5
     "@types/sax": ^1.2.1
     arg: ^5.0.0
     sax: ^1.2.4
   bin:
     sitemap: dist/cli.js
-  checksum: 9dd62d8512835027074183172ced770b8f2b7c16d2c9682d6359fc11d982aa6d960570d1f01d457815a9e31957574d01c92c6b5991f2960cf2b417764b5b03a1
+  checksum: 87a6d21b0d4a33b8c611d3bb8543d02b813c0ebfce014213ef31849b5c1439005644f19ad1593ec89815f6101355f468c9a02c251d09aa03f6fddd17e23c4be4
   languageName: node
   linkType: hard
 
