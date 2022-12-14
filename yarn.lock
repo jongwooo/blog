@@ -2888,6 +2888,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lmdb/lmdb-darwin-arm64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-darwin-arm64@npm:2.5.3"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@lmdb/lmdb-darwin-arm64@npm:2.7.0":
   version: 2.7.0
   resolution: "@lmdb/lmdb-darwin-arm64@npm:2.7.0"
@@ -2898,6 +2905,13 @@ __metadata:
 "@lmdb/lmdb-darwin-x64@npm:2.5.2":
   version: 2.5.2
   resolution: "@lmdb/lmdb-darwin-x64@npm:2.5.2"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@lmdb/lmdb-darwin-x64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-darwin-x64@npm:2.5.3"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -2916,6 +2930,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lmdb/lmdb-linux-arm64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-linux-arm64@npm:2.5.3"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@lmdb/lmdb-linux-arm64@npm:2.7.0":
   version: 2.7.0
   resolution: "@lmdb/lmdb-linux-arm64@npm:2.7.0"
@@ -2926,6 +2947,13 @@ __metadata:
 "@lmdb/lmdb-linux-arm@npm:2.5.2":
   version: 2.5.2
   resolution: "@lmdb/lmdb-linux-arm@npm:2.5.2"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@lmdb/lmdb-linux-arm@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-linux-arm@npm:2.5.3"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
@@ -2944,6 +2972,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lmdb/lmdb-linux-x64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-linux-x64@npm:2.5.3"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@lmdb/lmdb-linux-x64@npm:2.7.0":
   version: 2.7.0
   resolution: "@lmdb/lmdb-linux-x64@npm:2.7.0"
@@ -2954,6 +2989,13 @@ __metadata:
 "@lmdb/lmdb-win32-x64@npm:2.5.2":
   version: 2.5.2
   resolution: "@lmdb/lmdb-win32-x64@npm:2.5.2"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@lmdb/lmdb-win32-x64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-win32-x64@npm:2.5.3"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -5144,7 +5186,7 @@ __metadata:
     gatsby-plugin-feed: ^5.3.0
     gatsby-plugin-gtag: ^1.0.13
     gatsby-plugin-manifest: ^5.3.0
-    gatsby-plugin-offline: ^6.3.0
+    gatsby-plugin-offline: ^6.3.1
     gatsby-plugin-robots-txt: ^1.8.0
     gatsby-plugin-sharp: ^5.3.0
     gatsby-plugin-sitemap: ^6.3.0
@@ -8260,6 +8302,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "gatsby-core-utils@npm:4.3.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.1.0
+    got: ^11.8.5
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: caa3d356ea0ccd2549fdec659f0fbbe6353c6845a543fea55ecb3d2a881ebff19bd4fe0a497f89da451b1a1fbbc2c2ca87824024dad85f80f5516b1e4342d3dd
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.3.0":
   version: 3.3.0
   resolution: "gatsby-graphiql-explorer@npm:3.3.0"
@@ -8398,13 +8463,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "gatsby-plugin-offline@npm:6.3.0"
+"gatsby-plugin-offline@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "gatsby-plugin-offline@npm:6.3.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.3.0
+    gatsby-core-utils: ^4.3.1
     glob: ^7.2.3
     idb-keyval: ^3.2.0
     lodash: ^4.17.21
@@ -8413,7 +8478,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 7acd3094ec943b3aa04262b93db87ba16304c34100296733d4f3230b9e6b3e12de1219bd0c634bdc0c5538e1185385538d2c2bbf0441682219e61b5ac8acff24
+  checksum: e08966395783fe4af96095acf3725e87f98f8c1e3e7b41fa3fae5b3bf01415ee3c8941134f248f212197dff3f3bd1a10c15faa2f7e17f8d4e7be9f4d7f7959fb
   languageName: node
   linkType: hard
 
@@ -10691,6 +10756,39 @@ __metadata:
     "@lmdb/lmdb-win32-x64":
       optional: true
   checksum: 3362dc2b03c6fbdfc02291001007e4096767476e65fbf8d5e332ef473946a0d108319748ef5974ebb84cf6ffa4015c039920f130bcc09c03a751b03a9fd93dff
+  languageName: node
+  linkType: hard
+
+"lmdb@npm:2.5.3":
+  version: 2.5.3
+  resolution: "lmdb@npm:2.5.3"
+  dependencies:
+    "@lmdb/lmdb-darwin-arm64": 2.5.3
+    "@lmdb/lmdb-darwin-x64": 2.5.3
+    "@lmdb/lmdb-linux-arm": 2.5.3
+    "@lmdb/lmdb-linux-arm64": 2.5.3
+    "@lmdb/lmdb-linux-x64": 2.5.3
+    "@lmdb/lmdb-win32-x64": 2.5.3
+    msgpackr: ^1.5.4
+    node-addon-api: ^4.3.0
+    node-gyp: latest
+    node-gyp-build-optional-packages: 5.0.3
+    ordered-binary: ^1.2.4
+    weak-lru-cache: ^1.2.2
+  dependenciesMeta:
+    "@lmdb/lmdb-darwin-arm64":
+      optional: true
+    "@lmdb/lmdb-darwin-x64":
+      optional: true
+    "@lmdb/lmdb-linux-arm":
+      optional: true
+    "@lmdb/lmdb-linux-arm64":
+      optional: true
+    "@lmdb/lmdb-linux-x64":
+      optional: true
+    "@lmdb/lmdb-win32-x64":
+      optional: true
+  checksum: 8dd33d46878e28029d62cab8bfa491da0f06428eb9f3cc63b8b1d9464fb3bdb46bddaf4caa5b1a0af5815cec288102aae0cb411a48e79c5514df566ddcb3a4c4
   languageName: node
   linkType: hard
 
