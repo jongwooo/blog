@@ -5188,7 +5188,7 @@ __metadata:
     gatsby-plugin-manifest: ^5.3.0
     gatsby-plugin-offline: ^6.3.1
     gatsby-plugin-robots-txt: ^1.8.0
-    gatsby-plugin-sharp: ^5.3.0
+    gatsby-plugin-sharp: ^5.3.2
     gatsby-plugin-sitemap: ^6.3.1
     gatsby-remark-images: ^7.3.0
     gatsby-remark-prismjs: ^7.3.0
@@ -8516,9 +8516,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "gatsby-plugin-sharp@npm:5.3.0"
+"gatsby-plugin-sharp@npm:^5.3.2":
+  version: 5.3.2
+  resolution: "gatsby-plugin-sharp@npm:5.3.2"
   dependencies:
     "@babel/runtime": ^7.15.4
     async: ^3.2.4
@@ -8526,15 +8526,15 @@ __metadata:
     debug: ^4.3.4
     filenamify: ^4.3.0
     fs-extra: ^10.1.0
-    gatsby-core-utils: ^4.3.0
-    gatsby-plugin-utils: ^4.3.0
+    gatsby-core-utils: ^4.3.1
+    gatsby-plugin-utils: ^4.3.1
     lodash: ^4.17.21
     probe-image-size: ^7.2.3
     semver: ^7.3.8
     sharp: ^0.31.2
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: cb35187d969976c3112a49a44a7aa5997a22c177b70a2db1b5af686b75a8255abe2421146785b62a59f4af652f3e65a4184062d28856d49a9b6156ba55f75ec6
+  checksum: 5b365a9649764588f5dbfdf7fd62d7b91856b26863389c9afd8e608a4d88b85eb77d4f567bbe355de78850c5e10f8764a0953d68ffa543e1faf1ce017eae8b0b
   languageName: node
   linkType: hard
 
