@@ -5185,7 +5185,7 @@ __metadata:
     gatsby-plugin-emotion: ^8.3.0
     gatsby-plugin-feed: ^5.3.1
     gatsby-plugin-gtag: ^1.0.13
-    gatsby-plugin-manifest: ^5.3.0
+    gatsby-plugin-manifest: ^5.3.1
     gatsby-plugin-offline: ^6.3.1
     gatsby-plugin-robots-txt: ^1.8.0
     gatsby-plugin-sharp: ^5.3.2
@@ -8448,18 +8448,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "gatsby-plugin-manifest@npm:5.3.0"
+"gatsby-plugin-manifest@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "gatsby-plugin-manifest@npm:5.3.1"
   dependencies:
     "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^4.3.0
-    gatsby-plugin-utils: ^4.3.0
+    gatsby-core-utils: ^4.3.1
+    gatsby-plugin-utils: ^4.3.1
     semver: ^7.3.8
     sharp: ^0.31.2
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: f88a58d76267377f40317a52da40e2698038e153f7d188f7022a044c43a7a8ed24dfba80fdee56a0657c24fa32374d8c7a815e663955b47d44ed20fb36657160
+  checksum: 201d7b79612f131df7045704431c1c31755cab930e681bdf7f678be2a4e1b1ea65dce0c8220d853d741cdc52b732c5fae9a839116c3f318dee235b3a236bca5c
   languageName: node
   linkType: hard
 
