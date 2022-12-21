@@ -5109,7 +5109,7 @@ __metadata:
     gatsby-remark-images: ^7.3.1
     gatsby-remark-prismjs: ^7.3.0
     gatsby-source-filesystem: ^5.3.1
-    gatsby-transformer-remark: ^6.3.1
+    gatsby-transformer-remark: ^6.3.2
     prettier: ^2.8.1
     prismjs: ^1.29.0
     prop-types: ^15.8.1
@@ -8594,9 +8594,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-remark@npm:^6.3.1":
-  version: 6.3.1
-  resolution: "gatsby-transformer-remark@npm:6.3.1"
+"gatsby-transformer-remark@npm:^6.3.2":
+  version: 6.3.2
+  resolution: "gatsby-transformer-remark@npm:6.3.2"
   dependencies:
     "@babel/runtime": ^7.15.4
     gatsby-core-utils: ^4.3.1
@@ -8622,7 +8622,7 @@ __metadata:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 021ad18b1244969e089e52fd78e142a620c1a9abff1560d22421e8e48d30bc0a5c0718af2694c7a94b624e31bbebff680ae78aa31885e5f0358116ed57b25e27
+  checksum: 20a969dc55fe9b5b7820d1cc4f0ce6961d0be3cf76af7fd81ad09f0f9e0afdced486c9ccc099d83d9ab8f0c25a3e8b8bf96c271448fca7bfd3dbf2c1ad7207f4
   languageName: node
   linkType: hard
 
