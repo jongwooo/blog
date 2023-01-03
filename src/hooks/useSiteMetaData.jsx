@@ -14,7 +14,6 @@ const useSiteMetaData = () => {
                         defaultOgImage
                         siteUrl
                         githubUrl
-                        repo
                         naverToken
                     }
                 }
