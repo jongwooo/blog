@@ -4,20 +4,17 @@ import { graphql } from "gatsby";
 import Post from "../models/post";
 import Layout from "../layout";
 import Seo from "../components/seo";
+import PostComment from "../components/post-comment";
 import PostHeader from "../components/post-header";
 import PostNavigator from "../components/post-navigator";
 import ProfileCard from "../components/profile-card";
 import Divider from "../components/divider";
-import Utterances from "../components/utterances";
-import useSiteMetaData from "../hooks/useSiteMetaData";
 import StyledMarkdown from "../styles/markdown";
 
 const PostTemplate = ({ data }) => {
     const currentPost = new Post(data.current);
     const previousPost = data.previous && new Post(data.previous);
     const nextPost = data.next && new Post(data.next);
-
-    const { repo } = useSiteMetaData();
 
     return (
         <Layout>
@@ -26,7 +23,7 @@ const PostTemplate = ({ data }) => {
             <Divider />
             <ProfileCard />
             <PostNavigator previousPost={previousPost} nextPost={nextPost} />
-            <Utterances repo={repo} />
+            <PostComment />
         </Layout>
     );
 };
