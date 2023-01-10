@@ -13,7 +13,7 @@
     "emotion-reset": "^3.0.1",
     "gatsby": "^5.3.3",
     "gatsby-plugin-canonical-urls": "^5.3.0",
-    "gatsby-plugin-emotion": "^8.3.0",
+    "gatsby-plugin-emotion": "^8.4.0",
     "gatsby-plugin-feed": "^5.3.1",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "^5.3.1",

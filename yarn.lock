@@ -2099,6 +2099,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.20.7":
+  version: 7.20.7
+  resolution: "@babel/runtime@npm:7.20.7"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 4629ce5c46f06cca9cfb9b7fc00d48003335a809888e2b91ec2069a2dcfbfef738480cff32ba81e0b7c290f8918e5c22ddcf2b710001464ee84ba62c7e32a3a3
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/template@npm:7.16.0"
@@ -5125,7 +5134,7 @@ __metadata:
     emotion-reset: ^3.0.1
     gatsby: ^5.3.3
     gatsby-plugin-canonical-urls: ^5.3.0
-    gatsby-plugin-emotion: ^8.3.0
+    gatsby-plugin-emotion: ^8.4.0
     gatsby-plugin-feed: ^5.3.1
     gatsby-plugin-gtag: ^1.0.13
     gatsby-plugin-manifest: ^5.3.1
@@ -8326,17 +8335,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-emotion@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "gatsby-plugin-emotion@npm:8.3.0"
+"gatsby-plugin-emotion@npm:^8.4.0":
+  version: 8.4.0
+  resolution: "gatsby-plugin-emotion@npm:8.4.0"
   dependencies:
-    "@babel/runtime": ^7.15.4
+    "@babel/runtime": ^7.20.7
     "@emotion/babel-preset-css-prop": ^11.2.0
   peerDependencies:
     "@babel/core": ^7.11.6
     "@emotion/react": ^11.0.0
     gatsby: ^5.0.0-next
-  checksum: 06edd4ba0b5cefd537c9fa29175109f38ee476b4f670acbadeddaa683b93e393ee2cbf75134f1fab71eb856c9fed04586e5af1843d550b3a32d4eed2c40b8aaf
+  checksum: c8f67838157d3fdd0109e08aceec59f29aea0d12dee312d495e13418020a1a4e08f809a5e9bf0ed31afb62efd23bc646187d5a8bca5217ece9d8ac5cd38258ad
   languageName: node
   linkType: hard
 
@@ -13815,6 +13824,13 @@ __metadata:
   version: 0.13.10
   resolution: "regenerator-runtime@npm:0.13.10"
   checksum: 09893f5a9e82932642d9a999716b6c626dc53ef2a01307c952ebbf8e011802360163a37c304c18a6c358548be5a72b448e37209954a18696f21e438c81cbb4b9
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.13.11":
+  version: 0.13.11
+  resolution: "regenerator-runtime@npm:0.13.11"
+  checksum: 27481628d22a1c4e3ff551096a683b424242a216fee44685467307f14d58020af1e19660bf2e26064de946bad7eff28950eae9f8209d55723e2d9351e632bbb4
   languageName: node
   linkType: hard
 
