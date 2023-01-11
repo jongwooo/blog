@@ -22,7 +22,7 @@
     "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-plugin-sitemap": "^6.3.1",
     "gatsby-remark-images": "^7.3.1",
-    "gatsby-remark-prismjs": "^7.3.0",
+    "gatsby-remark-prismjs": "^7.4.0",
     "gatsby-source-filesystem": "^5.3.1",
     "gatsby-transformer-remark": "^6.3.2",
     "prismjs": "^1.29.0",
