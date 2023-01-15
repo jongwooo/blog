@@ -1,5 +1,6 @@
 import * as React from "react";
 import Giscus from "@giscus/react";
+import "./style.scss";
 
 import { GISCUS_CONFIG } from "../../config/giscus";
 

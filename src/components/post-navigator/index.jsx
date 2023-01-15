@@ -1,68 +1,23 @@
 import * as React from "react";
-import styled from "@emotion/styled";
 import { Link } from "gatsby";
-
-import { lightTheme } from "../../styles/theme";
-
-const PostNavWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    margin: 32px 0;
-`;
-
-const PostNav = styled(Link)`
-    flex: 0 0 calc(50% - 0.5rem);
-    padding: 16px;
-    box-sizing: border-box;
-    text-decoration: none;
-    line-height: 1.4;
-    border-radius: 1px;
-
-    &:hover {
-        background-color: ${lightTheme.postCardColor};
-    }
-`;
-
-const PreviousCard = styled(PostNav)`
-    margin-right: auto;
-`;
-
-const NextCard = styled(PostNav)`
-    margin-left: auto;
-    text-align: right;
-`;
-
-const Label = styled.span`
-    font-size: 0.875rem;
-    color: ${lightTheme.mutedFontColor};
-`;
-
-const PostTitle = styled.p`
-    font-weight: 700;
-    color: ${lightTheme.fontColor};
-    margin: 0;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-`;
+import "./style.scss";
 
 const PostNavigator = ({ previousPost, nextPost }) => {
     return (
-        <PostNavWrapper>
+        <div className="post-nav-wrapper">
             {previousPost && (
-                <PreviousCard to={previousPost.slug}>
-                    <Label>이전 글</Label>
-                    <PostTitle>{previousPost.title}</PostTitle>
-                </PreviousCard>
+                <Link className="post-nav previous-card" to={previousPost.slug}>
+                    <span className="post-nav-label">이전 글</span>
+                    <p className="post-nav-title">{previousPost.title}</p>
+                </Link>
             )}
             {nextPost && (
-                <NextCard to={nextPost.slug}>
-                    <Label>다음 글</Label>
-                    <PostTitle>{nextPost.title}</PostTitle>
-                </NextCard>
+                <Link className="post-nav next-card" to={nextPost.slug}>
+                    <span className="post-nav-label">다음 글</span>
+                    <p className="post-nav-title">{nextPost.title}</p>
+                </Link>
             )}
-        </PostNavWrapper>
+        </div>
     );
 };
 

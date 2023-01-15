@@ -1,59 +1,22 @@
 import * as React from "react";
 import { VscGithubInverted } from "react-icons/vsc";
-import styled from "@emotion/styled";
-
-import { lightTheme } from "../../styles/theme";
 import useSiteMetaData from "../../hooks/useSiteMetaData";
-
-const ProfileCardWrapper = styled.div`
-    padding: 16px 0;
-    line-height: 1.4;
-`;
-
-const Author = styled.h1`
-    font-size: 1rem;
-    font-weight: 700;
-    color: ${lightTheme.primaryColor};
-    margin-bottom: 16px;
-`;
-
-const Greetings = styled.p`
-    margin: 0 0 16px;
-    color: ${lightTheme.fontColor};
-    word-break: keep-all;
-    overflow-wrap: break-word;
-`;
-
-const SocialLink = styled.a`
-    font-size: 1rem;
-    display: inline-flex;
-    align-items: center;
-    color: ${lightTheme.primaryColor};
-    text-decoration: none;
-
-    > svg {
-        margin: 0 8px 0 0;
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
-`;
+import "./style.scss";
 
 const ProfileCard = () => {
     const { author, greetings, githubUrl } = useSiteMetaData();
 
     return (
-        <ProfileCardWrapper>
-            <Author>{author}</Author>
-            <Greetings>{greetings}</Greetings>
+        <div className="profile-card-wrapper">
+            <h1 className="author">{author}</h1>
+            <p className="greetings">{greetings}</p>
             {githubUrl && (
-                <SocialLink href={githubUrl}>
+                <a className="social-link" href={githubUrl}>
                     <VscGithubInverted />
                     깃허브
-                </SocialLink>
+                </a>
             )}
-        </ProfileCardWrapper>
+        </div>
     );
 };
 

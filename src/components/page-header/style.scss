@@ -1,0 +1,50 @@
+@use "./src/styles/_variables" as *;
+
+.page-header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 4rem;
+  box-sizing: border-box;
+  border-bottom: thin solid var(--border-color);
+  background-color: var(--header-bg-color);
+
+  .page-header-body {
+    height: inherit;
+    margin: auto;
+    max-width: $content-max-width;
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: inherit;
+      padding: 0 1rem;
+
+      .page-title {
+        color: var(--text-color);
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .underline {
+        background-image: linear-gradient(transparent calc(100% - 0.25rem), var(--primary-color) 0.25rem);
+        background-repeat: no-repeat;
+        background-size: 0 100%;
+        transition: background-size 0.5s;
+
+        &:hover {
+          background-size: 100% 100%;
+        }
+      }
+
+      .underline.page-title {
+        background-image: linear-gradient(transparent 60%, var(--primary-color) 40%);
+      }
+    }
+  }
+}
+

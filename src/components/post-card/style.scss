@@ -1,0 +1,44 @@
+.post-card-wrapper {
+  position: relative;
+  padding: 1rem;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+
+  &:hover {
+    background-color: var(--post-card-color);
+    border-radius: 0.5rem;
+  }
+
+  .post-card-title {
+    overflow: hidden;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: var(--text-color);
+  }
+
+  .post-card-date {
+    color: var(--text-color-muted);
+    margin-top: 4px;
+  }
+
+  .post-card-excerpt {
+    color: var(--text-color);
+    margin-top: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .post-card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

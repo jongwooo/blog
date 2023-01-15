@@ -1,0 +1,43 @@
+.post-nav-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 0 1rem;
+
+  .post-nav {
+    flex: 0 0 calc(50% - 0.5rem);
+    padding: 1rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 1.4;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: var(--header-bg-color);
+    }
+  }
+
+  .post-nav .previous-card {
+    margin-right: auto;
+  }
+
+  .post-nav .next-card {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .post-nav-label {
+    font-size: 0.875rem;
+    color: var(--text-color-muted);
+  }
+
+  .post-nav-title {
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}

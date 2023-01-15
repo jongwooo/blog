@@ -1,0 +1,21 @@
+body {
+  --primary-color: #41b883;
+}
+
+body.light {
+  --background-color: #ffffff;
+  --header-bg-color: #f6f8fa;
+  --border-color: rgba(189, 189, 189, 0.31);
+  --text-color: #24292f;
+  --text-color-muted: #57606a;
+  --post-card-color: #f5f6f9;
+}
+
+body.dark {
+  --background-color: #0d1117;
+  --header-bg-color: #161b22;
+  --border-color: rgba(33, 38, 45, 0.69);
+  --text-color: #c9d1d9;
+  --text-color-muted: #8b949e;
+  --post-card-color: #161b22;
+}

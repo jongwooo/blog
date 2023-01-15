@@ -5,11 +5,11 @@ import Post from "../models/post";
 import Layout from "../layout";
 import Seo from "../components/seo";
 import PostComment from "../components/post-comment";
+import PostContent from "../components/post-content";
 import PostHeader from "../components/post-header";
 import PostNavigator from "../components/post-navigator";
 import ProfileCard from "../components/profile-card";
 import Divider from "../components/divider";
-import StyledMarkdown from "../styles/markdown";
 
 const PostTemplate = ({ data }) => {
     const currentPost = new Post(data.current);
@@ -19,7 +19,7 @@ const PostTemplate = ({ data }) => {
     return (
         <Layout>
             <PostHeader title={currentPost?.title} date={currentPost?.date} />
-            <StyledMarkdown dangerouslySetInnerHTML={{ __html: currentPost.html }} />
+            <PostContent html={currentPost.html} />
             <Divider />
             <ProfileCard />
             <PostNavigator previousPost={previousPost} nextPost={nextPost} />
