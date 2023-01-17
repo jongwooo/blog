@@ -14,5 +14,5 @@ body {
 
 .content {
   margin: 64px auto 0;
-  max-width: 700px;
+  max-width: $content-max-width;
 }
