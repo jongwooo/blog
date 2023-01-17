@@ -4818,6 +4818,7 @@ __metadata:
     "@reach/router": ^1.3.4
     gatsby: ^5.4.1
     gatsby-plugin-canonical-urls: ^5.4.0
+    gatsby-plugin-dark-mode: ^1.1.2
     gatsby-plugin-feed: ^5.4.0
     gatsby-plugin-gtag: ^1.0.13
     gatsby-plugin-manifest: ^5.4.0
@@ -8140,6 +8141,17 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: 3b702945bd593d99ffd69160855aa07410dcd56fd829a189bfeba84e6b62ffec714c4775b4bd102ba0af1595f894f8b00496fa9e139d7d7ae587395096c89051
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-dark-mode@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "gatsby-plugin-dark-mode@npm:1.1.2"
+  dependencies:
+    prop-types: ^15.5.7
+  peerDependencies:
+    react: 16.x
+  checksum: f487d7081267d22dafe1f313433c1ef2f5a9888e0aff62559e36df9d4097f839cd8ddab8f587760b229c23871ccbd251cd692e5075163e14c61d62449987e9ff
   languageName: node
   linkType: hard
 
@@ -13314,6 +13326,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prop-types@npm:^15.5.7, prop-types@npm:^15.8.1":
+  version: 15.8.1
+  resolution: "prop-types@npm:15.8.1"
+  dependencies:
+    loose-envify: ^1.4.0
+    object-assign: ^4.1.1
+    react-is: ^16.13.1
+  checksum: c056d3f1c057cb7ff8344c645450e14f088a915d078dcda795041765047fa080d38e5d626560ccaac94a4e16e3aa15f3557c1a9a8d1174530955e992c675e459
+  languageName: node
+  linkType: hard
+
 "prop-types@npm:^15.6.1":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
@@ -13322,17 +13345,6 @@ __metadata:
     object-assign: ^4.1.1
     react-is: ^16.8.1
   checksum: 5eef82fdda64252c7e75aa5c8cc28a24bbdece0f540adb60ce67c205cf978a5bd56b83e4f269f91c6e4dcfd80b36f2a2dec24d362e278913db2086ca9c6f9430
-  languageName: node
-  linkType: hard
-
-"prop-types@npm:^15.8.1":
-  version: 15.8.1
-  resolution: "prop-types@npm:15.8.1"
-  dependencies:
-    loose-envify: ^1.4.0
-    object-assign: ^4.1.1
-    react-is: ^16.13.1
-  checksum: c056d3f1c057cb7ff8344c645450e14f088a915d078dcda795041765047fa080d38e5d626560ccaac94a4e16e3aa15f3557c1a9a8d1174530955e992c675e459
   languageName: node
   linkType: hard
 
