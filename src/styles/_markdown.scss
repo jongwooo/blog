@@ -1,0 +1,156 @@
+@use "./variables" as *;
+
+.markdown {
+  font-size: 1.125rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.markdown p {
+  margin: 0.75rem 0.3rem;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-weight: 700;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h1,
+.markdown h2 {
+  font-size: 1.5rem;
+}
+
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-size: 1.25rem;
+}
+
+@media (max-width: $content-max-width) {
+  .markdown {
+    font-size: 1rem;
+  }
+
+  .markdown h1,
+  .markdown h2,
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .markdown h1,
+  .markdown h2 {
+    font-size: 1.25rem;
+  }
+
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    font-size: 1.125rem;
+  }
+}
+
+.markdown a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown strong {
+  font-weight: 700;
+}
+
+.markdown em {
+  font-style: italic;
+}
+
+.markdown ul,
+.markdown ol {
+  margin: 0.3rem 0.3rem 0.3rem 2rem;
+}
+
+.markdown li > p,
+.markdown li > ul,
+.markdown li > ol {
+  margin-bottom: 0;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+}
+
+.markdown ul {
+  list-style-type: disc;
+}
+
+.markdown blockquote {
+  padding: 0 0.5rem;
+  color: var(--text-color-muted);
+  margin: 0 0.3rem;
+  border-left: 4px solid var(--border-color);
+}
+
+.markdown blockquote p {
+  margin: 0.5rem;
+}
+
+.markdown blockquote > h1,
+.markdown blockquote > h2,
+.markdown blockquote > h3,
+.markdown blockquote > h4,
+.markdown blockquote > h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown td,
+.markdown th {
+  padding: 0.25rem 0.5rem;
+  border-width: 1px;
+  border-color: var(--border-color);
+}
+
+.markdown table {
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.markdown img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.markdown figcaption {
+  color: var(--text-color-muted);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.markdown hr {
+  width: 75%;
+  margin: 32px auto;
+  height: 0;
+  border: 0;
+  border-top: thin solid var(--border-color);
+}

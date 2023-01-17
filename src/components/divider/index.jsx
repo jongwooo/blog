@@ -1,12 +1,8 @@
-import styled from "@emotion/styled";
-import { lightTheme } from "../../styles/theme";
+import * as React from "react";
+import "./style.scss";
 
-const Divider = styled.hr`
-    width: 75%;
-    margin: 32px auto;
-    height: 0;
-    border: 0;
-    border-top: thin solid ${lightTheme.borderColor};
-`;
+const Divider = () => {
+    return <hr className="divider" />;
+};
 
 export default Divider;

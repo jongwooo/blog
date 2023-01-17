@@ -1,46 +1,21 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import styled from "@emotion/styled";
 import { Link } from "gatsby";
+import ThemeSwitch from "../theme-switch";
+import "./style.scss";
 
-import { lightTheme } from "../../styles/theme";
-
-const PageHeaderWrapper = styled.header`
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 64px;
-    box-sizing: border-box;
-    border-bottom: thin solid ${lightTheme.borderColor};
-    background-color: ${lightTheme.backgroundColor};
-`;
-
-const PageHeaderBody = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 5%;
-    margin: auto;
-    max-width: 700px;
-`;
-
-const PageTitle = styled(Link)`
-    color: ${lightTheme.primaryColor};
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-decoration: none;
-`;
-
-const PageHeader = ({ siteTitle }) => {
+const PageHeader = ({ siteTitle, theme, toggleTheme }) => {
     return (
-        <PageHeaderWrapper>
-            <PageHeaderBody>
-                <PageTitle to="/">{siteTitle}</PageTitle>
-            </PageHeaderBody>
-        </PageHeaderWrapper>
+        <header className="page-header-wrapper">
+            <div className="page-header-body">
+                <div className="page-header">
+                    <Link className="page-title underline" to="/">
+                        {siteTitle}
+                    </Link>
+                    <ThemeSwitch className="theme-switch" theme={theme} toggleTheme={toggleTheme} />
+                </div>
+            </div>
+        </header>
     );
 };
 

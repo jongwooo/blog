@@ -138,8 +138,9 @@ module.exports = {
                 ],
             },
         },
-        `gatsby-plugin-emotion`,
+        `gatsby-plugin-dark-mode`,
         `gatsby-plugin-offline`,
+        `gatsby-plugin-sass`,
         `gatsby-plugin-sharp`,
     ],
 };

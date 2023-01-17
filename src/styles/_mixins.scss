@@ -1,0 +1,6 @@
+@use "./variables" as *;
+
+@mixin content-max-width {
+  width: 100%;
+  max-width: $content-max-width;
+}
