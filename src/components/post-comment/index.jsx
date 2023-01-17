@@ -1,18 +1,17 @@
 import * as React from "react";
 import Giscus from "@giscus/react";
+import { GISCUS_CONFIG } from "../../config/giscus";
+import ThemeContext from "../../stores/themeContext";
 import "./style.scss";
 
-import { GISCUS_CONFIG } from "../../config/giscus";
-
 const PostComment = () => {
-    const [mounted, setMounted] = React.useState(false);
-    React.useEffect(() => setMounted(true), []);
+    const theme = React.useContext(ThemeContext);
 
-    if (!mounted) {
-        return null;
-    }
-
-    return <Giscus {...GISCUS_CONFIG} theme={"light"} />;
+    return (
+        <div className="post-comment-wrapper">
+            <Giscus {...GISCUS_CONFIG} theme={theme} />
+        </div>
+    );
 };
 
 export default PostComment;
