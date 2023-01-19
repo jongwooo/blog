@@ -1,15 +1,16 @@
 import * as React from "react";
 import Giscus from "@giscus/react";
-import { GISCUS_CONFIG } from "../../config/giscus";
+import useSiteMetaData from "../../hooks/useSiteMetaData";
 import ThemeContext from "../../stores/themeContext";
 import "./style.scss";
 
 const PostComment = () => {
     const theme = React.useContext(ThemeContext);
+    const { giscusConfig } = useSiteMetaData();
 
     return (
         <div className="post-comment-wrapper">
-            <Giscus {...GISCUS_CONFIG} theme={theme} />
+            <Giscus {...giscusConfig} theme={theme} />
         </div>
     );
 };
