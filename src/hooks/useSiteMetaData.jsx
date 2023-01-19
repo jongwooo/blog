@@ -15,6 +15,18 @@ const useSiteMetaData = () => {
                         siteUrl
                         githubUrl
                         naverToken
+                        giscusConfig {
+                            repo
+                            repoId
+                            category
+                            categoryId
+                            mapping
+                            reactionsEnabled
+                            emitMetadata
+                            inputPosition
+                            lang
+                            loading
+                        }
                     }
                 }
             }
