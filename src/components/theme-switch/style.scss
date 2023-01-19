@@ -1,7 +1,13 @@
-.theme-switch {
-  color: var(--text-color);
+.theme-switch-wrapper {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
 
-  &:hover {
-    cursor: pointer;
+  .theme-switch {
+    color: var(--text-color);
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
