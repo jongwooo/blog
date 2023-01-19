@@ -6,9 +6,9 @@ import "./style.scss";
 
 const ThemeSwitch = ({ theme, toggleTheme }) => {
     return (
-        <div onClick={() => toggleTheme(theme === DARK ? LIGHT : DARK)}>
+        <button className="theme-switch-wrapper" onClick={() => toggleTheme(theme === DARK ? LIGHT : DARK)}>
             {theme === DARK ? <FiSun className="theme-switch" /> : <CgMoon className="theme-switch" />}
-        </div>
+        </button>
     );
 };
 
