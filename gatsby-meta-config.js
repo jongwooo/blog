@@ -1,3 +1,7 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
     siteTitle: `아카이브-로그`,
     author: `한종우`,
@@ -7,6 +11,18 @@ module.exports = {
     defaultOgImage: `/default-og-image.png`,
     siteUrl: `https://thearchivelog.dev`,
     githubUrl: `https://github.com/jongwooo`,
-    gaTrackingId: `G-G347H7GN1W`,
-    naverToken: `11caa82a2e04522f65c80a777a7ce992eedcc57d`,
+    gaTrackingId: process.env.GA_TRACKING_ID,
+    naverToken: process.env.NAVER_TOKEN,
+    giscusConfig: {
+        repo: `jongwooo/blog`,
+        repoId: process.env.GISCUS_REPO_ID,
+        category: "Comment",
+        categoryId: process.env.GISCUS_CATEGORY_ID,
+        mapping: "title",
+        reactionsEnabled: "0",
+        emitMetadata: "0",
+        inputPosition: "top",
+        lang: "en",
+        loading: "lazy",
+    },
 };
