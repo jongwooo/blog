@@ -1,6 +1,6 @@
 ---
 date: 2023-01-23 01:30:00
-title: Docker 이미지를 최적화하는 방법
+title: Docker 이미지 최적화
 keywords: Docker, 도커, Dockerfile, Docker 이미지, Docker 이미지 최적화
 ---
 
