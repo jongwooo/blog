@@ -6,7 +6,11 @@ import "./style.scss";
 
 const ThemeSwitch = ({ theme, toggleTheme }) => {
     return (
-        <button className="theme-switch-btn" onClick={() => toggleTheme(theme === DARK ? LIGHT : DARK)}>
+        <button
+            className="theme-switch-btn"
+            aria-label="theme-switch"
+            onClick={() => toggleTheme(theme === DARK ? LIGHT : DARK)}
+        >
             {theme === DARK ? <FiSun className="theme-switch" /> : <CgMoon className="theme-switch" />}
         </button>
     );
