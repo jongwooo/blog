@@ -4,8 +4,8 @@ title: 더 빠른 워크플로우를 향해
 keywords: GitHub Actions, Workflows, 워크플로우, 캐싱, 의존성 캐싱, Dependency Caching, cache
 ---
 
-한 [오픈소스 프로젝트](https://github.com/fosslight/fosslight)에서 리드 멘티로 활동하며 GitHub Actions 워크플로우 최적화에 기여하였습니다.
-이 글에서는 워크플로우를 개선하면서 알게 된 의존성 캐싱에 대해 알아보겠습니다.
+[오픈소스 프로젝트](https://github.com/fosslight/fosslight)에서 리드 멘티로 활동하며 워크플로우 최적화에 기여했습니다.
+이 글에서는 기여 과정에서 알게된 의존성 캐싱에 대해 알아보겠습니다.
 
 <!-- end -->
 
