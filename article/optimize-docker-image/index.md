@@ -24,14 +24,16 @@ Docker 이미지를 최적화하는 방법은 다음과 같습니다.
 7. `.dockerignore` 를 활용합니다.
 8. 애플리케이션 데이터를 별도 볼륨으로 분리합니다.
 
-## 더 작은 Base 이미지의 사용
+## Docker 이미지를 최적화하는 방법
+
+### 더 작은 Base 이미지의 사용
 
 Base 이미지에는 필요 없는 패키지나 파일이 포함되어 있을 수 있습니다.
 이러한 경우에는 작은 Base 이미지를 사용하는 것이 좋습니다.
 예를 들어, `ubuntu:latest` 이미지는 **29.02MB** 이지만 `alpine:latest` 이미지는 **3.21MB** 입니다.
 그러나 경량화된 이미지를 사용할 경우, 애플리케이션 실행에 필요한 패키지나 파일이 빠져 있을 수 있으니 주의가 필요합니다.
 
-## 멀티 스테이지 빌드
+### 멀티 스테이지 빌드
 
 [멀티 스테이지 빌드](https://docs.docker.com/build/building/multi-stage/)는 Dockerfile에 여러 개의 `FROM` 명령을 사용하여 이미지를 빌드하는 방법입니다.
 이 방법을 활용하면 빌드에 필요한 패키지나 파일은 빌드 이미지에만 포함되고, 최종 이미지에는 포함되지 않습니다.
@@ -56,7 +58,7 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-## 불필요한 레이어의 수를 줄이기
+### 불필요한 레이어의 수를 줄이기
 
 Docker 이미지는 여러 개의 레이어로 구성되어 있습니다.
 이 레이어는 이미지를 빌드할 때 Dockerfile에 정의된 `RUN`, `COPY`, `FROM` 명령문이 실행되면서 생성됩니다.
@@ -83,7 +85,7 @@ RUN apt-get update -y && \
     apt-get install vim net-tools dnsutils -y
 ```
 
-## Production Dependencies만 설치하기
+### Production Dependencies만 설치하기
 
 애플리케이션을 빌드할 때는 개발용 패키지나 파일이 필요하지 않습니다.
 이때 `npm install` 명령에 `--production` 옵션을 사용하면 production dependencies만 설치할 수 있습니다.
@@ -114,7 +116,7 @@ RUN npm ci && \
     npm prune --production
 ```
 
-## 불필요한 패키지 설치하지 않기
+### 불필요한 패키지 설치하지 않기
 
 Dockerfile에서 `RUN` 명령문을 사용할 때는 불필요한 패키지의 설치를 피해야 합니다.
 예를 들어, `apt-get`을 사용할 때 `--no-install-recommends` 옵션을 사용하면 추천 패키지를 설치하지 않습니다.
@@ -125,7 +127,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends netcat
 ```
 
-## apt cache 삭제하기
+### apt cache 삭제하기
 
 `apt-get`을 사용할 때 `/var/lib/apt/lists/*` 디렉토리에 캐시가 저장됩니다.
 이 캐시는 이미지를 빌드할 때 불필요한 용량을 차지하게 됩니다.
@@ -138,7 +140,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 ```
 
-## `.dockerignore` 활용하기
+### `.dockerignore` 활용하기
 
 `.dockerignore` 파일을 사용하면 이미지를 빌드할 때 불필요한 파일이나 디렉토리를 제외할 수 있습니다.
 아래는 Node.js 애플리케이션을 빌드할 때 불필요한 파일을 제외하는 예시입니다.
@@ -149,7 +151,7 @@ node_modules
 npm-debug.log
 ```
 
-## 애플리케이션 데이터를 별도 볼륨으로 분리
+### 애플리케이션 데이터를 별도 볼륨으로 분리
 
 이미지에 애플리케이션의 데이터를 저장하면 이미지의 크기가 커질 수 있습니다.
 이럴 경우 별도의 [볼륨](https://docs.docker.com/storage/volumes/)을 사용하는 것이 좋습니다.
