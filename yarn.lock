@@ -4829,7 +4829,7 @@ __metadata:
     gatsby-plugin-sharp: ^5.4.0
     gatsby-plugin-sitemap: ^6.4.0
     gatsby-remark-images: ^7.4.0
-    gatsby-remark-prismjs: ^7.4.0
+    gatsby-remark-prismjs: ^7.5.0
     gatsby-source-filesystem: ^5.4.0
     gatsby-transformer-remark: ^6.4.0
     prettier: ^2.8.3
@@ -8383,9 +8383,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-prismjs@npm:^7.4.0":
-  version: 7.4.0
-  resolution: "gatsby-remark-prismjs@npm:7.4.0"
+"gatsby-remark-prismjs@npm:^7.5.0":
+  version: 7.5.0
+  resolution: "gatsby-remark-prismjs@npm:7.5.0"
   dependencies:
     "@babel/runtime": ^7.20.7
     parse-numeric-range: ^1.2.0
@@ -8393,7 +8393,7 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     prismjs: ^1.15.0
-  checksum: e513abbe579742481ab5e1cabd349943843e1322a6eb55724c057533b46e131c59f9882d7015c34398586932e4c157c816f25c4638e75efe062591b77b779797
+  checksum: 6ab46535a93a68b138848688f8583ca10406f778d13347568470e862f649ba103e2d0b6a288bca124dc7f3543476ddf13bd3c50f1a1535573d07686a81dcec38
   languageName: node
   linkType: hard
 
