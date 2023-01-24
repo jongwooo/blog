@@ -18,7 +18,7 @@
     "gatsby-plugin-offline": "^6.4.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^6.4.0",
-    "gatsby-plugin-sharp": "^5.4.0",
+    "gatsby-plugin-sharp": "^5.5.0",
     "gatsby-plugin-sitemap": "^6.4.0",
     "gatsby-remark-images": "^7.4.0",
     "gatsby-remark-prismjs": "^7.4.0",
