@@ -28,10 +28,10 @@ GitHub의 [actions/cache](https://github.com/actions/cache)를 사용하면 의�
 ```yml
 - uses: actions/cache@v3
   with:
-      path: |
-          path/to/dependencies
-          some/other/dependencies
-      key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+    path: |
+      path/to/dependencies
+      some/other/dependencies
+    key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
 ```
 
 ### 사용 제한과 제거(eviction) 정책
@@ -47,9 +47,9 @@ key가 일치하지 않을 경우를 대비하여 여러 key를 `restore-keys`�
 
 ```yml
 restore-keys: |
-    npm-feature-${{ hashFiles('package-lock.json') }}
-    npm-feature-
-    npm-
+  npm-feature-${{ hashFiles('package-lock.json') }}
+  npm-feature-
+  npm-
 ```
 
 ### cache-hit
@@ -82,14 +82,14 @@ cache miss가 발생하면 action은 restore-keys를 대안키로 사용하여 �
 - name: Get npm cache directory
   id: npm-cache-dir
   run: |
-      echo "::set-output name=dir::$(npm config get cache)"
+    echo "::set-output name=dir::$(npm config get cache)"
 - uses: actions/cache@v3
   id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
   with:
-      path: ${{ steps.npm-cache-dir.outputs.dir }}
-      key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      restore-keys: |
-          ${{ runner.os }}-node-
+    path: ${{ steps.npm-cache-dir.outputs.dir }}
+    key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+    restore-keys: |
+      ${{ runner.os }}-node-
 ```
 
 ### Node - Yarn
@@ -101,33 +101,33 @@ yarn은 버전에 따라 캐시 디렉터리 경로를 가져오는 명령어가
 - uses: actions/cache@v3
   id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
   with:
-      path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-      key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      restore-keys: |
-          ${{ runner.os }}-yarn-
+    path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+    key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+    restore-keys: |
+      ${{ runner.os }}-yarn-
 ```
 
 -   [yarn classic](https://classic.yarnpkg.com/lang/en/)
 
-    yarn의 캐시 디렉터리는 운영체제와 yarn의 버전에 따라 달라집니다.
-    npm과 같이 `yarn cache dir` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
+  yarn의 캐시 디렉터리는 운영체제와 yarn의 버전에 따라 달라집니다.
+  npm과 같이 `yarn cache dir` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
 
-    ```yml
-    - name: Get yarn cache directory path
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn cache dir)"
-    ```
+  ```yml
+  - name: Get yarn cache directory path
+    id: yarn-cache-dir-path
+    run: echo "::set-output name=dir::$(yarn cache dir)"
+  ```
 
 -   [yarn berry](https://yarnpkg.com)
 
-    yarn2의 캐시 디렉터리는 사용자 설정에 따라 달라집니다.
-    yarn과는 다르게 `yarn config get cacheFolder` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
+  yarn2의 캐시 디렉터리는 사용자 설정에 따라 달라집니다.
+  yarn과는 다르게 `yarn config get cacheFolder` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
 
-    ```yml
-    - name: Get yarn cache directory path
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-    ```
+  ```yml
+  - name: Get yarn cache directory path
+    id: yarn-cache-dir-path
+    run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+  ```
 
 ### Built-in 의존성 캐싱
 
@@ -136,25 +136,25 @@ yarn은 버전에 따라 캐시 디렉터리 경로를 가져오는 명령어가
 
 -   [actions/setup-node](https://github.com/actions/setup-node#caching-global-packages-data)
 
-    ```yml
-    steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
-          with:
-              node-version: "16"
-              cache: "npm" # or "yarn", "pnpm"
-    ```
+  ```yml
+  steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: npm # or yarn, pnpm
+  ```
 
 -   [actions/setup-java](https://github.com/actions/setup-java#caching-packages-dependencies)
-    ```yml
-    steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-java@v3
-          with:
-              java-version: "11"
-              distribution: "temurin"
-              cache: "gradle" # or "maven", "sbt"
-    ```
+  ```yml
+  steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-java@v3
+      with:
+        java-version: 11
+        distribution: temurin
+        cache: gradle # or maven, sbt
+```
 
 ---
 
