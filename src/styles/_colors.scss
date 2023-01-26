@@ -3,6 +3,8 @@ body {
 }
 
 body.light {
+  color-scheme: light;
+
   --background-color: #ffffff;
   --header-bg-color: #f6f8fa;
   --border-color: rgba(189, 189, 189, 0.31);
@@ -25,6 +27,8 @@ body.light {
 }
 
 body.dark {
+  color-scheme: dark;
+
   --background-color: #0d1117;
   --header-bg-color: #161b22;
   --border-color: rgba(33, 38, 45, 0.69);
