@@ -81,8 +81,7 @@ cache miss가 발생하면 action은 restore-keys를 대안키로 사용하여 �
 ```yml
 - name: Get npm cache directory
   id: npm-cache-dir
-  run: |
-    echo "::set-output name=dir::$(npm config get cache)"
+  run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
 - uses: actions/cache@v3
   id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
   with:
@@ -115,7 +114,7 @@ yarn은 버전에 따라 캐시 디렉터리 경로를 가져오는 명령어가
   ```yml
   - name: Get yarn cache directory path
     id: yarn-cache-dir-path
-    run: echo "::set-output name=dir::$(yarn cache dir)"
+    run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
   ```
 
 -   [yarn berry](https://yarnpkg.com)
@@ -126,7 +125,7 @@ yarn은 버전에 따라 캐시 디렉터리 경로를 가져오는 명령어가
   ```yml
   - name: Get yarn cache directory path
     id: yarn-cache-dir-path
-    run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+    run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
   ```
 
 ### Built-in 의존성 캐싱
