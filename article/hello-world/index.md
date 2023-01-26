@@ -38,25 +38,25 @@ Gatsby로 블로그를 만드는 방법으로는 아래 세 가지가 있습니�
 
 ```jsx
 const ProfileCard = () => {
-    const { site } = useStaticQuery(
-        graphql`
-            query {
-                site {
-                    siteMetadata {
-                        author
-                        greetings
-                    }
-                }
-            }
-        `,
-    );
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            author
+            greetings
+          }
+        }
+      }
+    `,
+  );
 
-    return (
-        <ProfileCardWrapper>
-            <Author>{site.siteMetadata.author}</Author>
-            <Greetings>{site.siteMetadata.greetings}</Greetings>
-        </ProfileCardWrapper>
-    );
+  return (
+    <ProfileCardWrapper>
+      <Author>{site.siteMetadata.author}</Author>
+      <Greetings>{site.siteMetadata.greetings}</Greetings>
+    </ProfileCardWrapper>
+  );
 };
 ```
 
@@ -66,14 +66,14 @@ metadata를 호출하는 부분을 `react hook`으로 만들어 불필요한 코
 
 ```jsx
 const ProfileCard = () => {
-    const { author, greetings } = useSiteMetaData();
-
-    return (
-        <ProfileCardWrapper>
-            <Author>{author}</Author>
-            <Greetings>{greetings}</Greetings>
-        </ProfileCardWrapper>
-    );
+  const { author, greetings } = useSiteMetaData();
+  
+  return (
+    <ProfileCardWrapper>
+      <Author>{author}</Author>
+      <Greetings>{greetings}</Greetings>
+    </ProfileCardWrapper>
+  );
 };
 ```
 
@@ -95,19 +95,18 @@ Utterances로 댓글을 관리하기 때문에 댓글 Issue를 관리하기 위�
 ```yml
 name: Deploy
 
-on:
-    push:
+on: push
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v1
-            - uses: enriikke/gatsby-gh-pages-action@v2
-              with:
-                  access-token: ${{ secrets.ACCESS_TOKEN }}
-                  deploy-branch: main
-                  deploy-repo: jongwooo.github.io
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: main
+          deploy-repo: jongwooo.github.io
 ```
 
 ---
