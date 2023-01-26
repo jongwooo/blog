@@ -6,20 +6,20 @@ import ThemeContext from "../stores/themeContext";
 import "./style.scss";
 
 const Layout = ({ children }) => {
-    const { siteTitle } = useSiteMetaData();
+  const { siteTitle } = useSiteMetaData();
 
-    return (
-        <ThemeToggler>
-            {({ theme, toggleTheme }) => (
-                <ThemeContext.Provider value={theme}>
-                    <PageHeader siteTitle={siteTitle} theme={theme} toggleTheme={toggleTheme} />
-                    <div className="content">
-                        <main>{children}</main>
-                    </div>
-                </ThemeContext.Provider>
-            )}
-        </ThemeToggler>
-    );
+  return (
+    <ThemeToggler>
+      {({ theme, toggleTheme }) => (
+        <ThemeContext.Provider value={theme}>
+          <PageHeader siteTitle={siteTitle} theme={theme} toggleTheme={toggleTheme} />
+          <div className="content">
+            <main>{children}</main>
+          </div>
+        </ThemeContext.Provider>
+      )}
+    </ThemeToggler>
+  );
 };
 
 export default Layout;
