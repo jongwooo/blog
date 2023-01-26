@@ -5,26 +5,26 @@ import ThemeSwitch from "../theme-switch";
 import "./style.scss";
 
 const PageHeader = ({ siteTitle, theme, toggleTheme }) => {
-    return (
-        <header className="page-header-wrapper">
-            <div className="page-header-body">
-                <div className="page-header">
-                    <Link className="page-title underline" to="/">
-                        {siteTitle}
-                    </Link>
-                    <ThemeSwitch className="theme-switch" theme={theme} toggleTheme={toggleTheme} />
-                </div>
-            </div>
-        </header>
-    );
+  return (
+    <header className="page-header-wrapper">
+      <div className="page-header-body">
+        <div className="page-header">
+          <Link className="page-title underline" to="/">
+            {siteTitle}
+          </Link>
+          <ThemeSwitch className="theme-switch" theme={theme} toggleTheme={toggleTheme} />
+        </div>
+      </div>
+    </header>
+  );
 };
 
 PageHeader.propTypes = {
-    siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string,
 };
 
 PageHeader.defaultProps = {
-    siteTitle: ``,
+  siteTitle: ``,
 };
 
 export default PageHeader;

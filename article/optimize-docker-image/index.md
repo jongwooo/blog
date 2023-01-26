@@ -183,7 +183,7 @@ CMD ["node", "dist/index.js"]
 
 ## 참고 링크
 
--   [Volumes | Docker Documentation](https://docs.docker.com/engine/reference/builder/#volume)
--   [Multi-stage builds | Docker Documentation](https://docs.docker.com/develop/develop-images/multistage-build/)
--   [Best practices for writing Dockerfiles | Docker Documentation](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
--   [How to Reduce Docker Image Size: 6 Optimization Methods](https://devopscube.com/reduce-docker-image-size/)
+- [Volumes | Docker Documentation](https://docs.docker.com/engine/reference/builder/#volume)
+- [Multi-stage builds | Docker Documentation](https://docs.docker.com/develop/develop-images/multistage-build/)
+- [Best practices for writing Dockerfiles | Docker Documentation](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [How to Reduce Docker Image Size: 6 Optimization Methods](https://devopscube.com/reduce-docker-image-size/)

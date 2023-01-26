@@ -5,15 +5,15 @@ import { DARK, LIGHT } from "../../constants/constants";
 import "./style.scss";
 
 const ThemeSwitch = ({ theme, toggleTheme }) => {
-    return (
-        <button
-            className="theme-switch-btn"
-            aria-label="theme-switch"
-            onClick={() => toggleTheme(theme === DARK ? LIGHT : DARK)}
-        >
-            {theme === DARK ? <FiSun className="theme-switch" /> : <CgMoon className="theme-switch" />}
-        </button>
-    );
+  return (
+    <button
+      className="theme-switch-btn"
+      aria-label="theme-switch"
+      onClick={() => toggleTheme(theme === DARK ? LIGHT : DARK)}
+    >
+      {theme === DARK ? <FiSun className="theme-switch" /> : <CgMoon className="theme-switch" />}
+    </button>
+  );
 };
 
 export default ThemeSwitch;

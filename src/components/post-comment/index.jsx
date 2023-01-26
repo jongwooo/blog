@@ -5,14 +5,14 @@ import ThemeContext from "../../stores/themeContext";
 import "./style.scss";
 
 const PostComment = () => {
-    const theme = React.useContext(ThemeContext);
-    const { giscusConfig } = useSiteMetaData();
+  const theme = React.useContext(ThemeContext);
+  const { giscusConfig } = useSiteMetaData();
 
-    return (
-        <div className="post-comment-wrapper">
-            <Giscus {...giscusConfig} theme={theme} />
-        </div>
-    );
+  return (
+    <div className="post-comment-wrapper">
+      <Giscus {...giscusConfig} theme={theme} />
+    </div>
+  );
 };
 
 export default PostComment;

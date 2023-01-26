@@ -20,9 +20,9 @@ keywords: 블로그, 기술 블로그, Gatsby, Utterances, GitHub Actions
 
 Gatsby로 블로그를 만드는 방법으로는 아래 세 가지가 있습니다.
 
--   직접 구현하기
--   스타터 템플릿 활용하기
--   Gatsby 테마 사용하기
+- 직접 구현하기
+- 스타터 템플릿 활용하기
+- Gatsby 테마 사용하기
 
 처음에 제가 시도한 방법은 바로 Gatsby 테마를 사용하는 것이었습니다. 테마를 선택하고 개발을 하다 보니 아무래도 제 코드 스타일과 달라 영 마음에 들지 않았습니다. 그래서 테마를 과감하게 포기하고 삽질을 하더라도 직접 구현해 보기로 했습니다.
 
@@ -67,7 +67,7 @@ metadata를 호출하는 부분을 `react hook`으로 만들어 불필요한 코
 ```jsx
 const ProfileCard = () => {
   const { author, greetings } = useSiteMetaData();
-  
+
   return (
     <ProfileCardWrapper>
       <Author>{author}</Author>
@@ -87,8 +87,8 @@ const ProfileCard = () => {
 
 Utterances로 댓글을 관리하기 때문에 댓글 Issue를 관리하기 위해 레포지토리를 아래와 같이 분리하였습니다.
 
--   댓글 Issue를 관리하는 Gatsby 레포지토리
--   실제로 사이트가 배포되는 블로그 레포지토리
+- 댓글 Issue를 관리하는 Gatsby 레포지토리
+- 실제로 사이트가 배포되는 블로그 레포지토리
 
 [gatsby-gh-pages-action](https://github.com/enriikke/gatsby-gh-pages-action)를 통해 쉽게 레포지토리를 분리할 수 있었습니다. 아래는 배포를 위해 만든 workflow 파일입니다.
 

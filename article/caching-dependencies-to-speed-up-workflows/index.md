@@ -106,53 +106,54 @@ yarn은 버전에 따라 캐시 디렉터리 경로를 가져오는 명령어가
       ${{ runner.os }}-yarn-
 ```
 
--   [yarn classic](https://classic.yarnpkg.com/lang/en/)
+- [yarn classic](https://classic.yarnpkg.com/lang/en/)
 
-  yarn의 캐시 디렉터리는 운영체제와 yarn의 버전에 따라 달라집니다.
-  npm과 같이 `yarn cache dir` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
+yarn의 캐시 디렉터리는 운영체제와 yarn의 버전에 따라 달라집니다.
+npm과 같이 `yarn cache dir` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
 
-  ```yml
-  - name: Get yarn cache directory path
-    id: yarn-cache-dir-path
-    run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
-  ```
+```yml
+- name: Get yarn cache directory path
+  id: yarn-cache-dir-path
+  run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+```
 
--   [yarn berry](https://yarnpkg.com)
+- [yarn berry](https://yarnpkg.com)
 
-  yarn2의 캐시 디렉터리는 사용자 설정에 따라 달라집니다.
-  yarn과는 다르게 `yarn config get cacheFolder` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
+yarn2의 캐시 디렉터리는 사용자 설정에 따라 달라집니다.
+yarn과는 다르게 `yarn config get cacheFolder` 명령어를 통하여 캐시 디렉터리 경로를 찾을 수 있습니다.
 
-  ```yml
-  - name: Get yarn cache directory path
-    id: yarn-cache-dir-path
-    run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
-  ```
+```yml
+- name: Get yarn cache directory path
+  id: yarn-cache-dir-path
+  run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+```
 
 ### Built-in 의존성 캐싱
 
 워크플로우 셋업이 용이하도록 GitHub에서 제공하는 [action](https://github.com/actions?q=setup&type=all&language=&sort=setup)은 대부분
 [actions/cache](https://github.com/actions/cache)를 내장하고 있어 복잡한 설정 없이 `의존성 캐싱`을 적용할 수 있습니다.
 
--   [actions/setup-node](https://github.com/actions/setup-node#caching-global-packages-data)
+- [actions/setup-node](https://github.com/actions/setup-node#caching-global-packages-data)
 
-  ```yml
-  steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-        cache: npm # or yarn, pnpm
-  ```
+```yml
+steps:
+  - uses: actions/checkout@v3
+  - uses: actions/setup-node@v3
+    with:
+      node-version: 16
+      cache: npm # or yarn, pnpm
+```
 
--   [actions/setup-java](https://github.com/actions/setup-java#caching-packages-dependencies)
-  ```yml
-  steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-java@v3
-      with:
-        java-version: 11
-        distribution: temurin
-        cache: gradle # or maven, sbt
+- [actions/setup-java](https://github.com/actions/setup-java#caching-packages-dependencies)
+
+```yml
+steps:
+  - uses: actions/checkout@v3
+  - uses: actions/setup-java@v3
+    with:
+      java-version: 11
+      distribution: temurin
+      cache: gradle # or maven, sbt
 ```
 
 ---
@@ -168,5 +169,5 @@ yarn은 버전에 따라 캐시 디렉터리 경로를 가져오는 명령어가
 
 ## 참고 링크
 
--   [카카오웹툰은 GitHub Actions를 어떻게 사용하고 있을까?](https://fe-developers.kakaoent.com/2022/220106-github-actions/)
--   [Caching dependencies to speed up workflows](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows)
+- [카카오웹툰은 GitHub Actions를 어떻게 사용하고 있을까?](https://fe-developers.kakaoent.com/2022/220106-github-actions/)
+- [Caching dependencies to speed up workflows](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows)
