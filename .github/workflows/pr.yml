@@ -3,6 +3,22 @@ name: PR
 on: pull_request
 
 jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Check format
+        run: yarn format
   build:
     runs-on: ubuntu-latest
     steps:
