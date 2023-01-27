@@ -12,7 +12,7 @@ keywords: linux, kernel, patch, contribute, 리눅스, 커널, 패치, 기여
 
 ## TL;DR
 
-리눅스 커널에 기여하기 위해서는 다음 절차를 거쳐야 합니다.
+리눅스 커널에 기여하는 방법은 다음과 같습니다.
 
 1. git clone
 2. 소스 코드 수정
