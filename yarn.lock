@@ -1912,6 +1912,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.20.13":
+  version: 7.20.13
+  resolution: "@babel/runtime@npm:7.20.13"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 09b7a97a05c80540db6c9e4ddf8c5d2ebb06cae5caf3a87e33c33f27f8c4d49d9c67a2d72f1570e796045288fad569f98a26ceba0c4f5fad2af84b6ad855c4fb
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.20.7":
   version: 7.20.7
   resolution: "@babel/runtime@npm:7.20.7"
@@ -4825,7 +4834,7 @@ __metadata:
     gatsby-plugin-manifest: ^5.5.0
     gatsby-plugin-offline: ^6.5.0
     gatsby-plugin-robots-txt: ^1.8.0
-    gatsby-plugin-sass: ^6.5.0
+    gatsby-plugin-sass: ^6.6.0
     gatsby-plugin-sharp: ^5.5.0
     gatsby-plugin-sitemap: ^6.5.0
     gatsby-remark-images: ^7.5.0
@@ -8234,17 +8243,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sass@npm:^6.5.0":
-  version: 6.5.0
-  resolution: "gatsby-plugin-sass@npm:6.5.0"
+"gatsby-plugin-sass@npm:^6.6.0":
+  version: 6.6.0
+  resolution: "gatsby-plugin-sass@npm:6.6.0"
   dependencies:
-    "@babel/runtime": ^7.20.7
+    "@babel/runtime": ^7.20.13
     resolve-url-loader: ^3.1.5
     sass-loader: ^10.4.1
   peerDependencies:
     gatsby: ^5.0.0-next
     sass: ^1.30.0
-  checksum: 4444574f30d3203fcdbc9c25aaba2c7326d9f8c44f692d82f474ab1babf9fe024494b4dd62eaf4d725eba8813b87b9d954bb811e1b726ab344df1ec75fb997d3
+  checksum: 256d7f631f6aaf013a9930a652862ae5c6673a489d48dd7c855ffaf679072b9595768a941eafffdf1eab533bf8be6d1b77385e84988039a8d991eefed7d1dd52
   languageName: node
   linkType: hard
 
