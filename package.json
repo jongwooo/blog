@@ -9,7 +9,7 @@
     "@jongwooo/prism-theme-github": "^1.7.0",
     "@reach/router": "^1.3.4",
     "dotenv": "^16.0.3",
-    "gatsby": "^5.6.1",
+    "gatsby": "^5.7.0",
     "gatsby-plugin-canonical-urls": "^5.6.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-feed": "^5.6.0",
