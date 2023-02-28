@@ -2127,15 +2127,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@giscus/react@npm:^2.2.6":
-  version: 2.2.6
-  resolution: "@giscus/react@npm:2.2.6"
+"@giscus/react@npm:^2.2.8":
+  version: 2.2.8
+  resolution: "@giscus/react@npm:2.2.8"
   dependencies:
-    giscus: ^1.2.6
+    giscus: ^1.2.8
   peerDependencies:
     react: ^16 || ^17 || ^18
     react-dom: ^16 || ^17 || ^18
-  checksum: 0301afed9d2f0210a7e66ce47f4e1d11f4136b13861c0f5135934cac391c322ca831fcc7455425d37007a71d4de3dc367d8d7d46675ec4ac35ea35ef20adb923
+  checksum: 0e12fa73a3f56c151437f3b9d8edd41b95e7ad1a938f9d1c6e1c030ae8434f51c4becb0e24f5b98c658ee13e7254eb7cecb6d0dddeaa06c08891ce865fc4b91e
   languageName: node
   linkType: hard
 
@@ -2637,10 +2637,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lit/reactive-element@npm:^1.3.0, @lit/reactive-element@npm:^1.5.0":
+"@lit-labs/ssr-dom-shim@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@lit-labs/ssr-dom-shim@npm:1.0.0"
+  checksum: ccba6675ad631c6f7360af4e12e328e88d877a52ec992ae9254a1be9902ef699b7916d851b073803dd91244d0f709de2c0539a7db643889cfe341ff6e1a74eb5
+  languageName: node
+  linkType: hard
+
+"@lit/reactive-element@npm:^1.3.0":
   version: 1.5.0
   resolution: "@lit/reactive-element@npm:1.5.0"
   checksum: 8f87a2d9d7630c26ad0dd6b9a8ad46bb184fcec11e04ded3d487859a6cfebbe871d07a8271dfdf3f2d4b9688d27c17de0f8fa3fc690602f5b86d742f969a3ca4
+  languageName: node
+  linkType: hard
+
+"@lit/reactive-element@npm:^1.6.0":
+  version: 1.6.1
+  resolution: "@lit/reactive-element@npm:1.6.1"
+  dependencies:
+    "@lit-labs/ssr-dom-shim": ^1.0.0
+  checksum: fab0bcfdade9c26af2ad5115fb564bcf8ba0732a3a8be86c157851c2771e3fdc65ab38f2cd60fa121946058bf6e487461fd217f87b01f96e88ee7a95d5d866ba
   languageName: node
   linkType: hard
 
@@ -4925,7 +4941,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "blog@workspace:."
   dependencies:
-    "@giscus/react": ^2.2.6
+    "@giscus/react": ^2.2.8
     "@jongwooo/prism-theme-github": ^1.7.0
     "@reach/router": ^1.3.4
     dotenv: ^16.0.3
@@ -8928,12 +8944,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"giscus@npm:^1.2.6":
-  version: 1.2.6
-  resolution: "giscus@npm:1.2.6"
+"giscus@npm:^1.2.8":
+  version: 1.2.8
+  resolution: "giscus@npm:1.2.8"
   dependencies:
-    lit: ^2.5.0
-  checksum: dfd4dcaf9626a15c3f21bcdcb4cc63f6f5b610a62debf8ff82cfd71e6e2d9713439483c49d4b7dab8a58b029b00e5c3877c8420a303238dc2d4c45ce402db8de
+    lit: ^2.6.1
+  checksum: 327fa1af3a0b97ef62be5baad01933cbf963b97888161a778c66a422f93025b1c2d114bf708aa2b4c295ff93b41b80b8f43c6e082c9b55c259413b480173b662
   languageName: node
   linkType: hard
 
@@ -10759,7 +10775,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit-html@npm:^2.2.0, lit-html@npm:^2.5.0":
+"lit-html@npm:^2.2.0":
   version: 2.5.0
   resolution: "lit-html@npm:2.5.0"
   dependencies:
@@ -10768,14 +10784,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "lit@npm:2.5.0"
+"lit-html@npm:^2.6.0":
+  version: 2.6.1
+  resolution: "lit-html@npm:2.6.1"
   dependencies:
-    "@lit/reactive-element": ^1.5.0
+    "@types/trusted-types": ^2.0.2
+  checksum: 32291eb5bcaa7fcc1d433522a9a62c3c3d240e49bb8c57ccea5c10014823d94f62f17e2d5361781cb6ee0b3c9078ef839de6164d5374371d650471904515e48e
+  languageName: node
+  linkType: hard
+
+"lit@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "lit@npm:2.6.1"
+  dependencies:
+    "@lit/reactive-element": ^1.6.0
     lit-element: ^3.2.0
-    lit-html: ^2.5.0
-  checksum: 7f62ef9da4b21d37f8b476d8425903a22ed9c1e5b26597c811cb38760d28baf6cd83865457c971d1ac77d6ad59ecc73cd1870fa3478a08d0beffa0b74b016bec
+    lit-html: ^2.6.0
+  checksum: 74f2813152a48f195784f01b6b4ff7e4e7d8fa90ac272b725d1953fa3e1d6c9dca60b77da435f34144fcdd38705480889a8ea986835676932a8559c897cea517
   languageName: node
   linkType: hard
 
