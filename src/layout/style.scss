@@ -10,6 +10,7 @@ html {
 body {
   background-color: var(--background-color) !important;
   font-family: $font-family;
+  word-break: keep-all;
 }
 
 .content {
