@@ -1,3 +1,5 @@
+@use "./src/styles/_variables" as *;
+
 .post-header-wrapper {
   padding: 1.5rem 1rem;
 
@@ -8,6 +10,12 @@
     font-weight: 700;
     line-height: 1.2;
     word-break: keep-all;
+  }
+
+  @media (max-width: $content-max-width) {
+    .post-header-title {
+      font-size: 1.5rem;
+    }
   }
 
   .post-header-date {
