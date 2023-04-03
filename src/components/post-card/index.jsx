@@ -10,7 +10,7 @@ const PostCard = ({ post }) => {
       <label className="post-card-title">{title}</label>
       <p className="post-card-date">{date}</p>
       <p className="post-card-excerpt">{excerpt}</p>
-      <Link className="post-card-link" to={slug} />
+      <Link className="post-card-link" aria-label={title} to={slug} />
     </div>
   );
 };
