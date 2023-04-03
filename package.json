@@ -4,6 +4,29 @@
   "description": "thearchivelog.dev",
   "version": "0.1.0",
   "author": "jongwooo <jongwooo.han@gmail.com>",
+  "keywords": [
+    "gatsby",
+    "blog"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,scss,md}\"",
+    "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,scss,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jongwooo/blog"
+  },
+  "bugs": {
+    "url": "https://github.com/jongwooo/blog"
+  },
   "dependencies": {
     "@giscus/react": "^2.2.8",
     "@jongwooo/prism-theme-github": "^1.7.1",
@@ -33,29 +56,6 @@
   },
   "devDependencies": {
     "prettier": "^2.8.7"
-  },
-  "keywords": [
-    "gatsby",
-    "blog"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,scss,md}\"",
-    "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,scss,md}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jongwooo/blog"
-  },
-  "bugs": {
-    "url": "https://github.com/jongwooo/blog"
   },
   "packageManager": "yarn@3.4.1"
 }
