@@ -4937,7 +4937,7 @@ __metadata:
     "@reach/router": ^1.3.4
     dotenv: ^16.0.3
     gatsby: ^5.8.1
-    gatsby-plugin-canonical-urls: ^5.8.0
+    gatsby-plugin-canonical-urls: ^5.9.0
     gatsby-plugin-dark-mode: ^1.1.2
     gatsby-plugin-feed: ^5.8.0
     gatsby-plugin-gtag: ^1.0.13
@@ -8262,14 +8262,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-canonical-urls@npm:^5.8.0":
-  version: 5.8.0
-  resolution: "gatsby-plugin-canonical-urls@npm:5.8.0"
+"gatsby-plugin-canonical-urls@npm:^5.9.0":
+  version: 5.9.0
+  resolution: "gatsby-plugin-canonical-urls@npm:5.9.0"
   dependencies:
     "@babel/runtime": ^7.20.13
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: c9233c9399c4eb619210efb29b6759dff6ec4f6193ce2b3fc1fdc8ada7aae04fe8245afdceefb4f3b93b3ddb16c5b4734a83596cbf2c198376e98f9b2893beb4
+  checksum: bba7396652db86645cb6bbb3fe1515614b770addd8f49ecf04bd84bd9e701efd62ced56ce37c3a68670b5a4ad06ddcb38fa2e7d5c358b8483f8daf338790e6b4
   languageName: node
   linkType: hard
 
