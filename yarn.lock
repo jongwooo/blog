@@ -4947,7 +4947,7 @@ __metadata:
     gatsby-plugin-sass: ^6.8.0
     gatsby-plugin-sharp: ^5.8.1
     gatsby-plugin-sitemap: ^6.8.0
-    gatsby-remark-images: ^7.8.0
+    gatsby-remark-images: ^7.9.0
     gatsby-remark-prismjs: ^7.8.0
     gatsby-source-filesystem: ^5.8.0
     gatsby-transformer-remark: ^6.8.0
@@ -8019,6 +8019,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fs-extra@npm:^11.1.1":
+  version: 11.1.1
+  resolution: "fs-extra@npm:11.1.1"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: fb883c68245b2d777fbc1f2082c9efb084eaa2bbf9fddaa366130d196c03608eebef7fb490541276429ee1ca99f317e2d73e96f5ca0999eefedf5a624ae1edfd
+  languageName: node
+  linkType: hard
+
 "fs-extra@npm:^4.0.2":
   version: 4.0.3
   resolution: "fs-extra@npm:4.0.3"
@@ -8189,6 +8200,30 @@ __metadata:
     tmp: ^0.2.1
     xdg-basedir: ^4.0.0
   checksum: 6147c180162037b574873c1020538500d7c2f43f1a40fea04a13eb8c7e8197f4c1c177edf64cf4c7f55840ac7b79ea3278b82a93217a1766ef0ef501358eab9d
+  languageName: node
+  linkType: hard
+
+"gatsby-core-utils@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "gatsby-core-utils@npm:4.9.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.1.1
+    got: ^11.8.6
+    hash-wasm: ^4.9.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 2721b8f910d7b4619720f4735af3784d518cfb7850e42358f882f1e11453673e9bc4b2bcf4f8032a6f3b6a3255d4f071af31945b7f9fe8f9cff20dd4b92ae318
   languageName: node
   linkType: hard
 
@@ -8483,14 +8518,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:^7.8.0":
-  version: 7.8.0
-  resolution: "gatsby-remark-images@npm:7.8.0"
+"gatsby-remark-images@npm:^7.9.0":
+  version: 7.9.0
+  resolution: "gatsby-remark-images@npm:7.9.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.8.0
+    gatsby-core-utils: ^4.9.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -8500,7 +8535,7 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: db5df648ddb692e20ec6134770404d9d3dd940b99328f8ec13df8f80605bba9ebaa13d6f1417bb3fbb10f328c302cc71df680153b7e7f205820b819ec8fdb94a
+  checksum: e82d597a57be9cbc0018c9da5b2436ec5b83a6a6a74ee905d31933ff00aeed787d120c311d39be4dc98ac3fbe670e591dddbb1590660df46206351973fa55b09
   languageName: node
   linkType: hard
 
