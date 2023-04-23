@@ -1,6 +1,6 @@
 ---
 date: 2023-04-24 03:40:00
-title: AWS Solutions Architect - Associate 취득 후기
+title: AWS SAA-C03 자격증 취득 후기
 keywords: AWS, Certified, Solutions Architect, Associate, SAA-C03, 취득 후기
 ---
 
