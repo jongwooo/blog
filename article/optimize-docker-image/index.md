@@ -145,7 +145,7 @@ RUN apt-get update && \
 `.dockerignore` 파일을 사용하면 이미지를 빌드할 때 불필요한 파일이나 디렉토리를 제외할 수 있습니다.
 아래는 Node.js 애플리케이션을 빌드할 때 불필요한 파일을 제외하는 예시입니다.
 
-```dockerignore
+```shell
 # .dockerignore
 node_modules
 npm-debug.log
