@@ -62,7 +62,7 @@ Early Return은 들여쓰기를 줄여 코드를 간결하고 읽기 쉽게 만�
 if someCondition {
     if someOtherCondition {
         if someOtherOtherCondition {
-            // do something
+            // countlessly nested if statements
         }
     }
 }
@@ -71,11 +71,13 @@ if someCondition {
 또한 유효하지 않은 경우를 먼저 처리하여(bouncer pattern) 함수의 "진짜" 본문에 집중할 수 있게 합니다.
 
 ```go
-func someFunc(someCondition bool) {
-    if !someCondition {
-        return
+func someFunc() error {
+    if err := someValidation(); err != nil {
+        return fmt.Errorf("some validation error: %s", err)
     }
+
     // do something
+    return nil
 }
 ```
 
