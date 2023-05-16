@@ -5000,7 +5000,7 @@ __metadata:
     gatsby-plugin-sass: ^6.9.0
     gatsby-plugin-sharp: ^5.9.0
     gatsby-plugin-sitemap: ^6.9.0
-    gatsby-remark-images: ^7.9.0
+    gatsby-remark-images: ^7.10.0
     gatsby-remark-prismjs: ^7.9.0
     gatsby-source-filesystem: ^5.9.0
     gatsby-transformer-remark: ^6.9.0
@@ -8206,6 +8206,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.10.0":
+  version: 4.10.0
+  resolution: "gatsby-core-utils@npm:4.10.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.1.1
+    got: ^11.8.6
+    hash-wasm: ^4.9.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 605d29475d3b204965888cfbaf043091ea56f8ee5a6682c74a578ded7e9fc3d005ee86df91bf6347f87946a01bc2366b65c63e8d7110184f030edde7acb8e753
+  languageName: node
+  linkType: hard
+
 "gatsby-core-utils@npm:^4.9.0":
   version: 4.9.0
   resolution: "gatsby-core-utils@npm:4.9.0"
@@ -8521,14 +8545,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:^7.9.0":
-  version: 7.9.0
-  resolution: "gatsby-remark-images@npm:7.9.0"
+"gatsby-remark-images@npm:^7.10.0":
+  version: 7.10.0
+  resolution: "gatsby-remark-images@npm:7.10.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.9.0
+    gatsby-core-utils: ^4.10.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -8538,7 +8562,7 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: e82d597a57be9cbc0018c9da5b2436ec5b83a6a6a74ee905d31933ff00aeed787d120c311d39be4dc98ac3fbe670e591dddbb1590660df46206351973fa55b09
+  checksum: c13a0c26c65c058832c43254c73a1fdcea8394f34f181056f75566a409523b5dfcd1f1fb2a15270b33e8a8600ced37d9b21335fb381f6f20a6b3dc970cda7bb1
   languageName: node
   linkType: hard
 
