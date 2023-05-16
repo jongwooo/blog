@@ -45,7 +45,7 @@
     "gatsby-plugin-sitemap": "^6.9.0",
     "gatsby-remark-images": "^7.9.0",
     "gatsby-remark-prismjs": "^7.9.0",
-    "gatsby-source-filesystem": "^5.9.0",
+    "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-remark": "^6.9.0",
     "prismjs": "^1.29.0",
     "prop-types": "^15.8.1",
