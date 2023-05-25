@@ -4961,6 +4961,7 @@ __metadata:
     gatsby-plugin-canonical-urls: ^5.10.0
     gatsby-plugin-dark-mode: ^1.1.2
     gatsby-plugin-feed: ^5.10.0
+    gatsby-plugin-google-analytics: ^5.10.0
     gatsby-plugin-manifest: ^5.10.0
     gatsby-plugin-offline: ^6.10.0
     gatsby-plugin-robots-txt: ^1.8.0
@@ -8334,6 +8335,21 @@ __metadata:
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
   checksum: b7c70f9db4f652f81388b73d37aeb4d0bfd4a6da53fc3c8cba2eb48e578fc78d5284e592f0b00dcdbd4c82d0dead76f0a5922ee78314c1c1d22da17671a133cd
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-google-analytics@npm:^5.10.0":
+  version: 5.10.0
+  resolution: "gatsby-plugin-google-analytics@npm:5.10.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    minimatch: ^3.1.2
+    web-vitals: ^1.1.2
+  peerDependencies:
+    gatsby: ^5.0.0-next
+    react: ^18.0.0 || ^0.0.0
+    react-dom: ^18.0.0 || ^0.0.0
+  checksum: 10f7688bf7016ae29f5e23e0298780f10c0eeb33035cf36f95811ea5b2bd70ad9f94bbbfc554828570e735fc1e8e7dd29cc64af56c5ab0b3ac174099d2690d80
   languageName: node
   linkType: hard
 
@@ -16480,6 +16496,13 @@ __metadata:
   version: 1.1.4
   resolution: "web-namespaces@npm:1.1.4"
   checksum: 5149842ccbfbc56fe4f8758957b3f8c8616a281874a5bb84aa1b305e4436a9bad853d21c629a7b8f174902449e1489c7a6c724fccf60965077c5636bd8aed42b
+  languageName: node
+  linkType: hard
+
+"web-vitals@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "web-vitals@npm:1.1.2"
+  checksum: 92071029089277166e11141b735831d9011e85737d32c1360034676db898ab0ca95f19041ee01904f2189ad6e711b9da6b17567e4831290a429a586c98bc573f
   languageName: node
   linkType: hard
 
