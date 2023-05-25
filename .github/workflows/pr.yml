@@ -39,7 +39,7 @@ jobs:
         run: yarn build:incremental
         env:
           NODE_ENV: development
-          GA_TRACK_ID: ${{ secrets.GA_TRACK_ID }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
           NAVER_TOKEN: ${{ secrets.NAVER_TOKEN }}
           GISCUS_REPO_ID: ${{ secrets.GISCUS_REPO_ID }}
           GISCUS_CATEGORY_ID: ${{ secrets.GISCUS_CATEGORY_ID }}
