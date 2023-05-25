@@ -19,27 +19,3 @@ jobs:
 
       - name: Check format
         run: yarn format
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          cache: yarn
-
-      - uses: jongwooo/gatsby-cache@main
-
-      - name: Install dependencies
-        run: yarn install --immutable
-
-      - name: Build
-        run: yarn build:incremental
-        env:
-          NODE_ENV: development
-          GA_TRACK_ID: ${{ secrets.GA_TRACK_ID }}
-          NAVER_TOKEN: ${{ secrets.NAVER_TOKEN }}
-          GISCUS_REPO_ID: ${{ secrets.GISCUS_REPO_ID }}
-          GISCUS_CATEGORY_ID: ${{ secrets.GISCUS_CATEGORY_ID }}
