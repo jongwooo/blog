@@ -64,14 +64,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: metaConfig.gaTrackingId,
-        head: false,
-        anonymize: true,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: metaConfig.siteTitle,
