@@ -64,6 +64,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: metaConfig.gaTrackingId,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: metaConfig.siteTitle,
