@@ -37,7 +37,7 @@
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-feed": "^5.10.0",
     "gatsby-plugin-gtag": "^1.0.13",
-    "gatsby-plugin-manifest": "^5.10.0",
+    "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-offline": "^6.10.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^6.10.0",
