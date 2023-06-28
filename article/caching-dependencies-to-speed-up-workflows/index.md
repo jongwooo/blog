@@ -4,18 +4,20 @@ title: 더 빠른 워크플로우를 향해
 keywords: GitHub Actions, Workflows, 워크플로우, 캐싱, 의존성 캐싱, Dependency Caching, cache
 ---
 
-[오픈소스 프로젝트](https://github.com/fosslight/fosslight)에서 리드 멘티로 활동하며 워크플로우 속도를 단축하는데 기여하였습니다.
-이 글에서는 GitHub Actions의 워크플로우를 최적화하기 위해 의존성 캐싱을 사용하는 방법에 대해 알아보겠습니다.
+오픈소스 컨트리뷰션 아카데미에서 [프로젝트](https://github.com/fosslight/fosslight)를 진행하면서 CI를 기다리는 시간이 오래 걸린다는 의견이 있었습니다.
+이는 워크플로우가 매번 새로운 가상환경에서 실행되기 때문에, 의존성 패키지를 워크플로우마다 설치해야 해서 발생하는 문제였습니다.
 
-<!-- end -->
+비슷한 의존성을 반복적으로 설치하는 것은 네트워크 사용량을 증가시키고 런타임을 늘리는 원인이 되므로, 결국 시간과 자원의 낭비로 이어지게 됩니다.
+이러한 문제를 해결하기 위해 GitHub Actions에서는
+[의존성 캐싱](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows)을 지원합니다.
+
+이 글에서는 GitHub Actions의 의존성 캐싱 기능을 소개하고, 프로젝트에 적용하는 방법을 알아보겠습니다.
 
 ---
 
 ## TL;DR
 
-GitHub Actions의 워크플로우는 매번 새로운 가상환경에서 실행되기 때문에 의존성 패키지를 워크플로우마다 설치해야 합니다.
-이 과정에서 네트워크의 사용이 증가하고 런타임이 길어지므로 결국 시간과 자원의 낭비로 이어지게 됩니다.
-이러한 문제를 해결하기 위해 GitHub에서는 `의존성 캐싱` 기능을 지원합니다.
+GitHub Actions에서 제공하는 **의존성 캐싱**을 적용하면 워크플로우의 실행 시간을 단축할 수 있습니다.
 
 ---
 
@@ -54,7 +56,8 @@ restore-keys: |
 
 ### cache-hit
 
-[actions/cache](https://github.com/actions/cache)의 출력값 `cache-hit`을 통해 의존성 패키지를 설치하는 step에 캐시의 존재 여부를 확인하는 조건을 추가할 수 있습니다.
+[actions/cache](https://github.com/actions/cache)의 출력값 `cache-hit`을 통해 의존성 패키지를 설치하는 step에 캐시의 존재 여부를 확인하는 조건을 추가할 수
+있습니다.
 
 key에 맞는 캐시가 존재하는 경우를 `cache hit`이라고 하며, cache-hit의 값은 true가 됩니다.
 반대로 key에 맞는 캐시가 없는 경우는 `cache miss`라고 하며, 해당 작업이 성공적으로 끝났을 경우 새로운 캐시를 생성합니다.
@@ -131,7 +134,7 @@ yarn과는 다르게 `yarn config get cacheFolder` 명령어를 통하여 캐시
 ### Built-in 의존성 캐싱
 
 워크플로우 셋업이 용이하도록 GitHub에서 제공하는 [action](https://github.com/actions?q=setup&type=all&language=&sort=setup)은 대부분
-[actions/cache](https://github.com/actions/cache)를 내장하고 있어 복잡한 설정 없이 `의존성 캐싱`을 적용할 수 있습니다.
+[actions/cache](https://github.com/actions/cache)를 내장하고 있어 복잡한 설정 없이 의존성 캐싱을 적용할 수 있습니다.
 
 - [actions/setup-node](https://github.com/actions/setup-node#caching-global-packages-data)
 
@@ -162,7 +165,7 @@ steps:
 
 ![워크플로우에서 335MB의 캐시를 복원한 모습](gradle-cache.png "워크플로우에서 **335MB**의 캐시를 복원한 모습")
 
-워크플로우에 `의존성 캐싱`을 도입함으로써 오래 걸리던 CI 속도를 60초 이상 단축할 수 있게 되었습니다.
+워크플로우에 의존성 캐싱을 도입함으로써 오래 걸리던 CI 속도를 60초 이상 단축할 수 있게 되었습니다.
 이 글이 GitHub Actions를 사용하는 다른 개발자분들께도 도움 되었으면 합니다.
 
 ---
