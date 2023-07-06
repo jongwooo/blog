@@ -38,18 +38,16 @@ Gatsby로 블로그를 만드는 방법으로는 아래 세 가지가 있습니�
 
 ```jsx
 const ProfileCard = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            author
-            greetings
-          }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          author
+          greetings
         }
       }
-    `,
-  );
+    }
+  `);
 
   return (
     <ProfileCardWrapper>
