@@ -1,17 +1,17 @@
 ---
 date: 2023-04-24 03:40:00
-title: AWS SAA-C03 자격증 취득 후기
+title: AWS Certified Solutions Architect - Associate 취득 후기
 keywords: AWS, Certified, Solutions Architect, Associate, SAA-C03, 취득 후기
 ---
 
-지난 1일 [AWS Solutions Architect - Associate (SAA-C03)](https://aws.amazon.com/ko/certification/certified-solutions-architect-associate/) 자격증을 취득하였습니다.
-이번 글에서는 SAA-C03 자격증에 대한 간략한 소개와 준비 과정, 그리고 시험 관련 팁에 관해 이야기해 보려 합니다.
+지난 1일 [AWS Solutions Architect - Associate (SAA-C03)](https://aws.amazon.com/ko/certification/certified-solutions-architect-associate/)을 취득하였습니다.
+이번 글에서는 AWS Certified Solutions Architect - Associate에 대한 간략한 소개와 준비 과정, 그리고 시험 관련 팁에 관해 이야기해 보려 합니다.
 
 <!-- end -->
 
 ## TL;DR
 
-AWS Solutions Architect - Associate 자격증에 대한 소개와 준비 과정, 시험 관련 팁에 대해 다룹니다.
+AWS Certified Solutions Architect - Associate에 대한 소개와 준비 과정, 시험 관련 팁에 대해 다룹니다.
 
 ## AWS 공인 자격증 취득 후기
 
@@ -21,7 +21,7 @@ AWS Solutions Architect - Associate 자격증에 대한 소개와 준비 과정,
 
 AWS에서는 클라우드에 대한 기초적인 이해를 다루는 Cloud Practitioner부터 AWS의 여러 서비스를 활용하여 아키텍처를 설계하는 Solutions Architect까지 [다양한 자격증](https://aws.amazon.com/ko/certification/)을 제공하고 있습니다.
 
-이번에 취득한 [AWS Solutions Architect - Associate](https://aws.amazon.com/ko/certification/certified-solutions-architect-associate/)은 다양한 AWS 서비스에 대한 기본적인 지식과 기술을 다루는 자격증입니다.
+이번에 취득한 [AWS Certified Solutions Architect - Associate](https://aws.amazon.com/ko/certification/certified-solutions-architect-associate/)은 다양한 AWS 서비스에 대한 기본적인 지식과 기술을 다루는 자격증입니다.
 
 ### 준비 과정
 
@@ -43,7 +43,7 @@ AWS 공인 자격증 시험은 65문항으로 구성되어 있으며, 130분 동
 
 ![AWS Certified Solutions Architect - Associate](./certificate.png "AWS Certified Solutions Architect - Associate")
 
-800점이 조금 안 되는 점수로 시험을 통과하여 AWS Solutions Architect - Associate 자격증을 취득하였습니다.
+800점이 조금 안 되는 점수로 시험을 통과하여 AWS Certified Solutions Architect - Associate을 취득하였습니다.
 이 글이 자격증을 준비하시는 분들께 도움이 되었으면 좋겠습니다.
 
 ## 참고 링크
