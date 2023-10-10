@@ -4,7 +4,7 @@ title: NAVER Cloud Platform Certified Associate 취득 후기
 keywords: NAVER Cloud Platform, Certified, Associate, NCA, 취득 후기
 ---
 
-지난 6일 [NAVER Cloud Platform Certified Associate)](https://edu.ncloud.com/certi)를 취득하였습니다.
+지난 6일 [NAVER Cloud Platform Certified Associate](https://edu.ncloud.com/certi)를 취득하였습니다.
 이번 글에서는 NAVER Cloud Platform Certified Associate에 대한 간략한 소개와 준비 과정, 그리고 시험 관련 팁에 관해 이야기해 보려 합니다.
 
 <!-- end -->
