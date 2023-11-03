@@ -1,7 +1,7 @@
 ---
 date: 2023-01-27 05:30:00
 title: 리눅스 커널에 기여해보자
-keywords: linux, kernel, patch, contribute, 리눅스, 커널, 패치, 기여
+keywords: linux, kernel, patch, open source, contribution, 리눅스, 커널, 패치, 기여, 오픈소스
 ---
 
 [리눅스 커널](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git)은 오픈소스 프로젝트로 개발되고 있습니다.

@@ -1,7 +1,7 @@
 ---
 date: 2023-01-23 01:30:00
 title: Docker 이미지 최적화
-keywords: Docker, 도커, Dockerfile, Docker 이미지, Docker 이미지 최적화
+keywords: Docker, 도커, Dockerfile, Docker 이미지, Docker 이미지 최적화, 도커 이미지, 도커 이미지 최적화
 ---
 
 Docker 컨테이너는 애플리케이션을 개발, 테스트, 배포하는데 유용하게 사용됩니다.
