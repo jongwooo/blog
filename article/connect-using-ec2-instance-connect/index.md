@@ -1,7 +1,7 @@
 ---
 date: 2023-03-25 18:30:00
 title: EC2 Instance Connect 사용하기
-keywords: AWS, EC2, EC2 Instance Connect, Linux Instance, ssh
+keywords: AWS, EC2, EC2 Instance Connect, Linux Instance, ssh, ssh 접속
 ---
 
 AWS EC2 인스턴스에 접속하는 방법은 여러 가지가 있습니다.

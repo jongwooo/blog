@@ -1,7 +1,7 @@
 ---
 date: 2023-08-31 18:00:00
 title: 쿠버네티스 문서에 기여해보자
-keywords: Kubernetes, Docs, Contribution, SIG-Docs, 쿠버네티스, 문서, 오픈소스
+keywords: kubernetes, docs, contribution, open source, SIG-Docs, 쿠버네티스, 문서, 오픈소스, 기여, 한글화
 ---
 
 [쿠버네티스](https://kubernetes.io)는 컨테이너화된

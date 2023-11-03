@@ -1,7 +1,7 @@
 ---
 date: 2023-07-31 23:59:59
 title: GitHub Actions에서 Service Container 사용하기
-keywords: GitHub Actions, Service Container, Application Test, Database, Memory Cache, 애플리케이션 테스트, 데이터베이스, 메모리 캐시
+keywords: GitHub Actions, Service Container, Application Test, Database, Memory Cache, 애플리케이션 테스트, 데이터베이스, 메모리 캐시, 서비스 컨테이너, 워크플로우
 ---
 
 워크플로우에서 애플리케이션을 테스트할 때, 데이터베이스나 메모리 캐시 등의 도구를 사용해야 하는 경우가 있습니다.

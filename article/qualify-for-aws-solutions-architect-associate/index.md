@@ -1,7 +1,7 @@
 ---
 date: 2023-04-24 03:40:00
 title: AWS Certified Solutions Architect - Associate 취득 후기
-keywords: AWS, Certified, Solutions Architect, Associate, SAA-C03, 취득 후기
+keywords: AWS, Certified, Solutions Architect, Associate, SAA-C03, AWS Certified Solutions Architect - Associate, 취득 후기
 ---
 
 지난 1일 [AWS Solutions Architect - Associate (SAA-C03)](https://aws.amazon.com/ko/certification/certified-solutions-architect-associate/)를 취득하였습니다.

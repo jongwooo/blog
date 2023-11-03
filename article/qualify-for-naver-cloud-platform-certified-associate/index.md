@@ -1,7 +1,7 @@
 ---
 date: 2023-10-09 23:45:00
 title: NAVER Cloud Platform Certified Associate 취득 후기
-keywords: NAVER Cloud Platform, Certified, Associate, NCA, 취득 후기
+keywords: NAVER Cloud Platform, Certified, Associate, NCA, NAVER Cloud Platform Certified Associate, 취득 후기
 ---
 
 지난 6일 [NAVER Cloud Platform Certified Associate](https://edu.ncloud.com/certi)를 취득하였습니다.

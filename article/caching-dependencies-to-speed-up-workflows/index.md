@@ -1,7 +1,7 @@
 ---
 date: 2022-08-12 00:00:00
 title: 더 빠른 워크플로우를 향해
-keywords: GitHub Actions, Workflows, 워크플로우, 캐싱, 의존성 캐싱, Dependency Caching, cache
+keywords: GitHub Actions, Workflows, 워크플로우, 캐싱, 의존성 캐싱, Dependency Caching, cache, actions/cache, CI 시간, CI 속도, CI 성능, CI 최적화
 ---
 
 오픈소스 컨트리뷰션 아카데미에서 [프로젝트](https://github.com/fosslight/fosslight)를 진행하면서 CI를 기다리는 시간이 오래 걸린다는 의견이 있었습니다.
