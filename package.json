@@ -32,7 +32,7 @@
     "@jongwooo/prism-theme-github": "^1.12.0",
     "@reach/router": "^1.3.4",
     "dotenv": "^16.3.1",
-    "gatsby": "^5.12.9",
+    "gatsby": "^5.12.10",
     "gatsby-plugin-canonical-urls": "^5.12.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-feed": "^5.12.3",
