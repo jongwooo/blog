@@ -8,7 +8,7 @@ const ProfileCard = () => {
 
   return (
     <div className="profile-card-wrapper">
-      <h1 className="author">{author}</h1>
+      <span className="author">{author}</span>
       <p className="greetings">{greetings}</p>
       {githubUrl && (
         <a className="social-link" href={githubUrl}>
