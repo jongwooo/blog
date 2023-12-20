@@ -2154,15 +2154,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@giscus/react@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "@giscus/react@npm:2.3.0"
+"@giscus/react@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "@giscus/react@npm:2.4.0"
   dependencies:
-    giscus: "npm:^1.3.0"
+    giscus: "npm:^1.4.0"
   peerDependencies:
     react: ^16 || ^17 || ^18
     react-dom: ^16 || ^17 || ^18
-  checksum: d1342d90c50eea2bd09a3dde8caf9743269b39687f17a8cb09d463c01e873174fd8d48c60da9dfab39d27e678d8e615508b0cc2e3ff4504cc2e724bb1bea4273
+  checksum: c0a8623bdbeca52b0e09d95a45305fe9b2f87e45aaa3745b459ff3a7514e20560fdd534eda9b2922ad841407176dec5041e372e198cd71c9906902c78d861d80
   languageName: node
   linkType: hard
 
@@ -2639,33 +2639,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lit-labs/ssr-dom-shim@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@lit-labs/ssr-dom-shim@npm:1.0.0"
-  checksum: 06e4b53df28f8e6d58c6cc20c7a582e1693d6dfe02e713106b27f9de58a26d6b1eadc4f406821b62bab14c2521e54b0038fa364364887bd4c6648169dc8cc72c
+"@lit-labs/ssr-dom-shim@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@lit-labs/ssr-dom-shim@npm:1.1.2"
+  checksum: a930f7de57b952dc21317a5754aa0411e000bb4991053cde771c111b7792c4a4cdc896922f0353c832215bed71400431c5ab5a6252c8f4f70bb9ce0b37fe4752
   languageName: node
   linkType: hard
 
-"@lit-labs/ssr-dom-shim@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "@lit-labs/ssr-dom-shim@npm:1.1.1"
-  checksum: f401a2bc7170ba8d0d81f2613905793bc661a377a62279b9d470123ec59696186270a8786d4cd40ebf726cd6a41d883fb5a56e6907cb4e737dae4c99f50dca81
-  languageName: node
-  linkType: hard
-
-"@lit/reactive-element@npm:^1.3.0":
-  version: 1.5.0
-  resolution: "@lit/reactive-element@npm:1.5.0"
-  checksum: c9988fc675721840a6fca6b50af0f17c7f79f203ff289f74dbb6c2ac7920db79467417a14ada05f7ec2bce2420f693d2239ec5911e5cdf3601d8cc9580568a2f
-  languageName: node
-  linkType: hard
-
-"@lit/reactive-element@npm:^1.6.0":
-  version: 1.6.1
-  resolution: "@lit/reactive-element@npm:1.6.1"
+"@lit/reactive-element@npm:^2.0.0":
+  version: 2.0.2
+  resolution: "@lit/reactive-element@npm:2.0.2"
   dependencies:
-    "@lit-labs/ssr-dom-shim": "npm:^1.0.0"
-  checksum: fdda9c48d8a3f9ab9fb6555505f298b67a9085c9d3aa45b9dea7dc76e0a248b26252b28d32b031ae48f87d47be876397ca58a186d1898482e1ba9ed402069f0c
+    "@lit-labs/ssr-dom-shim": "npm:^1.1.2"
+  checksum: 2b74234f041740a8e0ab65980e2ac949533f067e43a6a512171a2b5f8ecd2116996f728776adc8ab94c1dddb679235cceb463a9c9ceb0f34a00fe95966646eff
   languageName: node
   linkType: hard
 
@@ -4967,7 +4953,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "blog@workspace:."
   dependencies:
-    "@giscus/react": "npm:^2.3.0"
+    "@giscus/react": "npm:^2.4.0"
     "@jongwooo/prism-theme-github": "npm:^1.12.0"
     "@reach/router": "npm:^1.3.4"
     dotenv: "npm:^16.3.1"
@@ -8999,12 +8985,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"giscus@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "giscus@npm:1.3.0"
+"giscus@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "giscus@npm:1.4.0"
   dependencies:
-    lit: "npm:^2.7.5"
-  checksum: 7d55cd4dc21d51538975ed63eb5eb2652b3161c9befee7ece5c9ad3448095d65a20bc37999c3e1672f2b85e012a828d17a62887c512cbde601748a86c1f71423
+    lit: "npm:^3.1.0"
+  checksum: 16782dc3df6be4c4530126ef50bd09d7476d27c1d3320d101613650410b55c1d5abfa4cbe7d40a997c2d43d9eca18e31a9c8bc95e4142c0a529f30831bc25ab0
   languageName: node
   linkType: hard
 
@@ -10804,34 +10790,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit-element@npm:^3.3.0":
-  version: 3.3.2
-  resolution: "lit-element@npm:3.3.2"
+"lit-element@npm:^4.0.0":
+  version: 4.0.2
+  resolution: "lit-element@npm:4.0.2"
   dependencies:
-    "@lit-labs/ssr-dom-shim": "npm:^1.1.0"
-    "@lit/reactive-element": "npm:^1.3.0"
-    lit-html: "npm:^2.7.0"
-  checksum: 61a49b8ca0d9fc8d8e4a4553570dc5f81650ef3c7d7715de812c4805d461df55f36fa4e2f212b5347716224cd1e54d223105043cdd4a209c32ea3bfdfb5ba811
+    "@lit-labs/ssr-dom-shim": "npm:^1.1.2"
+    "@lit/reactive-element": "npm:^2.0.0"
+    lit-html: "npm:^3.1.0"
+  checksum: 185e8b916516c87d337d0491e572af412a3f7c60f751b5432d2f671ab1615f515683c49f2a28aeae81264072a8d6f80cfdcf39ca9521b2a6dd96d2f83e929bf6
   languageName: node
   linkType: hard
 
-"lit-html@npm:^2.7.0":
-  version: 2.7.4
-  resolution: "lit-html@npm:2.7.4"
+"lit-html@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "lit-html@npm:3.1.0"
   dependencies:
     "@types/trusted-types": "npm:^2.0.2"
-  checksum: d773b7919a4d927dc4a3141c9b32b64c859dc1e7064cf5a603aa4cb6736fde2973b4f1a7be238e7df7f0c4340f8dee7e61f570d087cfd2ef83b091626e8c8ee4
+  checksum: 2831f48e82bc75a27e329a844faf0b0324f006c004e2bbc2c5cc8632429ec79a5401aae31866fba9befae7861bf40c7513a7a39227ceafe2dc7a069f617ef875
   languageName: node
   linkType: hard
 
-"lit@npm:^2.7.5":
-  version: 2.7.5
-  resolution: "lit@npm:2.7.5"
+"lit@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "lit@npm:3.1.0"
   dependencies:
-    "@lit/reactive-element": "npm:^1.6.0"
-    lit-element: "npm:^3.3.0"
-    lit-html: "npm:^2.7.0"
-  checksum: ff449a5a2fe2f91a09b5c4d748c3c722664c3f9d298797c508722340087a8b7fba9a66fe3bd6ab7a0ef948e2285c8d8fcc1b5a4c5e89aa25234bc851d8071e2b
+    "@lit/reactive-element": "npm:^2.0.0"
+    lit-element: "npm:^4.0.0"
+    lit-html: "npm:^3.1.0"
+  checksum: cf46959d909a5dce2ac4bff3d9f8aa942be223c30ce1d4e86e66eda55d53f2886e4ae6092f9ab825c1a26d56d1a57c360981040cb579d53a73869d07ec04bad9
   languageName: node
   linkType: hard
 
