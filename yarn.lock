@@ -2527,10 +2527,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jongwooo/prism-theme-github@npm:^1.12.0":
-  version: 1.12.0
-  resolution: "@jongwooo/prism-theme-github@npm:1.12.0"
-  checksum: f09658d781f96115ff5ea472e89b35c1b80345923741102b815da931eda7d504b683782670c9e27103b63ef1af481356b4947e97a54f3a9e6a0c03aa838f87df
+"@jongwooo/prism-theme-github@npm:^1.14.0":
+  version: 1.14.0
+  resolution: "@jongwooo/prism-theme-github@npm:1.14.0"
+  checksum: 9478a7c3299aaf07e125891ee42686391bbe470b536d319427b5a483df55d31453bef51142d967be2160fff617abc1c21f870213f9128f8dda6d5ed853a3bbbb
   languageName: node
   linkType: hard
 
@@ -4947,7 +4947,7 @@ __metadata:
   resolution: "blog@workspace:."
   dependencies:
     "@giscus/react": "npm:^2.4.0"
-    "@jongwooo/prism-theme-github": "npm:^1.12.0"
+    "@jongwooo/prism-theme-github": "npm:^1.14.0"
     "@reach/router": "npm:^1.3.4"
     dotenv: "npm:^16.3.1"
     gatsby: "npm:^5.13.1"
