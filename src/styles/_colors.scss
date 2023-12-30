@@ -16,6 +16,7 @@ body.light {
     --color-fg-default: #24292f;
     --color-bg-code-block: #f6f8fa;
     --color-bg-inline-code-block: rgb(175 184 193 / 20%);
+    --color-neutral-muted: rgba(175, 184, 193, 0.2);
     --color-gray: #6e7781;
     --color-red: #cf222e;
     --color-green: var(--primary-color);
@@ -40,6 +41,7 @@ body.dark {
     --color-fg-default: #c9d1d9;
     --color-bg-code-block: #161b22;
     --color-bg-inline-code-block: rgb(110 118 129 / 40%);
+    --color-neutral-muted: rgba(110, 118, 129, 0.4);
     --color-gray: #8b949e;
     --color-red: #ff7b72;
     --color-green: var(--primary-color);
