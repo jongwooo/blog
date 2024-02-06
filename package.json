@@ -55,7 +55,7 @@
     "sass": "^1.70.0"
   },
   "devDependencies": {
-    "prettier": "^3.2.4"
+    "prettier": "^3.2.5"
   },
   "packageManager": "yarn@4.0.2"
 }
