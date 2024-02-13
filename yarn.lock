@@ -4974,7 +4974,7 @@ __metadata:
     "@giscus/react": "npm:^2.4.0"
     "@jongwooo/prism-theme-github": "npm:^1.14.0"
     "@reach/router": "npm:^1.3.4"
-    dotenv: "npm:^16.4.3"
+    dotenv: "npm:^16.4.4"
     gatsby: "npm:^5.13.3"
     gatsby-plugin-canonical-urls: "npm:^5.13.1"
     gatsby-plugin-dark-mode: "npm:^1.1.2"
@@ -6761,10 +6761,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.4.3":
-  version: 16.4.3
-  resolution: "dotenv@npm:16.4.3"
-  checksum: f07db902c62c239aef7a7b696b21dfab8e95bf5883bcf23c6b9b55f42578d18b842e6257b4f4ecfdbd024a3ee9949fbaaa4c84807de7ba037c74fe3c70785198
+"dotenv@npm:^16.4.4":
+  version: 16.4.4
+  resolution: "dotenv@npm:16.4.4"
+  checksum: ddf43ede209d5f54c9da688e93326162eb0fc367ad1869909568cb15571ab8c87a0fab4e1d4af9860be0571c707a8b4aefa060a4f1b0bb14298a81e0ccf0017d
   languageName: node
   linkType: hard
 
