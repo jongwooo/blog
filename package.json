@@ -28,7 +28,7 @@
     "url": "https://github.com/jongwooo/blog"
   },
   "dependencies": {
-    "@giscus/react": "^2.4.0",
+    "@giscus/react": "^3.0.0",
     "@jongwooo/prism-theme-github": "^1.14.0",
     "@reach/router": "^1.3.4",
     "dotenv": "^16.4.5",
