@@ -84,8 +84,8 @@ gwPrinter := &printer.GatewaysPrinter{Out: params.Out, Clock: realClock}
 
 ## 마치며
 
-`gwctl`의 `get` 명령을 구현하면서, 쿠버네티스 내 Gateway API 리소스를 조회하는 기능을 구현하였습니다.
-이를 통해, `gwctl`의 기능을 확장하고, 사용자에게 더 나은 경험을 제공할 수 있게 되었습니다.
+쿠버네티스 내 Gateway API 리소스를 조회하는 `gwctl get` 기능을 구현했습니다.
+이를 통해 gwctl의 기능을 확장하고, 사용자가 Gateway API 리소스를 쉽게 조회하는 데 기여했습니다.
 
 ## 참고 링크
 
