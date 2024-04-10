@@ -75,7 +75,7 @@ objects := []runtime.Object{
 gwPrinter := &printer.GatewaysPrinter{Out: params.Out, Clock: fakeClock}
 ```
 
-실제 코드에서는 다음과 같이 `RealClock`을 사용합니다.
+실제 코드에서는 다음과 같이 realClock을 사용합니다.
 
 ```go
 realClock := clock.RealClock{}
