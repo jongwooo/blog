@@ -4993,7 +4993,7 @@ __metadata:
     prettier: "npm:^3.2.5"
     prismjs: "npm:^1.29.0"
     prop-types: "npm:^15.8.1"
-    react: "npm:^18.3.0"
+    react: "npm:^18.3.1"
     react-dom: "npm:^18.2.0"
     react-icons: "npm:^5.1.0"
     sass: "npm:^1.75.0"
@@ -13911,12 +13911,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.3.0":
-  version: 18.3.0
-  resolution: "react@npm:18.3.0"
+"react@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "react@npm:18.3.1"
   dependencies:
     loose-envify: "npm:^1.1.0"
-  checksum: 17112377dad4e5c868b608be57c8e970a3f6ee6eb6269a5c4c23b11b8b4f393c42a8a046be0c9ddbc5f182b909330ddbecab905bcdea5051b05ec3914491fd79
+  checksum: 261137d3f3993eaa2368a83110466fc0e558bc2c7f7ae7ca52d94f03aac945f45146bd85e5f481044db1758a1dbb57879e2fcdd33924e2dde1bdc550ce73f7bf
   languageName: node
   linkType: hard
 
