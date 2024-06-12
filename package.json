@@ -52,7 +52,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
-    "sass": "^1.77.2"
+    "sass": "^1.77.5"
   },
   "devDependencies": {
     "prettier": "^3.2.5"
