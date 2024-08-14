@@ -13,8 +13,8 @@
     "build": "gatsby build",
     "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,scss,md}\"",
-    "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,scss,md}\"",
+    "format": "biome format ./src",
+    "format:fix": "biome format --write ./src",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -55,7 +55,7 @@
     "sass": "^1.77.8"
   },
   "devDependencies": {
-    "prettier": "^3.3.3"
+    "@biomejs/biome": "1.8.3"
   },
   "packageManager": "yarn@4.0.2"
 }
