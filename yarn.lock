@@ -5073,13 +5073,13 @@ __metadata:
     gatsby-plugin-feed: "npm:^5.13.1"
     gatsby-plugin-gtag: "npm:^1.0.13"
     gatsby-plugin-manifest: "npm:^5.13.1"
-    gatsby-plugin-offline: "npm:^6.13.2"
+    gatsby-plugin-offline: "npm:^6.13.3"
     gatsby-plugin-robots-txt: "npm:^1.8.0"
     gatsby-plugin-sass: "npm:^6.13.1"
     gatsby-plugin-sharp: "npm:^5.13.1"
     gatsby-plugin-sitemap: "npm:^6.13.1"
-    gatsby-remark-images: "npm:^7.13.1"
-    gatsby-remark-prismjs: "npm:^7.13.1"
+    gatsby-remark-images: "npm:^7.13.2"
+    gatsby-remark-prismjs: "npm:^7.13.2"
     gatsby-source-filesystem: "npm:^5.13.1"
     gatsby-transformer-remark: "npm:^6.13.1"
     prismjs: "npm:^1.29.0"
@@ -5577,31 +5577,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio-select@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "cheerio-select@npm:1.5.0"
+"cheerio-select@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "cheerio-select@npm:2.1.0"
   dependencies:
-    css-select: "npm:^4.1.3"
-    css-what: "npm:^5.0.1"
-    domelementtype: "npm:^2.2.0"
-    domhandler: "npm:^4.2.0"
-    domutils: "npm:^2.7.0"
-  checksum: c29d67d42b7160a757fd9af3dc6b79a0cc83e375fcb0761882e0761f42a36977bd35ca32f66b3810967c7095767a27618c18dc1095d2d089d7e3b1463a2b5cfc
+    boolbase: "npm:^1.0.0"
+    css-select: "npm:^5.1.0"
+    css-what: "npm:^6.1.0"
+    domelementtype: "npm:^2.3.0"
+    domhandler: "npm:^5.0.3"
+    domutils: "npm:^3.0.1"
+  checksum: b5d89208c23468c3a32d1e04f88b9e8c6e332e3649650c5cd29255e2cebc215071ae18563f58c3dc3f6ef4c234488fc486035490fceb78755572288245e2931a
   languageName: node
   linkType: hard
 
-"cheerio@npm:^1.0.0-rc.10":
-  version: 1.0.0-rc.10
-  resolution: "cheerio@npm:1.0.0-rc.10"
+"cheerio@npm:1.0.0-rc.12":
+  version: 1.0.0-rc.12
+  resolution: "cheerio@npm:1.0.0-rc.12"
   dependencies:
-    cheerio-select: "npm:^1.5.0"
-    dom-serializer: "npm:^1.3.2"
-    domhandler: "npm:^4.2.0"
-    htmlparser2: "npm:^6.1.0"
-    parse5: "npm:^6.0.1"
-    parse5-htmlparser2-tree-adapter: "npm:^6.0.1"
-    tslib: "npm:^2.2.0"
-  checksum: b86736b44277fabecfd7f37e74da7349093477fbea6329e0b21328e367cde935087b923e5212f7eae37ebbb4a62fb3e0cd39604a20c4174c07a1c23540606cd9
+    cheerio-select: "npm:^2.1.0"
+    dom-serializer: "npm:^2.0.0"
+    domhandler: "npm:^5.0.3"
+    domutils: "npm:^3.0.1"
+    htmlparser2: "npm:^8.0.1"
+    parse5: "npm:^7.0.0"
+    parse5-htmlparser2-tree-adapter: "npm:^7.0.0"
+  checksum: 812fed61aa4b669bbbdd057d0d7f73ba4649cabfd4fc3a8f1d5c7499e4613b430636102716369cbd6bbed8f1bdcb06387ae8342289fb908b2743184775f94f18
   languageName: node
   linkType: hard
 
@@ -6259,6 +6260,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-select@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "css-select@npm:5.1.0"
+  dependencies:
+    boolbase: "npm:^1.0.0"
+    css-what: "npm:^6.1.0"
+    domhandler: "npm:^5.0.2"
+    domutils: "npm:^3.0.1"
+    nth-check: "npm:^2.0.1"
+  checksum: d486b1e7eb140468218a5ab5af53257e01f937d2173ac46981f6b7de9c5283d55427a36715dc8decfc0c079cf89259ac5b41ef58f6e1a422eee44ab8bfdc78da
+  languageName: node
+  linkType: hard
+
 "css-selector-parser@npm:^1.0.0":
   version: 1.4.1
   resolution: "css-selector-parser@npm:1.4.1"
@@ -6276,14 +6290,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-what@npm:^5.0.0, css-what@npm:^5.0.1":
+"css-what@npm:^5.0.0":
   version: 5.1.0
   resolution: "css-what@npm:5.1.0"
   checksum: 3b1f0abdf104a2e887be45c5b710b063d3fa7468d1d1eea071fbd6e5b3e2e7d4c0cb001edec07ea5a360c06425f351e0356539155b70ea461382c9c7bcaba4d7
   languageName: node
   linkType: hard
 
-"css-what@npm:^6.0.1":
+"css-what@npm:^6.0.1, css-what@npm:^6.1.0":
   version: 6.1.0
   resolution: "css-what@npm:6.1.0"
   checksum: c67a3a2d0d81843af87f8bf0a4d0845b0f952377714abbb2884e48942409d57a2110eabee003609d02ee487b054614bdfcfc59ee265728ff105bd5aa221c1d0e
@@ -6741,7 +6755,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-serializer@npm:^1.0.1, dom-serializer@npm:^1.3.2":
+"dom-serializer@npm:^1.0.1":
   version: 1.3.2
   resolution: "dom-serializer@npm:1.3.2"
   dependencies:
@@ -6795,7 +6809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domhandler@npm:^5.0.1, domhandler@npm:^5.0.2":
+"domhandler@npm:^5.0.1, domhandler@npm:^5.0.2, domhandler@npm:^5.0.3":
   version: 5.0.3
   resolution: "domhandler@npm:5.0.3"
   dependencies:
@@ -6804,7 +6818,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domutils@npm:^2.5.2, domutils@npm:^2.6.0, domutils@npm:^2.7.0, domutils@npm:^2.8.0":
+"domutils@npm:^2.5.2, domutils@npm:^2.6.0, domutils@npm:^2.8.0":
   version: 2.8.0
   resolution: "domutils@npm:2.8.0"
   dependencies:
@@ -7043,6 +7057,13 @@ __metadata:
   version: 4.4.0
   resolution: "entities@npm:4.4.0"
   checksum: b627cb900e901cc7817037b83bf993a1cbf6a64850540f7526af7bcf9c7d09ebc671198e6182cfae4680f733799e2852e6a1c46aa62ff36eb99680057a038df5
+  languageName: node
+  linkType: hard
+
+"entities@npm:^4.4.0":
+  version: 4.5.0
+  resolution: "entities@npm:4.5.0"
+  checksum: ede2a35c9bce1aeccd055a1b445d41c75a14a2bb1cd22e242f20cf04d236cdcd7f9c859eb83f76885327bfae0c25bf03303665ee1ce3d47c5927b98b0e3e3d48
   languageName: node
   linkType: hard
 
@@ -8500,12 +8521,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:^6.13.2":
-  version: 6.13.2
-  resolution: "gatsby-plugin-offline@npm:6.13.2"
+"gatsby-plugin-offline@npm:^6.13.3":
+  version: 6.13.3
+  resolution: "gatsby-plugin-offline@npm:6.13.3"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
-    cheerio: "npm:^1.0.0-rc.10"
+    cheerio: "npm:1.0.0-rc.12"
     gatsby-core-utils: "npm:^4.13.1"
     glob: "npm:^7.2.3"
     idb-keyval: "npm:^3.2.0"
@@ -8515,7 +8536,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: ca1006e2bd7695b0c367a6bc60ced609a7c42dc6f3e4dff57d40c263e1b8a9e2d05f2d52780e5ba9bc04fc60fc68d213e74ce416428853ecc603bec4f2b7fcd4
+  checksum: a590c391cca49dcf503d2160db36e07965667abeab3c19681f57fd1a2d3e5e04a0d4d60c3046472dc77c9751c0f7fc2a88c1451a7c54aeda8691a516f4a40a14
   languageName: node
   linkType: hard
 
@@ -8656,13 +8677,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:^7.13.1":
-  version: 7.13.1
-  resolution: "gatsby-remark-images@npm:7.13.1"
+"gatsby-remark-images@npm:^7.13.2":
+  version: 7.13.2
+  resolution: "gatsby-remark-images@npm:7.13.2"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     chalk: "npm:^4.1.2"
-    cheerio: "npm:^1.0.0-rc.10"
+    cheerio: "npm:1.0.0-rc.12"
     gatsby-core-utils: "npm:^4.13.1"
     is-relative-url: "npm:^3.0.0"
     lodash: "npm:^4.17.21"
@@ -8673,13 +8694,13 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: fc1032bb41e96e90168d135d059bc2ddef76136a3e1bb3b3c59a5cefb910491efdf28a7831f06689dc7107b27d1ec7ef8f43164a88fded1ab1c01d292977dc0a
+  checksum: 729ed334703efbaca711ccf7f811b1171ec0d6e56d7a46d8ba8f0d5672a124c329d1ab9f4d97cbee0fbe8e3c548b70719dd1c2300edd24b64ff4e1aa10192816
   languageName: node
   linkType: hard
 
-"gatsby-remark-prismjs@npm:^7.13.1":
-  version: 7.13.1
-  resolution: "gatsby-remark-prismjs@npm:7.13.1"
+"gatsby-remark-prismjs@npm:^7.13.2":
+  version: 7.13.2
+  resolution: "gatsby-remark-prismjs@npm:7.13.2"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     parse-numeric-range: "npm:^1.3.0"
@@ -8687,7 +8708,7 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     prismjs: ^1.15.0
-  checksum: 5e4fc849de1719539ce2110eefd153023b6a252c971c1b60d15ff24bf06ddce3b0ff82bdb9845bda02d3a76e16d124fd4471c444e4aeb18cf8ed056d774862a1
+  checksum: 5170f04cc4624d9defc214b361c0e04c75e7e3f35d3deed9f1acb65de4f7547c0fbef254572c012923034f6f3b0c496d4a062ad963399036830b4293382b1c11
   languageName: node
   linkType: hard
 
@@ -9698,6 +9719,18 @@ __metadata:
     domutils: "npm:^3.0.1"
     entities: "npm:^4.3.0"
   checksum: f891041c331ef7ef300f1e8f0e6756d663cf8096f8a343a1bf474e7a5ce34fe7cd71b9dfb0227277f7de2007e847ef2a447e8b48eab592d6f3631aae18301d22
+  languageName: node
+  linkType: hard
+
+"htmlparser2@npm:^8.0.1":
+  version: 8.0.2
+  resolution: "htmlparser2@npm:8.0.2"
+  dependencies:
+    domelementtype: "npm:^2.3.0"
+    domhandler: "npm:^5.0.3"
+    domutils: "npm:^3.0.1"
+    entities: "npm:^4.4.0"
+  checksum: ea5512956eee06f5835add68b4291d313c745e8407efa63848f4b8a90a2dee45f498a698bca8614e436f1ee0cfdd609938b71d67c693794545982b76e53e6f11
   languageName: node
   linkType: hard
 
@@ -12963,19 +12996,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse5-htmlparser2-tree-adapter@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "parse5-htmlparser2-tree-adapter@npm:6.0.1"
+"parse5-htmlparser2-tree-adapter@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "parse5-htmlparser2-tree-adapter@npm:7.0.0"
   dependencies:
-    parse5: "npm:^6.0.1"
-  checksum: 3400a2cd1ad450b2fe148544154f86ea53d3ed6b6eab56c78bb43b9629d3dfe9f580dffd75bbf32be134ffef645b68081fc764bf75c210f236ab9c5c8c38c252
+    domhandler: "npm:^5.0.2"
+    parse5: "npm:^7.0.0"
+  checksum: 23dbe45fdd338fe726cf5c55b236e1f403aeb0c1b926e18ab8ef0aa580980a25f8492d160fe2ed0ec906c3c8e38b51e68ef5620a3b9460d9458ea78946a3f7c0
   languageName: node
   linkType: hard
 
-"parse5@npm:^6.0.0, parse5@npm:^6.0.1":
+"parse5@npm:^6.0.0":
   version: 6.0.1
   resolution: "parse5@npm:6.0.1"
   checksum: dfb110581f62bd1425725a7c784ae022a24669bd0efc24b58c71fc731c4d868193e2ebd85b74cde2dbb965e4dcf07059b1e651adbec1b3b5267531bd132fdb75
+  languageName: node
+  linkType: hard
+
+"parse5@npm:^7.0.0":
+  version: 7.1.2
+  resolution: "parse5@npm:7.1.2"
+  dependencies:
+    entities: "npm:^4.4.0"
+  checksum: 3c86806bb0fb1e9a999ff3a4c883b1ca243d99f45a619a0898dbf021a95a0189ed955c31b07fe49d342b54e814f33f2c9d7489198e8630dacd5477d413ec5782
   languageName: node
   linkType: hard
 
@@ -16140,7 +16183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.2.0":
+"tslib@npm:^2.0.3":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: 5e7de59ed9f2b705b399bda28326b7c3e7526deb48bbe1716e2e17fbd4cecbb610253d09c7b8fd0a6e76cfed9304e2e608cdb81bb1ee812d69e5089d1a94c71a
