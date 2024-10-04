@@ -55,7 +55,7 @@
     "sass": "^1.79.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.2"
+    "@biomejs/biome": "1.9.3"
   },
   "packageManager": "yarn@4.0.2"
 }
