@@ -5221,7 +5221,7 @@ __metadata:
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     react-icons: "npm:^5.3.0"
-    sass: "npm:^1.79.5"
+    sass: "npm:^1.80.1"
   languageName: unknown
   linkType: soft
 
@@ -14934,9 +14934,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.79.5":
-  version: 1.79.5
-  resolution: "sass@npm:1.79.5"
+"sass@npm:^1.80.1":
+  version: 1.80.1
+  resolution: "sass@npm:1.80.1"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -14944,7 +14944,7 @@ __metadata:
     source-map-js: "npm:>=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 86f6ebe9c3c8d86cf8fff2e12f93109697140090604fb6180c8792c0e4fc98377c433dbd4c86a0272c47ba4c307edf24435a06d7e5995956048a23f9e187fedc
+  checksum: e45d392f474b50b7f20b9f7426312fb093ca42c74e058a9023ba73cc59702052ea1769836753970ed6320b473678399d50cc96da6cbf5e771b0b5a23ef685f55
   languageName: node
   linkType: hard
 
