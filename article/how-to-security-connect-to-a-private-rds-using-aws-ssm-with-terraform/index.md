@@ -276,7 +276,6 @@ POLICY
 Session Manager 콘솔을 통해 EC2 인스턴스에 접속한 후, MySQL 클라이언트를 설치합니다.
 
 ```bash
-sudo amazon-linux-extras enable mysql8.0
 sudo yum install mysql -y
 ```
 
