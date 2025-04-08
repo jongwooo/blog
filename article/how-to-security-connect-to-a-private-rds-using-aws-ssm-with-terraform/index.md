@@ -32,7 +32,7 @@ keywords: AWS, RDS, Session Manager, SSM, Private Subnet, Security, Terraform, �
 
 먼저, CIDR 블록이 `10.0.0.0/16`인 VPC와 CIDR 블록이 `10.0.1.0/24`인 프라이빗 서브넷을 생성합니다.
 
-> 예제에서는 SSM 접속만 필요하므로, NAT Gateway 등은 구성하지 않습니다.
+> VPC와 서브넷은 필요에 따라 CIDR 블록을 변경하여 사용하시면 됩니다.
 
 ```hcl
 resource "aws_vpc" "vpc" {
@@ -50,11 +50,30 @@ resource "aws_subnet" "private_subnet" {
 
 resource "aws_route_table" "private_route_table" {
   vpc_id = aws_vpc.vpc.id
+  route {
+    cidr_block     = "0.0.0.0/0"
+    nat_gateway_id = aws_nat_gateway.ngw.id
+  }
 }
 
 resource "aws_route_table_association" "private_route_table_association" {
   subnet_id      = aws_subnet.private_subnet.id
   route_table_id = aws_route_table.private_route_table.id
+}
+
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.vpc.id
+}
+
+resource "aws_eip" "ngw_eip" {
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
+resource "aws_nat_gateway" "ngw" {
+  allocation_id = aws_eip.ngw_eip.id
+  subnet_id     = aws_subnet.public_subnets[0].id
 }
 ```
 
@@ -132,8 +151,6 @@ Session Manager는 VPC 엔드포인트를 통해 프라이빗 서브넷에 접�
 이때, `ssm`은 세션 연결 관리, `ssmmessages`는 세션 메시지 전달, `ec2messages`는 EC2 인스턴스와의 통신을 담당합니다.
 이 역할은 EC2 인스턴스가 Session Manager와 정상적으로 통신하고, SSM 포트포워딩 기능을 사용할 수 있게 해줍니다.
 
-> service_name을 제외한 구성이 동일하다면, for_each를 활용해 여러 개의 VPC 엔드포인트를 한 번에 생성할 수도 있습니다.
-
 ```hcl
 resource "aws_security_group" "sg_vpce_ssm" {
   vpc_id = aws_vpc.vpc.id
@@ -147,29 +164,16 @@ resource "aws_security_group" "sg_vpce_ssm" {
 }
 
 resource "aws_vpc_endpoint" "vpce_ssm" {
+  for_each = toset([
+    "ssm",
+    "ssmmessages",
+    "ec2messages"
+  ])
   vpc_id              = aws_vpc.vpc.id
   vpc_endpoint_type   = "Interface"
-  service_name        = "com.amazonaws.${var.aws_region}.ssm"
-  subnet_ids          = [aws_subnet.private_subnet.id]
-  security_group_ids  = [aws_security_group.sg_vpce_ssm.id]
-  private_dns_enabled = true
-}
-
-resource "aws_vpc_endpoint" "vpce_ssmmessages" {
-  vpc_id              = aws_vpc.vpc.id
-  vpc_endpoint_type   = "Interface"
-  service_name        = "com.amazonaws.${var.aws_region}.ssmmessages"
-  subnet_ids          = [aws_subnet.private_subnet.id]
-  security_group_ids  = [aws_security_group.sg_vpce_ssm.id]
-  private_dns_enabled = true
-}
-
-resource "aws_vpc_endpoint" "vpce_ec2messages" {
-  vpc_id              = aws_vpc.vpc.id
-  vpc_endpoint_type   = "Interface"
-  service_name        = "com.amazonaws.${var.aws_region}.ec2messages"
-  subnet_ids          = [aws_subnet.private_subnet.id]
-  security_group_ids  = [aws_security_group.sg_vpce_ssm.id]
+  service_name        = "com.amazonaws.${var.aws_region}.${each.key}"
+  subnet_ids          = aws_subnet.database_subnets[*].id
+  security_group_ids  = [var.sg_vpce_ssm_id]
   private_dns_enabled = true
 }
 ```
@@ -276,6 +280,7 @@ POLICY
 Session Manager 콘솔을 통해 EC2 인스턴스에 접속한 후, MySQL 클라이언트를 설치합니다.
 
 ```bash
+sudo yum update
 sudo yum install mysql -y
 ```
 
